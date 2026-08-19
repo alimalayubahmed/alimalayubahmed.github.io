@@ -1,29 +1,3 @@
-{% include base_path %}
-
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-
-    {% if site.author.github %}
-      <li>
-        <a href="https://github.com/{{ site.author.github }}">
-          <i class="fab fa-github" aria-hidden="true"></i> GitHub
-        </a>
-      </li>
-    {% endif %}
-
-    {% if site.atom_feed.hide != true %}
-      <li>
-        <a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}">
-          <i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed
-        </a>
-      </li>
-    {% endif %}
-
-    <li>
-      <span>&copy; {{ site.time | date: '%Y' }} Prof. Dr. Alim Al Ayub Ahmed. All rights reserved.</span>
-    </li>
-  </ul>
+<div class="page__footer-copyright">
+  &copy; {{ site.time | date: '%Y' }} Prof. Dr. Alim Al Ayub Ahmed. All rights reserved.
 </div>
