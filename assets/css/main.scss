@@ -209,11 +209,9 @@
 .research-lab-logo {
   width: 105px;
   height: 105px;
-
   min-width: 105px;
 
   object-fit: cover;
-
   border-radius: 50%;
 
   border: 3px solid #ffffff;
@@ -301,6 +299,240 @@
 
 
 /* =========================================================
+   Teaching Page
+   ========================================================= */
+
+.teaching-intro {
+  margin-bottom: 24px;
+
+  color: #46515c;
+
+  font-size: 1.02em;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   Special Section Titles
+   ========================================================= */
+
+.section-title-special {
+  margin: 0 0 18px 0;
+  padding: 0 0 10px 0;
+
+  color: #263746;
+
+  font-size: 1.32em;
+  font-weight: 700;
+  line-height: 1.3;
+
+  border-bottom: 2px solid #d5dde5;
+}
+
+.highlight-heading {
+  margin: 0 0 14px 0;
+
+  color: #2457a7;
+
+  font-size: 1.16em;
+  font-weight: 700;
+  line-height: 1.4;
+
+  transition: color 0.25s ease;
+}
+
+.content-card:hover .highlight-heading {
+  color: #0b6b3a;
+}
+
+
+/* =========================================================
+   Institution Employment Rows
+   ========================================================= */
+
+.institution-row {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 20px;
+
+  padding: 18px 10px;
+
+  border-bottom: 1px solid #dce2e8;
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.institution-row:hover {
+  background: #f4f9fd;
+
+  border-color: #91b5d4;
+
+  transform: translateX(4px);
+
+  box-shadow:
+    inset 4px 0 0 #0b7a4b,
+    0 4px 12px rgba(36, 87, 167, 0.08);
+}
+
+.institution-row-last {
+  border-bottom: none;
+}
+
+
+/* =========================================================
+   Institution Logos
+   ========================================================= */
+
+.institution-logo-wrap {
+  width: 92px;
+  min-width: 92px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.institution-logo {
+  width: 78px;
+  height: 78px;
+
+  object-fit: contain;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+
+  border: 2px solid #d3dde7;
+
+  padding: 5px;
+
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.10);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.institution-row:hover .institution-logo {
+  transform: scale(1.07);
+
+  border-color: #0b7a4b;
+
+  box-shadow:
+    0 0 0 2px rgba(11, 122, 75, 0.14),
+    0 5px 14px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================================
+   Institution Information
+   ========================================================= */
+
+.institution-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.institution-name {
+  display: inline-block;
+
+  margin-bottom: 3px;
+
+  color: #2457a7;
+
+  font-size: 1.08em;
+  font-weight: 700;
+  line-height: 1.35;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+.institution-name::after {
+  content: " ↗";
+
+  font-size: 0.76em;
+  font-weight: normal;
+
+  opacity: 0.55;
+}
+
+.institution-name:hover,
+.institution-name:focus {
+  color: #0b6b3a;
+
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.institution-name:hover::after,
+.institution-name:focus::after {
+  opacity: 1;
+}
+
+.institution-location {
+  margin-bottom: 7px;
+
+  color: #68737d;
+
+  font-size: 0.92em;
+  line-height: 1.35;
+}
+
+.appointment-role {
+  color: #2d3741;
+
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.appointment-date {
+  margin-top: 2px;
+
+  color: #68737d;
+
+  font-size: 0.92em;
+  line-height: 1.4;
+}
+
+.appointment-block {
+  margin-top: 4px;
+}
+
+.second-appointment {
+  margin-top: 12px;
+  padding-top: 11px;
+
+  border-top: 1px dashed #ccd6df;
+}
+
+.role-note {
+  display: inline-block;
+
+  margin-left: 5px;
+  padding: 2px 7px;
+
+  color: #0b6b3a;
+  background: #eaf6ef;
+
+  border: 1px solid #bcdcc9;
+  border-radius: 12px;
+
+  font-size: 0.72em;
+  font-weight: 600;
+}
+
+
+/* =========================================================
    Responsive Design
    ========================================================= */
 
@@ -336,6 +568,25 @@
   .lab-title {
     font-size: 1.04em;
   }
+
+  .institution-row {
+    gap: 14px;
+    padding: 16px 6px;
+  }
+
+  .institution-row:hover {
+    transform: none;
+  }
+
+  .institution-logo-wrap {
+    width: 74px;
+    min-width: 74px;
+  }
+
+  .institution-logo {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 
@@ -359,5 +610,29 @@
   .lab-title {
     display: block;
     text-align: left;
+  }
+
+  .institution-row {
+    align-items: flex-start;
+  }
+
+  .institution-logo-wrap {
+    width: 58px;
+    min-width: 58px;
+  }
+
+  .institution-logo {
+    width: 50px;
+    height: 50px;
+
+    padding: 3px;
+  }
+
+  .institution-name {
+    font-size: 1em;
+  }
+
+  .appointment-role {
+    font-size: 0.95em;
   }
 }
