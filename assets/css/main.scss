@@ -5,7 +5,7 @@
  * This file controls what is imported from /_sass
  *
  * Note that the files are processed in the order they are imported, so they are partly
- * sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
 @import
@@ -301,7 +301,7 @@
    ========================================================= */
 
 .teaching-intro {
-  max-width: 865px !important;
+  max-width: 822px !important;
   width: 100%;
 
   margin-right: auto !important;
@@ -323,7 +323,7 @@
 
 .teaching-card,
 .teaching-section-card {
-  max-width: 865px !important;
+  max-width: 822px !important;
   width: 100% !important;
 
   margin-left: 0 !important;
@@ -336,7 +336,7 @@
 .page__content .teaching-section-card,
 .page__content .content-card.teaching-card,
 .page__content .content-card.teaching-section-card {
-  max-width: 865px !important;
+  max-width: 822px !important;
   width: 100% !important;
 
   margin-left: 0 !important;
