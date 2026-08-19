@@ -60,7 +60,10 @@
    ========================================================= */
 
 .patent-card {
-  padding: 18px 20px;
+  display: flex;
+  align-items: stretch;
+  gap: 18px;
+  padding: 17px 18px;
   background: #ffffff;
   border: 1.5px solid #c7d0da;
   border-left: 5px solid #2457a7;
@@ -83,6 +86,11 @@
 
 .featured-patent {
   background: #fbfdff;
+}
+
+.patent-content {
+  flex: 1;
+  min-width: 0;
 }
 
 
@@ -115,7 +123,12 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 16px;
+  gap: 14px;
+}
+
+.patent-heading-content {
+  flex: 1;
+  min-width: 0;
 }
 
 .patent-title {
@@ -131,9 +144,9 @@
 }
 
 .patent-meta {
-  margin-top: 7px;
+  margin-top: 6px;
   color: #68737e;
-  font-size: .82em;
+  font-size: .81em;
   line-height: 1.45;
 }
 
@@ -154,7 +167,7 @@
   justify-content: center;
   padding: 5px 9px;
   border-radius: 12px;
-  font-size: .69em;
+  font-size: .68em;
   font-weight: 700;
   line-height: 1.2;
   white-space: nowrap;
@@ -186,18 +199,19 @@
 
 
 /* =========================================================
-   DETAILS ROW
+   COMPACT DETAILS ROW
+   Approx. 25-30% smaller than previous version
    ========================================================= */
 
 .patent-details {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  margin: 14px 0 13px;
+  grid-template-columns: 175px 190px 125px;
+  gap: 8px;
+  margin: 12px 0 12px;
 }
 
 .patent-details > div {
-  padding: 8px 10px;
+  padding: 6px 9px;
   background: #f7f9fb;
   border: 1px solid #dde3e8;
   border-radius: 7px;
@@ -205,20 +219,67 @@
 
 .patent-details span {
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   color: #78838d;
-  font-size: .68em;
-  font-weight: 600;
+  font-size: .61em;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .02em;
+  letter-spacing: .025em;
 }
 
 .patent-details strong {
   display: block;
   color: #34404c;
-  font-size: .82em;
+  font-size: .75em;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   OFFICE LOGO ON RIGHT
+   ========================================================= */
+
+.patent-logo-wrap {
+  width: 120px;
+  min-width: 120px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 5px 4px 4px 13px;
+  border-left: 1px solid #e2e7ec;
+}
+
+.patent-office-logo {
+  display: block;
+  width: 92px;
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+
+/* UK crown logo generally looks better slightly smaller */
+.uk-card .patent-office-logo {
+  width: 78px;
+}
+
+/* Canadian copyright symbol */
+.canada-card .patent-office-logo {
+  width: 82px;
+}
+
+/* Australian logo */
+.australia-card .patent-office-logo {
+  width: 92px;
+}
+
+/* Indian IP logo */
+.india-card .patent-office-logo {
+  width: 92px;
 }
 
 
@@ -237,12 +298,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 32px;
-  padding: 6px 11px;
+  min-height: 31px;
+  padding: 6px 10px;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: inherit;
-  font-size: .72em;
+  font-size: .71em;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none !important;
@@ -315,7 +376,20 @@
   }
 
   .patent-card {
-    padding: 16px 17px;
+    padding: 15px 16px;
+  }
+
+  .patent-details {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .patent-logo-wrap {
+    width: 100px;
+    min-width: 100px;
+  }
+
+  .patent-office-logo {
+    width: 80px;
   }
 
 }
@@ -340,6 +414,10 @@
     font-size: 1.08em;
   }
 
+  .patent-card {
+    flex-direction: column;
+  }
+
   .patent-card-top {
     flex-direction: column;
     gap: 8px;
@@ -355,7 +433,22 @@
 
   .patent-details {
     grid-template-columns: 1fr;
-    gap: 7px;
+    gap: 6px;
+  }
+
+  .patent-logo-wrap {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 0 0;
+    border-left: 0;
+    border-top: 1px solid #e2e7ec;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .patent-office-logo {
+    width: 78px;
+    max-height: 82px;
   }
 
 }
