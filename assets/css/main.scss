@@ -5,7 +5,7 @@
  * This file controls what is imported from /_sass
  *
  * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
 @import
@@ -313,14 +313,6 @@
   line-height: 1.7;
 }
 
-/*
- * All Teaching cards use exactly the same width.
- * This includes:
- * Academic Appointments
- * Academic Leadership
- * International Teaching Experience
- */
-
 .teaching-card,
 .teaching-section-card {
   max-width: 822px !important;
@@ -566,6 +558,228 @@
 
 
 /* =========================================================
+   Publications Hub
+   ========================================================= */
+
+.publications-intro {
+  max-width: 950px;
+  margin-bottom: 8px;
+
+  color: #46515c;
+
+  font-size: 1.02em;
+  line-height: 1.7;
+}
+
+.publications-intro-secondary {
+  margin-bottom: 26px;
+  color: #68737d;
+}
+
+
+/* =========================================================
+   Publications Category Grid
+   ========================================================= */
+
+.publication-hub-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+
+  max-width: 950px;
+  margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   Publication Category Card
+   ========================================================= */
+
+.publication-category-card {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 17px;
+
+  min-height: 215px;
+
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1.5px solid #bcc8d4;
+  border-left: 5px solid #2457a7;
+
+  border-radius: 11px;
+
+  color: #2d3741;
+  text-decoration: none !important;
+
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.07);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.publication-category-card:hover,
+.publication-category-card:focus {
+  transform: translateY(-6px);
+
+  background: #f8fbff;
+
+  border-color: #6f9fc8;
+
+  box-shadow:
+    0 12px 28px rgba(36, 87, 167, 0.16),
+    0 4px 9px rgba(0, 0, 0, 0.08);
+
+  text-decoration: none !important;
+}
+
+
+/* =========================================================
+   Publication Category Accent Colors
+   ========================================================= */
+
+.journal-card {
+  border-left-color: #2457a7;
+}
+
+.conference-card {
+  border-left-color: #16848a;
+}
+
+.chapter-card {
+  border-left-color: #6957a5;
+}
+
+.books-card {
+  border-left-color: #b47b19;
+}
+
+.technical-card {
+  border-left-color: #596978;
+}
+
+.patent-card {
+  border-left-color: #16814f;
+}
+
+
+/* =========================================================
+   Publications Category Icons
+   ========================================================= */
+
+.publication-category-icon {
+  width: 52px;
+  min-width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f1f5f9;
+
+  border: 1px solid #d5dee7;
+  border-radius: 50%;
+
+  font-size: 1.65em;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.publication-category-card:hover
+.publication-category-icon {
+  transform: scale(1.09);
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   Publication Category Content
+   ========================================================= */
+
+.publication-category-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+  min-width: 0;
+}
+
+.publication-category-title {
+  margin-bottom: 8px;
+
+  color: #2457a7;
+
+  font-size: 1.12em;
+  font-weight: 700;
+  line-height: 1.35;
+
+  transition:
+    color 0.25s ease;
+}
+
+.publication-category-card:hover
+.publication-category-title {
+  color: #0b6b3a;
+}
+
+.publication-category-content p {
+  margin: 0 0 10px 0;
+
+  color: #46515c;
+
+  font-size: 0.93em;
+  line-height: 1.55;
+}
+
+.publication-category-meta {
+  margin-top: auto;
+  margin-bottom: 10px;
+
+  color: #74808b;
+
+  font-size: 0.82em;
+  line-height: 1.45;
+}
+
+.publication-category-action {
+  color: #2457a7;
+
+  font-size: 0.88em;
+  font-weight: 700;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.publication-category-card:hover
+.publication-category-action {
+  color: #0b6b3a;
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
    Responsive Design
    ========================================================= */
 
@@ -635,6 +849,24 @@
     width: 64px;
     height: 64px;
   }
+
+  .publications-intro,
+  .publication-hub-grid {
+    max-width: 100%;
+  }
+
+  .publication-hub-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .publication-category-card {
+    min-height: auto;
+  }
+
+  .publication-category-card:hover {
+    transform: none;
+  }
 }
 
 
@@ -685,5 +917,22 @@
 
   .appointment-role {
     font-size: 0.95em;
+  }
+
+  .publication-category-card {
+    gap: 13px;
+    padding: 18px 16px;
+  }
+
+  .publication-category-icon {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+
+    font-size: 1.35em;
+  }
+
+  .publication-category-title {
+    font-size: 1.04em;
   }
 }
