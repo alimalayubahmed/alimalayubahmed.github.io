@@ -240,13 +240,14 @@
   min-width: 0;
 }
 
-.research-lab-info h3 {
-  margin-top: 0 !important;
+.research-lab-info p {
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 
 
 /* =========================================================
-   Research Lab Links
+   Research Lab Links and Titles
    ========================================================= */
 
 .lab-link {
@@ -282,6 +283,22 @@
   opacity: 1;
 }
 
+.lab-title {
+  display: inline-block;
+
+  margin: 0 0 6px 0;
+
+  font-size: 1.08em;
+  font-weight: 700;
+  line-height: 1.4;
+
+  color: #2457a7;
+}
+
+.research-lab:hover .lab-title {
+  color: #0b6b3a;
+}
+
 
 /* =========================================================
    Responsive Design
@@ -315,6 +332,10 @@
   .research-lab:hover {
     transform: none;
   }
+
+  .lab-title {
+    font-size: 1.04em;
+  }
 }
 
 
@@ -333,5 +354,10 @@
 
   .research-lab-info {
     width: 100%;
+  }
+
+  .lab-title {
+    display: block;
+    text-align: left;
   }
 }
