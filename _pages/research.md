@@ -31,13 +31,17 @@ My research interests lie at the intersection of accounting, emerging technologi
 
 <div class="research-lab-info">
 
-### <a class="lab-link" href="https://www.impactio.com/laboratory/responsibleAI" target="_blank" rel="noopener noreferrer">Digital Scholarship Lab for Responsible AI, Blockchain and Business Intelligence</a>
+<a class="lab-link lab-title" href="https://www.impactio.com/laboratory/responsibleAI" target="_blank" rel="noopener noreferrer">
+Digital Scholarship Lab for Responsible AI, Blockchain and Business Intelligence
+</a>
 
+<p>
 Research activities focus on the intersection of responsible artificial intelligence, blockchain, accounting information systems, business intelligence, data governance, and digital scholarship.
+</p>
 
 </div>
-
 </div>
+
 
 <div class="research-lab">
 
@@ -45,12 +49,15 @@ Research activities focus on the intersection of responsible artificial intellig
 
 <div class="research-lab-info">
 
-### <a class="lab-link" href="https://www.impactio.com/laboratory/SMARTIslands" target="_blank" rel="noopener noreferrer">Vanuatu and Pacific SMART Islands Research Lab for Climate Resilience, Sustainable Development and Digital Governance</a>
+<a class="lab-link lab-title" href="https://www.impactio.com/laboratory/SMARTIslands" target="_blank" rel="noopener noreferrer">
+Vanuatu and Pacific SMART Islands Research Lab for Climate Resilience, Sustainable Development and Digital Governance
+</a>
 
+<p>
 Research activities focus on climate resilience, sustainable development, SMART Islands, digital governance, Pacific research, and technology-enabled development.
+</p>
 
 </div>
-
 </div>
 
 </div>
