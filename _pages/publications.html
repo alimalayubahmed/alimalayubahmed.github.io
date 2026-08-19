@@ -5,32 +5,230 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<p class="publications-intro">
+  My scholarly and intellectual contributions include peer-reviewed journal articles,
+  conference proceedings, book chapters, academic books, technical notes, patents,
+  registered designs, trademarks, and other research outputs.
+</p>
 
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<p class="publications-intro publications-intro-secondary">
+  Select a category below to explore the corresponding publications and intellectual contributions.
+</p>
 
 
+<div class="publication-hub-grid">
 
+
+  <!-- =====================================================
+       Journal Articles
+       ===================================================== -->
+
+  <a class="publication-category-card journal-card"
+     href="{{ '/publications/journal-articles/' | relative_url }}">
+
+    <div class="publication-category-icon">
+      📄
+    </div>
+
+    <div class="publication-category-content">
+
+      <div class="publication-category-title">
+        Journal Articles
+      </div>
+
+      <p>
+        Peer-reviewed journal publications across accounting, corporate governance,
+        financial reporting, artificial intelligence, blockchain, business analytics,
+        and interdisciplinary research.
+      </p>
+
+      <div class="publication-category-meta">
+        Selected indexed and high-impact publications will be highlighted.
+      </div>
+
+      <div class="publication-category-action">
+        Explore Journal Articles →
+      </div>
+
+    </div>
+
+  </a>
+
+
+  <!-- =====================================================
+       Conference Proceedings
+       ===================================================== -->
+
+  <a class="publication-category-card conference-card"
+     href="{{ '/publications/conference-proceedings/' | relative_url }}">
+
+    <div class="publication-category-icon">
+      🎤
+    </div>
+
+    <div class="publication-category-content">
+
+      <div class="publication-category-title">
+        Conference Proceedings
+      </div>
+
+      <p>
+        Conference papers and proceedings publications, including works indexed in
+        Scopus and other scholarly databases.
+      </p>
+
+      <div class="publication-category-meta">
+        Conference title, proceedings information, DOI, indexing and article links.
+      </div>
+
+      <div class="publication-category-action">
+        Explore Conference Proceedings →
+      </div>
+
+    </div>
+
+  </a>
+
+
+  <!-- =====================================================
+       Book Chapters
+       ===================================================== -->
+
+  <a class="publication-category-card chapter-card"
+     href="{{ '/publications/book-chapters/' | relative_url }}">
+
+    <div class="publication-category-icon">
+      📑
+    </div>
+
+    <div class="publication-category-content">
+
+      <div class="publication-category-title">
+        Book Chapters
+      </div>
+
+      <p>
+        Chapters published in edited academic books and international scholarly
+        volumes, including Scopus-indexed publications.
+      </p>
+
+      <div class="publication-category-meta">
+        Chapter DOI, book title, publisher, indexing and book links.
+      </div>
+
+      <div class="publication-category-action">
+        Explore Book Chapters →
+      </div>
+
+    </div>
+
+  </a>
+
+
+  <!-- =====================================================
+       Books
+       ===================================================== -->
+
+  <a class="publication-category-card books-card"
+     href="{{ '/publications/books/' | relative_url }}">
+
+    <div class="publication-category-icon">
+      📚
+    </div>
+
+    <div class="publication-category-content">
+
+      <div class="publication-category-title">
+        Books
+      </div>
+
+      <p>
+        Authored and edited academic and professional books covering accounting,
+        artificial intelligence, blockchain, data science, research methodology,
+        and related areas.
+      </p>
+
+      <div class="publication-category-meta">
+        Book covers, short descriptions, publication details and Amazon links.
+      </div>
+
+      <div class="publication-category-action">
+        Explore Books →
+      </div>
+
+    </div>
+
+  </a>
+
+
+  <!-- =====================================================
+       Technical Notes
+       ===================================================== -->
+
+  <a class="publication-category-card technical-card"
+     href="{{ '/publications/technical-notes/' | relative_url }}">
+
+    <div class="publication-category-icon">
+      📝
+    </div>
+
+    <div class="publication-category-content">
+
+      <div class="publication-category-title">
+        Technical Notes
+      </div>
+
+      <p>
+        Technical and professional notes developed for research, scholarly
+        communication, academic development, and specialized professional purposes.
+      </p>
+
+      <div class="publication-category-meta">
+        Purpose, context, hosting information and reading/download links.
+      </div>
+
+      <div class="publication-category-action">
+        Explore Technical Notes →
+      </div>
+
+    </div>
+
+  </a>
+
+
+  <!-- =====================================================
+       Patents, Designs & Trademarks
+       ===================================================== -->
+
+  <a class="publication-category-card patent-card"
+     href="{{ '/publications/patents-designs/' | relative_url }}">
+
+    <div class="publication-category-icon">
+      💡
+    </div>
+
+    <div class="publication-category-content">
+
+      <div class="publication-category-title">
+        Patents, Designs & Trademarks
+      </div>
+
+      <p>
+        Patents, copyrights, registered designs, trademarks, and other intellectual
+        property contributions across multiple jurisdictions.
+      </p>
+
+      <div class="publication-category-meta">
+        Country, registration information, status, year and official links.
+      </div>
+
+      <div class="publication-category-action">
+        Explore Intellectual Property →
+      </div>
+
+    </div>
+
+  </a>
+
+
+</div>
