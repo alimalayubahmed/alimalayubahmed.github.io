@@ -27,15 +27,18 @@ My reviewing activities include assessment of research quality, methodology, aca
 
 My professional and scholarly engagements include affiliations with organizations and communities such as:
 
-- IEEE
-- IEEE Consultants Network
-- IEEE Blockchain Community
-- Crossref
-- Committee on Publication Ethics (COPE)
-- Online Computer Library Center (OCLC)
-- International Association of Engineers (IAENG)
-- International Economics Development Research Center (IEDRC)
-- International Association of Computer Science and Information Technology (IACSIT)
+- Associate Member, Institute of Electrical and Electronics Engineers (IEEE)
+- Member, IEEE Consultants Network
+- Member, IEEE Blockchain Community
+- Full Member (C-117118), American Accounting Association (AAA)
+- Member, Accounting Information Systems (AIS) Section, American Accounting Association
+- Member, Auditing Section, American Accounting Association
+- Member, American Taxation Association (ATA)
+- Member, Academy of Accounting Historians
+- Representative, Crossref Member Organization
+- Representative, Committee on Publication Ethics (COPE) Member Journal
+- Representative, OCLC Member Organization
+- Member, International Association of Engineers (IAENG)
 
 ## Academic Leadership
 
