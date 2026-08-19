@@ -7,8 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-# Prof. Dr. Alim Al Ayub Ahmed
-
 I am an academic, researcher, editor, and consultant with research interests spanning **Accounting Information Systems, Corporate Governance, Artificial Intelligence, Blockchain, Financial Reporting, and Research Visibility**.
 
 My academic and professional work focuses on the intersection of accounting, emerging technologies, and scholarly research. I have been involved in university teaching, academic leadership, research, journal editing, scholarly publishing, and research development activities.
