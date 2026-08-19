@@ -4,8 +4,6 @@ permalink: /research/
 author_profile: true
 ---
 
-# Research
-
 My research focuses on the intersection of accounting, emerging technologies, corporate governance, financial reporting, and digital scholarship.
 
 ## Research Interests
