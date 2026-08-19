@@ -24,8 +24,7 @@
   "layout/page",
   "layout/archive",
   "layout/sidebar",
-  "layout/json_cv"
-;
+  "layout/json_cv";
 
 
 /* =========================================================
@@ -65,7 +64,7 @@
 .research-lab-info p { margin-top: 6px; margin-bottom: 0; }
 .lab-link { color: #2457a7; text-decoration: none; transition: color .2s ease, text-decoration-color .2s ease; }
 .lab-link:hover, .lab-link:focus { color: #0b6b3a; text-decoration: underline; text-underline-offset: 4px; }
-.lab-link::after { content: " ↗"; font-size: .78em; font-weight: normal; opacity: .6; transition: opacity .2s ease; }
+.lab-link::after { content: " ↗"; font-size: .78em; font-weight: normal; opacity: .6; }
 .lab-link:hover::after, .lab-link:focus::after { opacity: 1; }
 .lab-title { display: inline-block; margin: 0 0 6px; font-size: 1.08em; font-weight: 700; line-height: 1.4; color: #2457a7; }
 .research-lab:hover .lab-title { color: #0b6b3a; }
@@ -87,7 +86,7 @@
 .institution-logo { width: 78px; height: 78px; object-fit: contain; background: #fff; border-radius: 50%; border: 2px solid #d3dde7; padding: 5px; box-shadow: 0 3px 9px rgba(0,0,0,.10); transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
 .institution-row:hover .institution-logo { transform: scale(1.07); border-color: #0b7a4b; box-shadow: 0 0 0 2px rgba(11,122,75,.14), 0 5px 14px rgba(0,0,0,.14); }
 .institution-info { flex: 1; min-width: 0; }
-.institution-name { display: inline-block; margin-bottom: 3px; color: #2457a7; font-size: 1.08em; font-weight: 700; line-height: 1.35; text-decoration: none; transition: color .2s ease, text-decoration-color .2s ease; }
+.institution-name { display: inline-block; margin-bottom: 3px; color: #2457a7; font-size: 1.08em; font-weight: 700; line-height: 1.35; text-decoration: none; transition: color .2s ease; }
 .institution-name::after { content: " ↗"; font-size: .76em; font-weight: normal; opacity: .55; }
 .institution-name:hover, .institution-name:focus { color: #0b6b3a; text-decoration: underline; text-underline-offset: 4px; }
 .institution-location { margin-bottom: 7px; color: #68737d; font-size: .92em; line-height: 1.35; }
@@ -125,25 +124,63 @@
 
 
 /* =========================================================
-   Books
+   Books Page
    ========================================================= */
 
 .books-intro { max-width: 855px; margin-bottom: 24px; color: #46515c; font-size: 1.02em; line-height: 1.7; }
 .books-list { max-width: 855px; }
+
 .book-card { display: flex; align-items: stretch; gap: 24px; margin-bottom: 24px; padding: 20px; background: #fff; border: 1.5px solid #bec9d4; border-left: 5px solid #b47b19; border-radius: 11px; box-shadow: 0 3px 10px rgba(0,0,0,.07); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, background-color .25s ease; }
 .book-card:hover { transform: translateY(-5px); background: #fffcf6; border-color: #c79a48; border-left-color: #0b7a4b; box-shadow: 0 10px 24px rgba(36,87,167,.14), 0 3px 8px rgba(0,0,0,.08); }
+
 .book-cover-wrap { width: 142px; min-width: 142px; height: 190px; display: flex; align-items: center; justify-content: center; padding: 6px; background: #f5f6f7; border: 1px solid #d9e0e6; border-radius: 7px; overflow: hidden; }
 .book-cover { width: 100%; height: 100%; object-fit: contain; display: block; transition: transform .25s ease; }
 .book-card:hover .book-cover { transform: scale(1.045); }
+
 .book-info { flex: 1; min-width: 0; display: flex; flex-direction: column; }
 .book-title { margin-bottom: 5px; color: #2457a7; font-size: 1.12em; font-weight: 700; line-height: 1.4; transition: color .25s ease; }
 .book-card:hover .book-title { color: #0b6b3a; }
 .book-subtitle { display: block; margin-top: 3px; color: #68737d; font-size: .84em; font-weight: 500; }
-.book-meta { margin-bottom: 10px; color: #74808b; font-size: .88em; line-height: 1.4; }
+.book-meta { margin-bottom: 10px; color: #74808b; font-size: .88em; line-height: 1.45; }
 .book-info p { margin: 0 0 12px; color: #46515c; font-size: .94em; line-height: 1.6; }
-.book-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
+
+.book-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
 .book-tags span { display: inline-block; padding: 3px 8px; background: #f1f5f9; border: 1px solid #d6e0e8; border-radius: 12px; color: #53616d; font-size: .74em; font-weight: 600; }
-.books-note { max-width: 855px; margin: 5px 0 25px; padding: 10px 14px; background: #f7f9fb; border-left: 4px solid #b47b19; color: #68737d; font-size: .86em; line-height: 1.5; }
+
+.book-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: auto; }
+
+.book-button { display: inline-block; padding: 7px 13px; border-radius: 6px; font-size: .80em; font-weight: 700; line-height: 1.2; text-decoration: none !important; transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease; }
+
+.amazon-button { color: #fff !important; background: #2457a7; border: 1px solid #1c478c; }
+.amazon-button:hover { color: #fff !important; background: #0b6b3a; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,.14); }
+
+.rokomari-button { color: #fff !important; background: #16814f; border: 1px solid #0f6c40; }
+.rokomari-button:hover { color: #fff !important; background: #2457a7; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,.14); }
+
+.book-button-disabled { color: #68737d; background: #eef1f4; border: 1px solid #d1d7dd; cursor: default; }
+
+.book-status { display: inline-block; padding: 5px 10px; border-radius: 12px; font-size: .76em; font-weight: 700; }
+.hard-print-status { color: #75510c; background: #fff3d7; border: 1px solid #e4c67c; }
+.out-stock-status { color: #6c4a4a; background: #f8eeee; border: 1px solid #dec4c4; }
+.coming-soon-status { color: #2457a7; background: #edf4fb; border: 1px solid #b8cee3; }
+
+.featured-book { border-left-color: #16814f; }
+.coming-soon-card { border-left-color: #596978; }
+
+
+/* =========================================================
+   Earlier Local Print Books
+   ========================================================= */
+
+.local-books-card { margin-bottom: 26px; padding: 22px 24px; background: #fffdf8; border: 1.5px solid #d7c9aa; border-left: 5px solid #8b6b28; border-radius: 11px; box-shadow: 0 3px 10px rgba(0,0,0,.06); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.local-books-card:hover { transform: translateY(-4px); border-color: #b79a5b; box-shadow: 0 9px 22px rgba(0,0,0,.10); }
+
+.local-books-heading { margin-bottom: 7px; color: #263746; font-size: 1.18em; font-weight: 700; }
+.local-books-badge { display: inline-block; margin-bottom: 15px; padding: 4px 9px; color: #75510c; background: #fff1ce; border: 1px solid #dfc174; border-radius: 12px; font-size: .76em; font-weight: 700; }
+.local-books-list { margin: 0; padding-left: 24px; color: #46515c; }
+.local-books-list li { margin-bottom: 12px; padding-left: 4px; line-height: 1.55; }
+.local-books-list li:last-child { margin-bottom: 0; }
+.isbn-line { display: block; margin-top: 2px; color: #68737d; font-size: .90em; }
 
 
 /* =========================================================
@@ -152,32 +189,44 @@
 
 @media (max-width:768px) {
   .content-card, .teaching-card, .teaching-section-card, .teaching-intro, .page__content .teaching-card, .page__content .teaching-section-card, .page__content .content-card.teaching-card, .page__content .content-card.teaching-section-card { max-width: 100% !important; width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; }
+
   .content-card { padding: 16px 18px; margin-bottom: 18px; border-radius: 8px; border-left-width: 4px; }
-  .content-card:hover, .research-lab:hover, .institution-row:hover, .publication-category-card:hover, .book-card:hover { transform: none; }
+  .content-card:hover, .research-lab:hover, .institution-row:hover, .publication-category-card:hover, .book-card:hover, .local-books-card:hover { transform: none; }
+
   .research-lab { gap: 14px; padding: 14px; }
   .research-lab-logo { width: 82px; height: 82px; min-width: 82px; }
+
   .institution-row { gap: 14px; padding: 16px 6px; }
   .institution-logo-wrap { width: 74px; min-width: 74px; }
   .institution-logo { width: 64px; height: 64px; }
-  .publications-intro, .publication-hub-grid, .books-intro, .books-list, .books-note { max-width: 100%; }
+
+  .publications-intro, .publication-hub-grid, .books-intro, .books-list { max-width: 100%; }
   .publication-hub-grid { grid-template-columns: 1fr; gap: 18px; }
   .publication-category-card { min-height: auto; }
+
   .book-cover-wrap { width: 125px; min-width: 125px; height: 170px; }
 }
+
 
 @media (max-width:520px) {
   .research-lab { flex-direction: column; align-items: center; }
   .research-lab-logo { width: 100px; height: 100px; min-width: 100px; }
   .research-lab-info { width: 100%; }
+
   .institution-logo-wrap { width: 58px; min-width: 58px; }
   .institution-logo { width: 50px; height: 50px; padding: 3px; }
   .institution-name { font-size: 1em; }
   .appointment-role { font-size: .95em; }
+
   .publication-category-card { gap: 13px; padding: 18px 16px; }
   .publication-category-icon { width: 44px; min-width: 44px; height: 44px; font-size: 1.35em; }
   .publication-category-title { font-size: 1.04em; }
+
   .book-card { flex-direction: column; align-items: center; gap: 15px; padding: 17px; }
   .book-cover-wrap { width: 145px; min-width: 145px; height: 195px; }
   .book-info { width: 100%; }
   .book-title, .book-meta { text-align: left; }
+
+  .local-books-card { padding: 18px 17px; }
+  .local-books-list { padding-left: 20px; }
 }
