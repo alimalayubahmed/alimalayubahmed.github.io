@@ -1,0 +1,250 @@
+---
+layout: archive
+title: "Technical Notes"
+permalink: /publications/technical-notes/
+author_profile: true
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/technical-notes.css' | relative_url }}">
+
+<p class="tn-intro">
+  Selected technical notes and research presentations prepared to communicate
+  research insights, institutional strategies, and scholarly visibility issues
+  to academic and professional audiences.
+</p>
+
+
+<div class="tn-list">
+
+
+  <!-- =====================================================
+       TECHNICAL NOTE 1
+       ===================================================== -->
+
+  <article class="tn-card tn-featured">
+
+    <div class="tn-card-top">
+
+      <div class="tn-heading">
+
+        <div class="tn-title">
+          Research Visibility and Citation Impact in the Digital Scholarship Era:
+          Challenges and Opportunities
+        </div>
+
+        <div class="tn-author">
+          Alim Al Ayub Ahmed
+        </div>
+
+      </div>
+
+      <span class="tn-badge presentation-badge">
+        Research Presentation
+      </span>
+
+    </div>
+
+
+    <div class="tn-info-grid">
+
+      <div>
+        <span>Presented at</span>
+        <strong>St Giles Cambridge</strong>
+      </div>
+
+      <div>
+        <span>Location</span>
+        <strong>Cambridge, United Kingdom</strong>
+      </div>
+
+      <div>
+        <span>Date</span>
+        <strong>24 November 2025</strong>
+      </div>
+
+    </div>
+
+
+    <p class="tn-description">
+      Presented at St Giles Cambridge, 52 Bateman Street, Cambridge, England,
+      focusing on research visibility, citation impact, and opportunities for
+      strengthening scholarly presence in the digital scholarship era.
+    </p>
+
+
+    <div class="tn-doi">
+      <strong>DOI:</strong>
+      <a href="https://doi.org/10.17605/OSF.IO/FBNUC"
+         target="_blank"
+         rel="noopener noreferrer">
+        10.17605/OSF.IO/FBNUC
+      </a>
+    </div>
+
+
+    <div class="tn-actions">
+
+      <a class="tn-btn view-btn"
+         href="https://doi.org/10.17605/OSF.IO/FBNUC"
+         target="_blank"
+         rel="noopener noreferrer">
+        View Note ↗
+      </a>
+
+      <button class="tn-btn citation-btn"
+              type="button"
+              data-citation="Ahmed, A. A. A. (2025, November 24). Research visibility and citation impact in the digital scholarship era: Challenges and opportunities [Research presentation]. St Giles Cambridge, Cambridge, United Kingdom. https://doi.org/10.17605/OSF.IO/FBNUC"
+              onclick="copyTNCitation(this)">
+        Copy Citation
+      </button>
+
+    </div>
+
+  </article>
+
+
+
+  <!-- =====================================================
+       TECHNICAL NOTE 2
+       ===================================================== -->
+
+  <article class="tn-card">
+
+    <div class="tn-card-top">
+
+      <div class="tn-heading">
+
+        <div class="tn-title">
+          Strategies for Elevating University Rankings:
+          How Far Does FIU Have to Go?
+        </div>
+
+        <div class="tn-author">
+          Alim Al Ayub Ahmed
+        </div>
+
+      </div>
+
+      <span class="tn-badge institutional-badge">
+        Institutional Technical Note
+      </span>
+
+    </div>
+
+
+    <div class="tn-info-grid">
+
+      <div>
+        <span>Submitted to</span>
+        <strong>Vice Chancellor, Fareast International University</strong>
+      </div>
+
+      <div>
+        <span>Purpose</span>
+        <strong>Institutional Betterment</strong>
+      </div>
+
+      <div>
+        <span>Date</span>
+        <strong>21 November 2023</strong>
+      </div>
+
+    </div>
+
+
+    <p class="tn-description">
+      Submitted to the Vice Chancellor of Fareast International University as a
+      technical note to inform timely strategies for institutional improvement
+      and the advancement of university ranking performance.
+    </p>
+
+
+    <div class="tn-records">
+
+      <a href="https://hal.science/hal-05191391v1"
+         target="_blank"
+         rel="noopener noreferrer">
+        HAL Record ↗
+      </a>
+
+      <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=azjOR68AAAAJ&cstart=100&pagesize=100&citation_for_view=azjOR68AAAAJ:jRIwE-1ttnoC"
+         target="_blank"
+         rel="noopener noreferrer">
+        Google Scholar ↗
+      </a>
+
+    </div>
+
+
+    <div class="tn-actions">
+
+      <a class="tn-btn view-btn"
+         href="https://hal.science/hal-05191391v1"
+         target="_blank"
+         rel="noopener noreferrer">
+        View Note ↗
+      </a>
+
+      <button class="tn-btn citation-btn"
+              type="button"
+              data-citation="Ahmed, A. A. A. (2023, November 21). Strategies for elevating university rankings: How far does FIU have to go? [Technical note]. Fareast International University. https://hal.science/hal-05191391v1"
+              onclick="copyTNCitation(this)">
+        Copy Citation
+      </button>
+
+    </div>
+
+  </article>
+
+</div>
+
+
+<!-- =====================================================
+     COPY CITATION SCRIPT
+     ===================================================== -->
+
+<script>
+function copyTNCitation(button) {
+
+  const citation = button.getAttribute("data-citation");
+  const originalText = button.textContent;
+
+  if (navigator.clipboard && window.isSecureContext) {
+
+    navigator.clipboard.writeText(citation).then(function () {
+      showTNCitationCopied(button, originalText);
+    });
+
+  } else {
+
+    const temp = document.createElement("textarea");
+
+    temp.value = citation;
+    temp.style.position = "fixed";
+    temp.style.opacity = "0";
+
+    document.body.appendChild(temp);
+
+    temp.focus();
+    temp.select();
+
+    document.execCommand("copy");
+
+    document.body.removeChild(temp);
+
+    showTNCitationCopied(button, originalText);
+  }
+}
+
+
+function showTNCitationCopied(button, originalText) {
+
+  button.textContent = "Copied ✓";
+  button.classList.add("citation-copied");
+
+  setTimeout(function () {
+    button.textContent = originalText;
+    button.classList.remove("citation-copied");
+  }, 1800);
+}
+</script>

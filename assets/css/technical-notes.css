@@ -1,0 +1,389 @@
+/* =========================================================
+   TECHNICAL NOTES
+   File: assets/css/technical-notes.css
+   ========================================================= */
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.tn-intro {
+  max-width: 855px;
+  margin: 0 0 24px;
+  color: #566273;
+  font-size: 1.02em;
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   LIST
+   ========================================================= */
+
+.tn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 855px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.tn-card {
+  padding: 19px 21px;
+  background: #ffffff;
+  border: 1.5px solid #c7d0da;
+  border-left: 5px solid #596978;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .06);
+  transition:
+    transform .22s ease,
+    box-shadow .22s ease,
+    border-color .22s ease,
+    background-color .22s ease;
+}
+
+.tn-card:hover {
+  transform: translateY(-3px);
+  background: #fafcff;
+  border-color: #88a6bf;
+  border-left-color: #0b7a4b;
+  box-shadow: 0 8px 20px rgba(36, 87, 167, .11);
+}
+
+.tn-featured {
+  border-left-color: #2457a7;
+  background: #fbfdff;
+}
+
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.tn-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.tn-heading {
+  flex: 1;
+  min-width: 0;
+}
+
+.tn-title {
+  color: #2457a7;
+  font-size: 1.08em;
+  font-weight: 700;
+  line-height: 1.42;
+  transition: color .2s ease;
+}
+
+.tn-card:hover .tn-title {
+  color: #0b6b3a;
+}
+
+.tn-author {
+  margin-top: 5px;
+  color: #68737d;
+  font-size: .82em;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   BADGES
+   ========================================================= */
+
+.tn-badge {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 9px;
+  border-radius: 12px;
+  font-size: .68em;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.presentation-badge {
+  color: #2457a7;
+  background: #edf4fb;
+  border: 1px solid #b7cee5;
+}
+
+.institutional-badge {
+  color: #735719;
+  background: #fff7e5;
+  border: 1px solid #dec788;
+}
+
+
+/* =========================================================
+   INFORMATION GRID
+   ========================================================= */
+
+.tn-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 14px 0 12px;
+}
+
+.tn-info-grid > div {
+  padding: 7px 9px;
+  background: #f7f9fb;
+  border: 1px solid #dde3e8;
+  border-radius: 7px;
+}
+
+.tn-info-grid span {
+  display: block;
+  margin-bottom: 2px;
+  color: #78838d;
+  font-size: .61em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+}
+
+.tn-info-grid strong {
+  display: block;
+  color: #34404c;
+  font-size: .75em;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.tn-description {
+  margin: 0 0 12px;
+  color: #56616c;
+  font-size: .87em;
+  line-height: 1.58;
+}
+
+
+/* =========================================================
+   DOI
+   ========================================================= */
+
+.tn-doi {
+  margin: 0 0 12px;
+  color: #68737d;
+  font-size: .79em;
+}
+
+.tn-doi strong {
+  color: #4d5964;
+}
+
+.tn-doi a {
+  color: #2457a7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tn-doi a:hover,
+.tn-doi a:focus {
+  color: #0b6b3a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+/* =========================================================
+   OTHER RECORD LINKS
+   ========================================================= */
+
+.tn-records {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 12px;
+}
+
+.tn-records a {
+  color: #2457a7;
+  font-size: .78em;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.tn-records a:hover,
+.tn-records a:focus {
+  color: #0b6b3a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.tn-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+}
+
+.tn-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 6px 11px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: .72em;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition:
+    transform .18s ease,
+    background-color .18s ease,
+    border-color .18s ease,
+    color .18s ease,
+    box-shadow .18s ease;
+}
+
+
+/* =========================================================
+   VIEW NOTE
+   ========================================================= */
+
+.view-btn {
+  color: #ffffff !important;
+  background: #2457a7;
+  border: 1.5px solid #1d488d;
+}
+
+.view-btn:hover,
+.view-btn:focus {
+  color: #ffffff !important;
+  background: #0b6b3a;
+  border-color: #0b6b3a;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(11, 107, 58, .18);
+}
+
+
+/* =========================================================
+   COPY CITATION
+   ========================================================= */
+
+.citation-btn {
+  color: #6b5314 !important;
+  background: #fff8e6 !important;
+  border: 1.5px solid #c9a84c !important;
+  cursor: pointer;
+}
+
+.citation-btn:hover,
+.citation-btn:focus {
+  color: #ffffff !important;
+  background: #8a6815 !important;
+  border-color: #8a6815 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(138, 104, 21, .16);
+}
+
+.citation-btn.citation-copied {
+  color: #ffffff !important;
+  background: #16814f !important;
+  border-color: #16814f !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .tn-intro,
+  .tn-list {
+    max-width: 100%;
+  }
+
+  .tn-card:hover {
+    transform: none;
+  }
+
+  .tn-card {
+    padding: 17px 18px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .tn-intro {
+    margin-bottom: 20px;
+    font-size: .96em;
+  }
+
+  .tn-card-top {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tn-badge {
+    align-self: flex-start;
+  }
+
+  .tn-title {
+    font-size: 1em;
+  }
+
+  .tn-info-grid {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .tn-card {
+    padding: 14px;
+  }
+
+  .tn-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tn-btn {
+    width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+}
