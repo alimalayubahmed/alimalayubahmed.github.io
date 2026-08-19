@@ -4,44 +4,58 @@ permalink: /research/
 author_profile: true
 ---
 
-My research focuses on the intersection of accounting, emerging technologies, corporate governance, financial reporting, and digital scholarship.
+My research spans accounting, financial systems, corporate governance, artificial intelligence, blockchain technology, data analytics, and emerging digital technologies.
 
 ## Research Interests
 
-- Accounting Information Systems
-- Corporate Governance
-- Financial Reporting
+- Accounting Information Systems (AIS)
+- Financial Reporting and Corporate Governance
 - Accounting Disclosure
-- Artificial Intelligence
-- Machine Learning
+- Artificial Intelligence and Machine Learning in Business
 - Blockchain Technology
-- Business Intelligence
-- Data Analytics
-- Digital Scholarship
-- Scholarly Communication
-- Research Visibility
-- Data Governance
+- Data Science and Business Analytics
+- Digital Governance
+- Supply Chain and Financial Analytics
+- Digital Scholarship and Research Visibility
+
+## Research Profile
+
+My research activities combine accounting and business research with emerging digital technologies. I have contributed to interdisciplinary research involving accounting information systems, corporate reporting, artificial intelligence, machine learning, blockchain, data analytics, financial management, and digital technologies.
+
+My scholarly record includes more than 60 Scopus-indexed publications, alongside publications indexed in Web of Science and other scholarly databases.
 
 ## Current Research Directions
 
-My current research interests include the application of responsible artificial intelligence in accounting and governance, blockchain-enabled audit and compliance systems, data-driven financial reporting, fraud detection, ESG-related information systems, and digital scholarship.
+My current research interests particularly focus on:
 
-## Research Labs
+- Responsible AI applications in accounting and business
+- AI-enabled Accounting Information Systems
+- Corporate governance and financial transparency
+- Blockchain-enabled auditing and financial integrity
+- AI and machine learning for financial analysis and decision-making
+- Data analytics and business intelligence
+- Digital governance and responsible technology
+- Scholarly communication and research visibility
+
+## Research Labs and Projects
 
 ### Digital Scholarship Lab for Responsible AI, Blockchain and Business Intelligence
 
-Role: Principal Investigator
+Research activities focus on the intersection of responsible artificial intelligence, blockchain, accounting information systems, business intelligence, data governance, and digital scholarship.
 
-Research themes include responsible AI, blockchain, business intelligence, accounting information systems, data governance, digital scholarship, and scholarly communication.
-
-### Vanuatu and Pacific SMART Islands Research Lab for Climate Resilience, Sustainable Development and Digital Governance
-
-Role: Founding Director
-
-Research themes include climate resilience, sustainable development, SMART Islands, digital governance, Pacific research, and technology-enabled development.
+Current project areas include responsible AI-enabled accounting information systems, blockchain-supported data governance, and intelligent frameworks for enterprise and business applications.
 
 ## Research Outputs
 
-Research outputs include journal articles, conference papers, book chapters, books, patents, registered designs, and interdisciplinary research projects.
+My research and intellectual contributions include:
 
-Detailed information is available through the Publications and other research-related sections of this website.
+- Peer-reviewed journal articles
+- Book chapters
+- Academic and professional books
+- Conference contributions
+- Patents
+- Copyrights
+- Registered designs
+- Interdisciplinary research projects
+
+Selected publications and other intellectual contributions are presented in the relevant sections of this website.
