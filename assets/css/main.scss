@@ -30,13 +30,9 @@
    ========================================================= */
 
 .page__footer { position: relative !important; margin-top: 0 !important; padding: 0 !important; min-height: 0 !important; height: auto !important; }
-
 .page__footer footer { margin: 0 auto !important; padding: 4px 1em !important; min-height: 0 !important; height: auto !important; }
-
 .page__footer-follow { display: none !important; }
-
 .page__footer-copyright { display: block !important; margin: 0 !important; padding: 0 !important; min-height: 0 !important; color: #333 !important; font-size: .78em !important; font-weight: 500 !important; line-height: 1.2 !important; }
-
 .page__footer-copyright a { color: #333 !important; text-decoration: none !important; }
 
 
@@ -45,35 +41,23 @@
    ========================================================= */
 
 .content-card { position: relative; overflow: hidden; background: #fff; border: 1.5px solid #b9c6d3; border-left: 5px solid #2457a7; border-radius: 10px; padding: 20px 24px; margin: 0 0 24px; box-shadow: 0 3px 10px rgba(0,0,0,.07); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, background-color .25s ease; }
-
 .content-card:hover { transform: translateY(-5px); background: #f8fbff; border-color: #2878b8; border-left-color: #0b7a4b; box-shadow: 0 10px 24px rgba(36,87,167,.16), 0 3px 8px rgba(0,0,0,.08); }
-
 .content-card h2 { margin-top: 0 !important; margin-bottom: 16px; padding-bottom: 9px; color: #263746; border-bottom: 2px solid #d5dde5; font-weight: 600; }
-
 .content-card:hover h2 { color: #2457a7; border-bottom-color: #6fa4cf; }
 
 
 /* =========================================================
-   RESEARCH LABS
+   RESEARCH
    ========================================================= */
 
 .research-lab { display: flex; align-items: flex-start; gap: 18px; margin: 18px 0; padding: 16px; background: #f9fbfd; border: 1px solid #d7e0e8; border-radius: 10px; transition: background-color .25s ease, border-color .25s ease, box-shadow .25s ease, transform .25s ease; }
-
 .research-lab:hover { background: #f3f9ff; border-color: #6fa4cf; transform: translateX(3px); box-shadow: 0 5px 14px rgba(36,87,167,.12); }
-
 .research-lab-logo { width: 105px; height: 105px; min-width: 105px; object-fit: cover; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 2px #5c8fbd, 0 4px 10px rgba(0,0,0,.15); }
-
 .research-lab-info { flex: 1; min-width: 0; }
-
 .research-lab-info p { margin-top: 6px; margin-bottom: 0; }
-
 .lab-link { color: #2457a7; text-decoration: none; }
-
-.lab-link:hover,
-.lab-link:focus { color: #0b6b3a; text-decoration: underline; text-underline-offset: 4px; }
-
+.lab-link:hover,.lab-link:focus { color: #0b6b3a; text-decoration: underline; text-underline-offset: 4px; }
 .lab-link::after { content: " ↗"; font-size: .78em; opacity: .6; }
-
 .lab-title { display: inline-block; margin: 0 0 6px; font-size: 1.08em; font-weight: 700; color: #2457a7; }
 
 
@@ -83,46 +67,28 @@
 
 .teaching-intro { max-width: 822px !important; width: 100%; margin-right: auto !important; margin-bottom: 24px; color: #46515c; font-size: 1.02em; line-height: 1.7; }
 
-.teaching-card,
-.teaching-section-card,
-.page__content .teaching-card,
-.page__content .teaching-section-card,
-.page__content .content-card.teaching-card,
-.page__content .content-card.teaching-section-card { max-width: 822px !important; width: 100% !important; margin-left: 0 !important; margin-right: auto !important; box-sizing: border-box !important; }
+.teaching-card,.teaching-section-card,.page__content .teaching-card,.page__content .teaching-section-card,.page__content .content-card.teaching-card,.page__content .content-card.teaching-section-card { max-width: 822px !important; width: 100% !important; margin-left: 0 !important; margin-right: auto !important; box-sizing: border-box !important; }
 
 .section-title-special { margin: 0 0 18px; padding: 0 0 10px; color: #263746; font-size: 1.32em; font-weight: 700; line-height: 1.3; border-bottom: 2px solid #d5dde5; }
-
 .highlight-heading { margin: 0 0 14px; color: #2457a7; font-size: 1.16em; font-weight: 700; line-height: 1.4; }
 
 .institution-row { display: flex; align-items: flex-start; gap: 20px; padding: 18px 10px; border-bottom: 1px solid #dce2e8; transition: background-color .25s ease, transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
-
 .institution-row:hover { background: #f4f9fd; border-color: #91b5d4; transform: translateX(4px); box-shadow: inset 4px 0 0 #0b7a4b, 0 4px 12px rgba(36,87,167,.08); }
-
 .institution-row-last { border-bottom: none; }
 
 .institution-logo-wrap { width: 92px; min-width: 92px; display: flex; align-items: flex-start; justify-content: center; }
-
 .institution-logo { width: 78px; height: 78px; object-fit: contain; background: #fff; border-radius: 50%; border: 2px solid #d3dde7; padding: 5px; box-shadow: 0 3px 9px rgba(0,0,0,.10); }
-
 .institution-info { flex: 1; min-width: 0; }
 
 .institution-name { display: inline-block; margin-bottom: 3px; color: #2457a7; font-size: 1.08em; font-weight: 700; line-height: 1.35; text-decoration: none; }
-
 .institution-name::after { content: " ↗"; font-size: .76em; opacity: .55; }
-
-.institution-name:hover,
-.institution-name:focus { color: #0b6b3a; text-decoration: underline; text-underline-offset: 4px; }
+.institution-name:hover,.institution-name:focus { color: #0b6b3a; text-decoration: underline; text-underline-offset: 4px; }
 
 .institution-location { margin-bottom: 7px; color: #68737d; font-size: .92em; line-height: 1.35; }
-
 .appointment-role { color: #2d3741; font-weight: 650; line-height: 1.45; }
-
 .appointment-date { margin-top: 2px; color: #68737d; font-size: .92em; line-height: 1.4; }
-
 .appointment-block { margin-top: 4px; }
-
 .second-appointment { margin-top: 12px; padding-top: 11px; border-top: 1px dashed #ccd6df; }
-
 .role-note { display: inline-block; margin-left: 5px; padding: 2px 7px; color: #0b6b3a; background: #eaf6ef; border: 1px solid #bcdcc9; border-radius: 12px; font-size: .72em; font-weight: 600; }
 
 
@@ -131,15 +97,13 @@
    ========================================================= */
 
 .publications-intro { max-width: 855px; margin-bottom: 8px; color: #46515c; font-size: 1.02em; line-height: 1.7; }
-
 .publications-intro-secondary { margin-bottom: 26px; color: #68737d; }
 
 .publication-hub-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; max-width: 855px; margin-bottom: 28px; }
 
 .publication-category-card { position: relative; display: flex; align-items: flex-start; gap: 17px; min-height: 215px; padding: 22px; background: #fff; border: 1.5px solid #bcc8d4; border-left: 5px solid #2457a7; border-radius: 11px; color: #2d3741; text-decoration: none !important; box-shadow: 0 3px 10px rgba(0,0,0,.07); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, background-color .25s ease; }
 
-.publication-category-card:hover,
-.publication-category-card:focus { transform: translateY(-6px); background: #f8fbff; border-color: #6f9fc8; box-shadow: 0 12px 28px rgba(36,87,167,.16), 0 4px 9px rgba(0,0,0,.08); text-decoration: none !important; }
+.publication-category-card:hover,.publication-category-card:focus { transform: translateY(-6px); background: #f8fbff; border-color: #6f9fc8; box-shadow: 0 12px 28px rgba(36,87,167,.16), 0 4px 9px rgba(0,0,0,.08); text-decoration: none !important; }
 
 .journal-card { border-left-color: #2457a7; }
 .conference-card { border-left-color: #16848a; }
@@ -149,54 +113,40 @@
 .patent-card { border-left-color: #16814f; }
 
 .publication-category-icon { width: 52px; min-width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: #f1f5f9; border: 1px solid #d5dee7; border-radius: 50%; font-size: 1.65em; }
-
 .publication-category-content { display: flex; flex-direction: column; flex: 1; min-width: 0; }
-
 .publication-category-title { margin-bottom: 8px; color: #2457a7; font-size: 1.12em; font-weight: 700; line-height: 1.35; }
-
 .publication-category-content p { margin: 0 0 10px; color: #46515c; font-size: .93em; line-height: 1.55; }
-
 .publication-category-meta { margin-top: auto; margin-bottom: 10px; color: #74808b; font-size: .82em; line-height: 1.45; }
-
 .publication-category-action { color: #2457a7; font-size: .88em; font-weight: 700; }
 
 
 /* =========================================================
-   BOOKS - RESTORED COMPACT DESIGN
+   BOOKS
    ========================================================= */
 
 .books-intro { max-width: 855px; margin-bottom: 24px; color: #46515c; font-size: 1.02em; line-height: 1.7; }
-
 .books-list { max-width: 855px; }
 
 .book-card { display: flex; align-items: stretch; gap: 24px; margin-bottom: 24px; padding: 20px; background: #fff; border: 1.5px solid #bec9d4; border-left: 5px solid #b47b19; border-radius: 11px; box-shadow: 0 3px 10px rgba(0,0,0,.07); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, background-color .25s ease; }
-
 .book-card:hover { transform: translateY(-5px); background: #fffcf6; border-color: #c79a48; border-left-color: #0b7a4b; box-shadow: 0 10px 24px rgba(36,87,167,.14), 0 3px 8px rgba(0,0,0,.08); }
 
 .book-cover-wrap { width: 142px; min-width: 142px; height: 190px; display: flex; align-items: center; justify-content: center; padding: 6px; background: #f5f6f7; border: 1px solid #d9e0e6; border-radius: 7px; overflow: hidden; box-sizing: border-box; }
 
 .book-cover { width: 100% !important; height: 100% !important; max-width: 100% !important; max-height: 100% !important; margin: 0 !important; object-fit: contain !important; display: block; border: 0 !important; box-shadow: none !important; transition: transform .25s ease; }
-
 .book-card:hover .book-cover { transform: scale(1.045); }
 
 .book-info { flex: 1; min-width: 0; display: flex; flex-direction: column; }
-
 .book-title { margin-bottom: 5px; color: #2457a7; font-size: 1.12em; font-weight: 700; line-height: 1.4; }
-
 .book-card:hover .book-title { color: #0b6b3a; }
 
 .book-subtitle { display: block; margin-top: 1px; margin-bottom: 3px; color: #68737d; font-size: .84em; font-weight: 500; }
-
 .book-meta { margin-bottom: 10px; color: #74808b; font-size: .88em; line-height: 1.45; }
-
 .book-meta strong { color: #606b75; font-weight: 700; padding: 0 2px; }
-
 .book-info p { margin: 0 0 12px; color: #46515c; font-size: .94em; line-height: 1.6; }
 
 .book-bottom-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; }
 
 .book-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; flex: 1; min-width: 0; }
-
 .book-tags span { display: inline-block; padding: 3px 8px; background: #f1f5f9; border: 1px solid #d6e0e8; border-radius: 12px; color: #53616d; font-size: .74em; font-weight: 600; }
 
 .book-actions { display: flex; flex-wrap: nowrap; align-items: center; justify-content: flex-end; gap: 7px; margin-left: auto; flex-shrink: 0; }
@@ -204,25 +154,19 @@
 .book-button { display: inline-block; padding: 7px 13px; border-radius: 6px; font-size: .80em; font-weight: 700; line-height: 1.2; text-decoration: none !important; white-space: nowrap; transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease; }
 
 .amazon-button { color: #fff !important; background: #2457a7; border: 1px solid #1c478c; }
-
 .amazon-button:hover { color: #fff !important; background: #0b6b3a; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,.14); }
 
 .rokomari-button { color: #fff !important; background: #16814f; border: 1px solid #0f6c40; }
-
 .rokomari-button:hover { color: #fff !important; background: #2457a7; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,.14); }
 
 .book-button-disabled { color: #68737d; background: #eef1f4; border: 1px solid #d1d7dd; cursor: default; }
 
 .book-status { display: inline-block; padding: 5px 9px; border-radius: 12px; font-size: .74em; font-weight: 700; white-space: nowrap; }
-
 .hard-print-status { color: #75510c; background: #fff3d7; border: 1px solid #e4c67c; }
-
 .out-stock-status { color: #6c4a4a; background: #f8eeee; border: 1px solid #dec4c4; }
-
 .coming-soon-status { color: #2457a7; background: #edf4fb; border: 1px solid #b8cee3; }
 
 .featured-book { border-left-color: #16814f; }
-
 .coming-soon-card { border-left-color: #596978; }
 
 
@@ -231,17 +175,11 @@
    ========================================================= */
 
 .local-books-card { margin-bottom: 22px; padding: 13px 18px; background: #fffdf8; border: 1.5px solid #d7c9aa; border-left: 5px solid #8b6b28; border-radius: 10px; box-shadow: 0 3px 9px rgba(0,0,0,.06); }
-
 .local-books-heading { margin: 0 0 5px; color: #263746; font-size: 1.02em; font-weight: 700; line-height: 1.2; }
-
 .local-books-badge { display: inline-block; margin: 0 0 9px; padding: 3px 8px; color: #75510c; background: #fff1ce; border: 1px solid #dfc174; border-radius: 11px; font-size: .68em; font-weight: 700; }
-
 .local-books-list { margin: 0; padding-left: 22px; color: #46515c; font-size: .82em; line-height: 1.32; }
-
 .local-books-list li { margin: 0 0 6px; padding-left: 2px; line-height: 1.32; }
-
 .local-books-list li:last-child { margin-bottom: 0; }
-
 .isbn-line { display: inline; margin-left: 5px; color: #68737d; font-size: .88em; white-space: nowrap; }
 
 
@@ -250,15 +188,11 @@
    ========================================================= */
 
 .chapter-page-intro { max-width: 855px; margin: 0 0 24px; color: #566273; font-size: 1.02em; line-height: 1.65; }
-
 .chapter-groups { display: flex; flex-direction: column; gap: 24px; max-width: 855px; }
 
 .chapter-group-card { overflow: hidden; background: #fff; border: 1.5px solid #c9d2df; border-left: 5px solid #7357b6; border-radius: 11px; box-shadow: 0 3px 10px rgba(0,0,0,.07); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
 
 .chapter-group-card:hover { transform: translateY(-4px); border-color: #9185be; box-shadow: 0 9px 22px rgba(65,50,115,.13); }
-
-
-/* Chapter Group Header */
 
 .chapter-group-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 15px; padding: 17px 19px; background: #faf9ff; border-bottom: 1px solid #ddd9eb; }
 
@@ -284,48 +218,48 @@
 .chapter-title { margin: 0 0 10px; color: #2f3a45; font-size: .96em; font-weight: 700; line-height: 1.45; }
 
 
-/* Chapter Action Row */
+/* Action Buttons */
 
 .chapter-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
 
-.chapter-btn { display: inline-flex; align-items: center; justify-content: center; padding: 6px 10px; min-height: 34px; border-radius: 6px; font-size: .72em; font-weight: 700; line-height: 1.2; text-decoration: none !important; white-space: nowrap; transition: transform .2s ease, background-color .2s ease, border-color .2s ease, color .2s ease; }
+.chapter-btn { display: inline-flex; align-items: center; justify-content: center; padding: 6px 10px; min-height: 34px; border-radius: 6px; font-size: .72em; font-weight: 700; line-height: 1.2; text-decoration: none !important; white-space: nowrap; box-sizing: border-box; transition: transform .2s ease, background-color .2s ease, border-color .2s ease, color .2s ease; }
 
 
 /* View Chapter */
 
-.chapter-primary { color: #fff !important; background: #2457a7; border: 1px solid #1d488d; }
+.chapter-primary { color: #fff !important; background: #2457a7 !important; border: 1.5px solid #1d488d !important; }
 
-.chapter-primary:hover { color: #fff !important; background: #0b6b3a; border-color: #0b6b3a; transform: translateY(-1px); }
+.chapter-primary:hover { color: #fff !important; background: #0b6b3a !important; border-color: #0b6b3a !important; transform: translateY(-1px); }
 
 
 /* View Book */
 
-.chapter-book-btn { color: #0b6b3a !important; background: #f0f8f4; border: 1px solid #bdd9ca; }
+.chapter-book-btn { color: #0b6b3a !important; background: #f0f8f4 !important; border: 1.5px solid #8fc4a6 !important; }
 
-.chapter-book-btn:hover { color: #fff !important; background: #0b6b3a; border-color: #0b6b3a; transform: translateY(-1px); }
+.chapter-book-btn:hover { color: #fff !important; background: #0b6b3a !important; border-color: #0b6b3a !important; transform: translateY(-1px); }
 
 
 /* Google Scholar */
 
-.scholar-btn { color: #4f5963 !important; background: #f4f6f8; border: 1px solid #d2d9df; }
+.scholar-btn { color: #4f5963 !important; background: #f4f6f8 !important; border: 1.5px solid #bfc8d1 !important; }
 
-.scholar-btn:hover { color: #2457a7 !important; background: #edf4fb; border-color: #b7cde2; transform: translateY(-1px); }
+.scholar-btn:hover { color: #2457a7 !important; background: #edf4fb !important; border-color: #8fb2d3 !important; transform: translateY(-1px); }
 
 
-/* Crossref */
+/* Crossref Record */
 
-.crossref-btn { color: #7a3e8e !important; background: #faf4fc; border: 1px solid #d9bfdc; }
+.crossref-btn { color: #7a3e8e !important; background: #faf4fc !important; border: 1.5px solid #9d68ad !important; box-shadow: inset 0 0 0 1px rgba(122,62,142,.05); }
 
-.crossref-btn:hover { color: #fff !important; background: #7a3e8e; border-color: #7a3e8e; transform: translateY(-1px); }
+.crossref-btn:hover { color: #fff !important; background: #7a3e8e !important; border-color: #643274 !important; transform: translateY(-1px); }
 
 
 /* Copy Citation */
 
-.citation-btn { color: #6b5314; background: #fff8e6; border: 1px solid #dfc67d; cursor: pointer; font-family: inherit; }
+.citation-btn { color: #6b5314 !important; background: #fff8e6 !important; border: 1.5px solid #c9a84c !important; cursor: pointer; font-family: inherit; }
 
-.citation-btn:hover { color: #fff; background: #8a6815; border-color: #8a6815; transform: translateY(-1px); }
+.citation-btn:hover { color: #fff !important; background: #8a6815 !important; border-color: #8a6815 !important; transform: translateY(-1px); }
 
-.citation-btn.citation-copied { color: #fff; background: #16814f; border-color: #16814f; }
+.citation-btn.citation-copied { color: #fff !important; background: #16814f !important; border-color: #16814f !important; }
 
 
 /* =========================================================
@@ -334,28 +268,11 @@
 
 @media (max-width:768px) {
 
-  .content-card,
-  .teaching-card,
-  .teaching-section-card,
-  .teaching-intro,
-  .page__content .teaching-card,
-  .page__content .teaching-section-card,
-  .page__content .content-card.teaching-card,
-  .page__content .content-card.teaching-section-card { max-width: 100% !important; width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; }
+  .content-card,.teaching-card,.teaching-section-card,.teaching-intro,.page__content .teaching-card,.page__content .teaching-section-card,.page__content .content-card.teaching-card,.page__content .content-card.teaching-section-card { max-width: 100% !important; width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; }
 
-  .content-card:hover,
-  .research-lab:hover,
-  .institution-row:hover,
-  .publication-category-card:hover,
-  .book-card:hover,
-  .chapter-group-card:hover { transform: none; }
+  .content-card:hover,.research-lab:hover,.institution-row:hover,.publication-category-card:hover,.book-card:hover,.chapter-group-card:hover { transform: none; }
 
-  .publications-intro,
-  .publication-hub-grid,
-  .books-intro,
-  .books-list,
-  .chapter-page-intro,
-  .chapter-groups { max-width: 100%; }
+  .publications-intro,.publication-hub-grid,.books-intro,.books-list,.chapter-page-intro,.chapter-groups { max-width: 100%; }
 
   .publication-hub-grid { grid-template-columns: 1fr; gap: 18px; }
 
