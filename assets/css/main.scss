@@ -40,7 +40,7 @@
 
 
 /* =========================================================
-   Compact Footer
+   Compact Custom Footer
    ========================================================= */
 
 .page__footer {
@@ -59,49 +59,72 @@
 }
 
 .page__footer-follow {
-  margin: 0 !important;
-  padding: 0 !important;
-  min-height: 0 !important;
-}
-
-.page__footer-follow ul {
-  display: flex !important;
-  align-items: center !important;
-  flex-wrap: wrap !important;
-  gap: 8px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  min-height: 0 !important;
-  line-height: 1.15 !important;
-}
-
-.page__footer-follow li {
-  display: inline-flex !important;
-  align-items: center !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  line-height: 1.15 !important;
-}
-
-.page__footer-follow a,
-.page__footer-follow span,
-.page__footer-follow strong {
-  margin: 0 !important;
-  padding: 0 !important;
-  line-height: 1.15 !important;
+  display: none !important;
 }
 
 .page__footer-copyright {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
   color: #333333 !important;
   font-size: 0.78em !important;
   font-weight: 500 !important;
   line-height: 1.2 !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 .page__footer-copyright a {
   color: #333333 !important;
+  text-decoration: none !important;
+}
+
+
+/* =========================================================
+   Content Section Cards
+   ========================================================= */
+
+.content-card {
+  background: #ffffff;
+  border: 1px solid #e1e6eb;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 0 0 22px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.content-card:hover {
+  transform: translateY(-2px);
+  border-color: #c9d2dc;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.content-card h2 {
+  margin-top: 0 !important;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+
+  border-bottom: 2px solid #e7ebf0;
+
+  font-weight: 600;
+}
+
+.content-card h3 {
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.content-card h3:first-of-type {
+  margin-top: 4px;
+}
+
+.content-card p:last-child,
+.content-card ul:last-child {
+  margin-bottom: 0;
 }
 
 
@@ -112,6 +135,7 @@
 .lab-link {
   color: #2457a7;
   text-decoration: none;
+
   transition:
     color 0.2s ease,
     text-decoration-color 0.2s ease;
@@ -129,10 +153,28 @@
   font-size: 0.78em;
   font-weight: normal;
   opacity: 0.6;
+
   transition: opacity 0.2s ease;
 }
 
 .lab-link:hover::after,
 .lab-link:focus::after {
   opacity: 1;
+}
+
+
+/* =========================================================
+   Responsive Cards
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .content-card {
+    padding: 16px 18px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+  }
+
+  .content-card:hover {
+    transform: none;
+  }
 }
