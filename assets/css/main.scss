@@ -90,7 +90,6 @@
 
   background: #ffffff;
 
-  /* Clear visible border */
   border: 1.5px solid #b9c6d3;
   border-left: 5px solid #2457a7;
 
@@ -108,9 +107,6 @@
     background-color 0.25s ease;
 }
 
-
-/* Stronger card hover effect */
-
 .content-card:hover {
   transform: translateY(-5px);
 
@@ -125,7 +121,9 @@
 }
 
 
-/* Card main heading */
+/* =========================================================
+   Card Headings
+   ========================================================= */
 
 .content-card h2 {
   margin-top: 0 !important;
@@ -144,16 +142,10 @@
     border-color 0.25s ease;
 }
 
-
-/* Main heading hover */
-
 .content-card:hover h2 {
   color: #2457a7;
   border-bottom-color: #6fa4cf;
 }
-
-
-/* Card subheadings */
 
 .content-card h3 {
   margin-top: 18px;
@@ -166,19 +158,90 @@
   margin-top: 4px;
 }
 
-
-/* Subheading hover */
-
 .content-card:hover h3 {
   color: #0b6b3a;
 }
 
-
-/* Remove unnecessary bottom spacing */
-
 .content-card p:last-child,
 .content-card ul:last-child {
   margin-bottom: 0;
+}
+
+
+/* =========================================================
+   Research Labs
+   ========================================================= */
+
+.research-lab {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+
+  margin: 18px 0;
+  padding: 16px;
+
+  background: #f9fbfd;
+
+  border: 1px solid #d7e0e8;
+  border-radius: 10px;
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.research-lab:hover {
+  background: #f3f9ff;
+  border-color: #6fa4cf;
+
+  transform: translateX(3px);
+
+  box-shadow: 0 5px 14px rgba(36, 87, 167, 0.12);
+}
+
+
+/* =========================================================
+   Research Lab Round Logos
+   ========================================================= */
+
+.research-lab-logo {
+  width: 105px;
+  height: 105px;
+
+  min-width: 105px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 3px solid #ffffff;
+
+  box-shadow:
+    0 0 0 2px #5c8fbd,
+    0 4px 10px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.research-lab:hover .research-lab-logo {
+  transform: scale(1.06);
+
+  box-shadow:
+    0 0 0 3px #0b7a4b,
+    0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.research-lab-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.research-lab-info h3 {
+  margin-top: 0 !important;
 }
 
 
@@ -221,7 +284,7 @@
 
 
 /* =========================================================
-   Responsive Cards
+   Responsive Design
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -234,8 +297,41 @@
     border-left-width: 4px;
   }
 
-  /* Avoid movement on phones/tablets */
   .content-card:hover {
     transform: none;
+  }
+
+  .research-lab {
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .research-lab-logo {
+    width: 82px;
+    height: 82px;
+    min-width: 82px;
+  }
+
+  .research-lab:hover {
+    transform: none;
+  }
+}
+
+
+@media (max-width: 520px) {
+
+  .research-lab {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .research-lab-logo {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+  }
+
+  .research-lab-info {
+    width: 100%;
   }
 }
