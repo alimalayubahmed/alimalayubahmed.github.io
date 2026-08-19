@@ -296,16 +296,15 @@
 
 
 /* =========================================================
-   Teaching Page Width
+   Teaching Page
+   Compact and Equal Card Width
    ========================================================= */
 
-.teaching-intro,
-.teaching-card,
-.page__content > .content-card {
-  max-width: 960px;
-}
-
 .teaching-intro {
+  max-width: 865px !important;
+  width: 100%;
+
+  margin-right: auto !important;
   margin-bottom: 24px;
 
   color: #46515c;
@@ -314,9 +313,41 @@
   line-height: 1.7;
 }
 
+/*
+ * All Teaching cards use exactly the same width.
+ * This includes:
+ * Academic Appointments
+ * Academic Leadership
+ * International Teaching Experience
+ */
+
+.teaching-card,
+.teaching-section-card {
+  max-width: 865px !important;
+  width: 100% !important;
+
+  margin-left: 0 !important;
+  margin-right: auto !important;
+
+  box-sizing: border-box !important;
+}
+
+.page__content .teaching-card,
+.page__content .teaching-section-card,
+.page__content .content-card.teaching-card,
+.page__content .content-card.teaching-section-card {
+  max-width: 865px !important;
+  width: 100% !important;
+
+  margin-left: 0 !important;
+  margin-right: auto !important;
+
+  box-sizing: border-box !important;
+}
+
 
 /* =========================================================
-   Special Section Titles
+   Teaching Special Section Titles
    ========================================================= */
 
 .section-title-special {
@@ -542,9 +573,17 @@
 
   .content-card,
   .teaching-card,
+  .teaching-section-card,
   .teaching-intro,
-  .page__content > .content-card {
-    max-width: 100%;
+  .page__content .teaching-card,
+  .page__content .teaching-section-card,
+  .page__content .content-card.teaching-card,
+  .page__content .content-card.teaching-section-card {
+    max-width: 100% !important;
+    width: 100% !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   .content-card {
@@ -598,6 +637,10 @@
   }
 }
 
+
+/* =========================================================
+   Small Mobile Screens
+   ========================================================= */
 
 @media (max-width: 520px) {
 
