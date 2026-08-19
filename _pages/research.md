@@ -25,13 +25,35 @@ My research interests lie at the intersection of accounting, emerging technologi
 
 ## Research Labs and Projects
 
+<div class="research-lab">
+
+<img class="research-lab-logo" src="/images/ResponsibleAI.png" alt="Responsible AI Research Lab logo">
+
+<div class="research-lab-info">
+
 ### <a class="lab-link" href="https://www.impactio.com/laboratory/responsibleAI" target="_blank" rel="noopener noreferrer">Digital Scholarship Lab for Responsible AI, Blockchain and Business Intelligence</a>
 
 Research activities focus on the intersection of responsible artificial intelligence, blockchain, accounting information systems, business intelligence, data governance, and digital scholarship.
 
+Current project areas include responsible AI-enabled accounting information systems, blockchain-supported data governance, and intelligent frameworks for enterprise and business applications.
+
+</div>
+
+</div>
+
+<div class="research-lab">
+
+<img class="research-lab-logo" src="/images/SMARTIslands.png" alt="Vanuatu and Pacific SMART Islands Research Lab logo">
+
+<div class="research-lab-info">
+
 ### <a class="lab-link" href="https://www.impactio.com/laboratory/SMARTIslands" target="_blank" rel="noopener noreferrer">Vanuatu and Pacific SMART Islands Research Lab for Climate Resilience, Sustainable Development and Digital Governance</a>
 
 Research activities focus on climate resilience, sustainable development, SMART Islands, digital governance, Pacific research, and technology-enabled development.
+
+</div>
+
+</div>
 
 </div>
 
