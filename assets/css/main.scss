@@ -38,8 +38,9 @@
     "layout/json_cv"
 ;
 
+
 /* =========================================================
-   Compact Custom Footer
+   Compact Footer
    ========================================================= */
 
 .page__footer {
@@ -52,30 +53,86 @@
 
 .page__footer footer {
   margin: 0 auto !important;
-  padding: 5px 1em !important;
+  padding: 4px 1em !important;
   min-height: 0 !important;
   height: auto !important;
 }
 
-/* Hide old Follow / GitHub / Feed section if any remains */
 .page__footer-follow {
-  display: none !important;
-}
-
-/* Copyright line */
-.page__footer-copyright {
-  display: block !important;
   margin: 0 !important;
   padding: 0 !important;
   min-height: 0 !important;
+}
 
+.page__footer-follow ul {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+  line-height: 1.15 !important;
+}
+
+.page__footer-follow li {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.15 !important;
+}
+
+.page__footer-follow a,
+.page__footer-follow span,
+.page__footer-follow strong {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.15 !important;
+}
+
+.page__footer-copyright {
   color: #333333 !important;
   font-size: 0.78em !important;
   font-weight: 500 !important;
   line-height: 1.2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .page__footer-copyright a {
   color: #333333 !important;
-  text-decoration: none !important;
+}
+
+
+/* =========================================================
+   Research Lab Links
+   ========================================================= */
+
+.lab-link {
+  color: #2457a7;
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+.lab-link:hover,
+.lab-link:focus {
+  color: #0b6b3a;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.lab-link::after {
+  content: " ↗";
+  font-size: 0.78em;
+  font-weight: normal;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.lab-link:hover::after,
+.lab-link:focus::after {
+  opacity: 1;
 }
