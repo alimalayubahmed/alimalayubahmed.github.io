@@ -40,11 +40,8 @@
    General Content Cards
    ========================================================= */
 
-.content-card { position: relative; overflow: hidden; background: #fff; border: 1.5px solid #b9c6d3; border-left: 5px solid #2457a7; border-radius: 10px; padding: 20px 24px; margin: 0 0 24px; box-shadow: 0 3px 10px rgba(0,0,0,.07); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, background-color .25s ease; }
+.content-card { position: relative; overflow: hidden; background: #fff; border: 1.5px solid #b9c6d3; border-left: 5px solid #2457a7; border-radius: 10px; padding: 20px 24px; margin: 0 0 24px; box-shadow: 0 3px 10px rgba(0,0,0,.07); transition: transform .25s ease,box-shadow .25s ease,border-color .25s ease,background-color .25s ease; }
 .content-card:hover { transform: translateY(-5px); background: #f8fbff; border-color: #2878b8; border-left-color: #0b7a4b; box-shadow: 0 10px 24px rgba(36,87,167,.16),0 3px 8px rgba(0,0,0,.08); }
-
-.content-card h2 { margin-top: 0 !important; margin-bottom: 16px; padding-bottom: 9px; color: #263746; border-bottom: 2px solid #d5dde5; font-weight: 600; }
-.content-card:hover h2 { color: #2457a7; border-bottom-color: #6fa4cf; }
 
 
 /* =========================================================
@@ -55,6 +52,7 @@
 .research-lab:hover { background: #f3f9ff; border-color: #6fa4cf; transform: translateX(3px); box-shadow: 0 5px 14px rgba(36,87,167,.12); }
 
 .research-lab-logo { width: 105px; height: 105px; min-width: 105px; object-fit: cover; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 2px #5c8fbd,0 4px 10px rgba(0,0,0,.15); }
+
 .research-lab-info { flex: 1; min-width: 0; }
 .research-lab-info p { margin-top: 6px; margin-bottom: 0; }
 
@@ -73,7 +71,6 @@
 .teaching-card,.teaching-section-card,.page__content .teaching-card,.page__content .teaching-section-card,.page__content .content-card.teaching-card,.page__content .content-card.teaching-section-card { max-width: 822px !important; width: 100% !important; margin-left: 0 !important; margin-right: auto !important; box-sizing: border-box !important; }
 
 .section-title-special { margin: 0 0 18px; padding: 0 0 10px; color: #263746; font-size: 1.32em; font-weight: 700; line-height: 1.3; border-bottom: 2px solid #d5dde5; }
-
 .highlight-heading { margin: 0 0 14px; color: #2457a7; font-size: 1.16em; font-weight: 700; line-height: 1.4; }
 
 .institution-row { display: flex; align-items: flex-start; gap: 20px; padding: 18px 10px; border-bottom: 1px solid #dce2e8; transition: background-color .25s ease,transform .25s ease,border-color .25s ease,box-shadow .25s ease; }
@@ -93,7 +90,6 @@
 .appointment-date { margin-top: 2px; color: #68737d; font-size: .92em; line-height: 1.4; }
 .appointment-block { margin-top: 4px; }
 .second-appointment { margin-top: 12px; padding-top: 11px; border-top: 1px dashed #ccd6df; }
-
 .role-note { display: inline-block; margin-left: 5px; padding: 2px 7px; color: #0b6b3a; background: #eaf6ef; border: 1px solid #bcdcc9; border-radius: 12px; font-size: .72em; font-weight: 600; }
 
 
@@ -137,7 +133,6 @@
 
 .book-card:hover { transform: translateY(-5px); background: #fffcf6; border-color: #c79a48; border-left-color: #0b7a4b; box-shadow: 0 10px 24px rgba(36,87,167,.14),0 3px 8px rgba(0,0,0,.08); }
 
-/* Same visual frame for all covers */
 .book-cover-wrap { width: 142px; min-width: 142px; height: 190px; display: flex; align-items: center; justify-content: center; padding: 6px; background: #f5f6f7; border: 1px solid #d9e0e6; border-radius: 7px; overflow: hidden; box-sizing: border-box; }
 
 .book-cover { width: 100% !important; height: 100% !important; max-width: 100% !important; max-height: 100% !important; margin: 0 !important; object-fit: contain !important; display: block; border: 0 !important; box-shadow: none !important; transition: transform .25s ease; }
@@ -145,7 +140,6 @@
 .book-card:hover .book-cover { transform: scale(1.045); }
 
 .book-info { flex: 1; min-width: 0; display: flex; flex-direction: column; }
-
 .book-title { margin-bottom: 5px; color: #2457a7; font-size: 1.12em; font-weight: 700; line-height: 1.4; }
 .book-card:hover .book-title { color: #0b6b3a; }
 
@@ -156,11 +150,9 @@
 
 .book-info p { margin: 0 0 12px; color: #46515c; font-size: .94em; line-height: 1.6; }
 
-/* Keywords left + button right */
 .book-bottom-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; }
 
 .book-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; flex: 1; min-width: 0; }
-
 .book-tags span { display: inline-block; padding: 3px 8px; background: #f1f5f9; border: 1px solid #d6e0e8; border-radius: 12px; color: #53616d; font-size: .74em; font-weight: 600; }
 
 .book-actions { display: flex; flex-wrap: nowrap; align-items: center; justify-content: flex-end; gap: 7px; margin-left: auto; flex-shrink: 0; }
@@ -203,6 +195,54 @@
 
 
 /* =========================================================
+   Book Chapters
+   ========================================================= */
+
+.chapter-page-intro { max-width: 855px; margin-bottom: 24px; color: #46515c; font-size: 1.02em; line-height: 1.65; }
+
+.chapter-groups { max-width: 855px; }
+
+.chapter-group-card { margin-bottom: 22px; background: #fff; border: 1.5px solid #c5cbd7; border-left: 5px solid #6957a5; border-radius: 11px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,.07); transition: transform .25s ease,box-shadow .25s ease,border-color .25s ease; }
+
+.chapter-group-card:hover { transform: translateY(-4px); border-color: #9185be; box-shadow: 0 9px 22px rgba(65,50,115,.13); }
+
+.chapter-group-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 15px; padding: 17px 19px; background: #faf9ff; border-bottom: 1px solid #ddd9eb; }
+
+.chapter-publisher { margin-bottom: 3px; color: #263746; font-size: 1.05em; font-weight: 700; }
+
+.chapter-book-title { display: inline-block; color: #6957a5; font-size: .96em; font-weight: 700; line-height: 1.4; text-decoration: none !important; }
+
+.chapter-book-title:hover { color: #0b6b3a; text-decoration: underline !important; text-underline-offset: 3px; }
+
+.chapter-group-meta { margin-top: 4px; color: #74808b; font-size: .82em; font-weight: 600; }
+
+.scopus-group-badge { display: inline-block; flex-shrink: 0; padding: 5px 9px; color: #2457a7; background: #edf4fb; border: 1px solid #bad0e5; border-radius: 12px; font-size: .72em; font-weight: 700; white-space: nowrap; }
+
+.chapter-item { padding: 15px 19px; border-bottom: 1px solid #e3e6ea; transition: background-color .2s ease,box-shadow .2s ease; }
+
+.chapter-item:last-child { border-bottom: none; }
+
+.chapter-item:hover { background: #fafcff; box-shadow: inset 4px 0 0 #0b7a4b; }
+
+.chapter-title { margin-bottom: 10px; color: #2f3a45; font-size: .96em; font-weight: 700; line-height: 1.45; }
+
+.chapter-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+
+.chapter-btn { display: inline-block; padding: 6px 10px; border-radius: 6px; font-size: .72em; font-weight: 700; line-height: 1.2; text-decoration: none !important; white-space: nowrap; transition: transform .2s ease,background-color .2s ease,border-color .2s ease,color .2s ease; }
+
+.chapter-primary { color: #fff !important; background: #2457a7; border: 1px solid #1d488d; }
+.chapter-primary:hover { color: #fff !important; background: #0b6b3a; transform: translateY(-1px); }
+
+.chapter-book-btn { color: #0b6b3a !important; background: #f0f8f4; border: 1px solid #bdd9ca; }
+.chapter-book-btn:hover { color: #fff !important; background: #0b6b3a; transform: translateY(-1px); }
+
+.scholar-btn { color: #4f5963 !important; background: #f4f6f8; border: 1px solid #d2d9df; }
+.scholar-btn:hover { color: #2457a7 !important; background: #edf4fb; border-color: #b7cde2; transform: translateY(-1px); }
+
+.chapter-scopus-badge { display: inline-block; padding: 5px 9px; color: #2457a7; background: #edf4fb; border: 1px solid #bad0e5; border-radius: 11px; font-size: .70em; font-weight: 700; white-space: nowrap; }
+
+
+/* =========================================================
    Responsive
    ========================================================= */
 
@@ -210,15 +250,19 @@
 
   .content-card,.teaching-card,.teaching-section-card,.teaching-intro,.page__content .teaching-card,.page__content .teaching-section-card,.page__content .content-card.teaching-card,.page__content .content-card.teaching-section-card { max-width: 100% !important; width: 100% !important; margin-left: 0 !important; margin-right: 0 !important; }
 
-  .content-card:hover,.research-lab:hover,.institution-row:hover,.publication-category-card:hover,.book-card:hover { transform: none; }
+  .content-card:hover,.research-lab:hover,.institution-row:hover,.publication-category-card:hover,.book-card:hover,.chapter-group-card:hover { transform: none; }
 
-  .publications-intro,.publication-hub-grid,.books-intro,.books-list { max-width: 100%; }
+  .publications-intro,.publication-hub-grid,.books-intro,.books-list,.chapter-page-intro,.chapter-groups { max-width: 100%; }
 
   .publication-hub-grid { grid-template-columns: 1fr; gap: 18px; }
 
   .book-card { gap: 18px; padding: 17px; }
 
   .book-cover-wrap { width: 125px; min-width: 125px; height: 170px; }
+
+  .chapter-group-header { padding: 15px 16px; }
+
+  .chapter-item { padding: 14px 16px; }
 }
 
 
@@ -227,6 +271,10 @@
   .book-bottom-row { flex-direction: column; align-items: flex-start; }
 
   .book-actions { margin-left: 0; }
+
+  .chapter-group-header { flex-direction: column; }
+
+  .chapter-actions { gap: 6px; }
 }
 
 
@@ -243,4 +291,6 @@
   .local-books-list { padding-left: 19px; font-size: .78em; }
 
   .isbn-line { display: block; margin: 2px 0 0; white-space: normal; }
+
+  .chapter-btn,.chapter-scopus-badge { font-size: .68em; }
 }
