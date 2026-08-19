@@ -67,6 +67,7 @@
   margin: 0 !important;
   padding: 0 !important;
   min-height: 0 !important;
+
   color: #333333 !important;
   font-size: 0.78em !important;
   font-weight: 500 !important;
@@ -84,43 +85,96 @@
    ========================================================= */
 
 .content-card {
+  position: relative;
+  overflow: hidden;
+
   background: #ffffff;
-  border: 1px solid #e1e6eb;
+
+  /* Clear visible border */
+  border: 1.5px solid #b9c6d3;
+  border-left: 5px solid #2457a7;
+
   border-radius: 10px;
+
   padding: 20px 24px;
-  margin: 0 0 22px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin: 0 0 24px 0;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
 
   transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease;
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
 }
 
+
+/* Stronger card hover effect */
+
 .content-card:hover {
-  transform: translateY(-2px);
-  border-color: #c9d2dc;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+
+  background: #f8fbff;
+
+  border-color: #2878b8;
+  border-left-color: #0b7a4b;
+
+  box-shadow:
+    0 10px 24px rgba(36, 87, 167, 0.16),
+    0 3px 8px rgba(0, 0, 0, 0.08);
 }
+
+
+/* Card main heading */
 
 .content-card h2 {
   margin-top: 0 !important;
   margin-bottom: 16px;
-  padding-bottom: 8px;
 
-  border-bottom: 2px solid #e7ebf0;
+  padding-bottom: 9px;
+
+  color: #263746;
+
+  border-bottom: 2px solid #d5dde5;
 
   font-weight: 600;
+
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease;
 }
+
+
+/* Main heading hover */
+
+.content-card:hover h2 {
+  color: #2457a7;
+  border-bottom-color: #6fa4cf;
+}
+
+
+/* Card subheadings */
 
 .content-card h3 {
   margin-top: 18px;
   margin-bottom: 8px;
+
+  transition: color 0.25s ease;
 }
 
 .content-card h3:first-of-type {
   margin-top: 4px;
 }
+
+
+/* Subheading hover */
+
+.content-card:hover h3 {
+  color: #0b6b3a;
+}
+
+
+/* Remove unnecessary bottom spacing */
 
 .content-card p:last-child,
 .content-card ul:last-child {
@@ -144,14 +198,17 @@
 .lab-link:hover,
 .lab-link:focus {
   color: #0b6b3a;
+
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
 .lab-link::after {
   content: " ↗";
+
   font-size: 0.78em;
   font-weight: normal;
+
   opacity: 0.6;
 
   transition: opacity 0.2s ease;
@@ -168,12 +225,16 @@
    ========================================================= */
 
 @media (max-width: 768px) {
+
   .content-card {
     padding: 16px 18px;
     margin-bottom: 18px;
+
     border-radius: 8px;
+    border-left-width: 4px;
   }
 
+  /* Avoid movement on phones/tablets */
   .content-card:hover {
     transform: none;
   }
