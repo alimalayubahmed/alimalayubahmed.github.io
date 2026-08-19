@@ -5,7 +5,7 @@
  * This file controls what is imported from /_sass
  *
  * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
 @import
@@ -39,7 +39,7 @@
 ;
 
 /* =========================================================
-   Compact Footer
+   Compact Custom Footer
    ========================================================= */
 
 .page__footer {
@@ -52,61 +52,30 @@
 
 .page__footer footer {
   margin: 0 auto !important;
-  padding: 4px 1em !important;
+  padding: 5px 1em !important;
   min-height: 0 !important;
   height: auto !important;
 }
 
+/* Hide old Follow / GitHub / Feed section if any remains */
 .page__footer-follow {
-  margin: 0 !important;
-  padding: 0 !important;
-  min-height: 0 !important;
-}
-
-.page__footer-follow ul {
-  display: flex !important;
-  align-items: center !important;
-  flex-wrap: wrap !important;
-  gap: 8px !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-  min-height: 0 !important;
-
-  line-height: 1.15 !important;
-}
-
-.page__footer-follow li {
-  display: inline-flex !important;
-  align-items: center !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  line-height: 1.15 !important;
-}
-
-.page__footer-follow a,
-.page__footer-follow span,
-.page__footer-follow strong {
-  margin: 0 !important;
-  padding: 0 !important;
-  line-height: 1.15 !important;
-}
-
-.page__footer-copyright {
   display: none !important;
 }
-/* Footer copyright text */
+
+/* Copyright line */
 .page__footer-copyright {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+
   color: #333333 !important;
   font-size: 0.78em !important;
   font-weight: 500 !important;
   line-height: 1.2 !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 .page__footer-copyright a {
   color: #333333 !important;
+  text-decoration: none !important;
 }
