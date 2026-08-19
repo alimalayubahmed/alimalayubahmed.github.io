@@ -4,8 +4,6 @@ permalink: /academic-service/
 author_profile: true
 ---
 
-# Academic Service
-
 My academic service includes editorial leadership, peer review, professional memberships, academic administration, quality assurance, and scholarly publishing activities.
 
 ## Editorial Roles
