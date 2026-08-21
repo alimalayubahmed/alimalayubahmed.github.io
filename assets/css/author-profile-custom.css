@@ -25,8 +25,8 @@
 .sidebar-profile-card {
   position:relative;
   width:100%;
-  margin:0 0 .48rem;
-  padding:.58rem .64rem;
+  margin:0 0 .5rem;
+  padding:.62rem .68rem;
   border:1px solid #dde4ea;
   border-radius:7px;
   overflow:hidden;
@@ -108,7 +108,6 @@
 
 /* =========================================================
    CARD 02: PROFESSIONAL CONTACT
-   Stronger green identity
    ========================================================= */
 
 .sidebar-profile-card--contact {
@@ -131,7 +130,6 @@
 
 /* =========================================================
    CARD 03: ACADEMIC PROFILES
-   Stronger blue identity
    ========================================================= */
 
 .sidebar-profile-card--academic {
@@ -154,7 +152,7 @@
 
 /* =========================================================
    LISTS
-   Very compact vertical spacing
+   Slightly relaxed spacing
    ========================================================= */
 
 .sidebar-profile-list {
@@ -167,14 +165,14 @@
   display:flex;
   align-items:center;
   margin:0 !important;
-  padding:.035rem 0 !important;
+  padding:.075rem 0 !important;
   font-size:.74rem;
-  line-height:1.08;
+  line-height:1.15;
   color:#46545e;
 }
 
 .sidebar-profile-list li + li {
-  margin-top:.02rem !important;
+  margin-top:.075rem !important;
 }
 
 .sidebar-profile-list li > a {
@@ -183,9 +181,9 @@
   width:100%;
   min-width:0;
   margin:0;
-  padding:.025rem 0 !important;
+  padding:.04rem 0 !important;
   color:#46545e;
-  line-height:1.08;
+  line-height:1.15;
   text-decoration:none;
   transition:color .15s ease,transform .15s ease;
 }
@@ -203,11 +201,11 @@
 
 .sidebar-employer-item {
   align-items:flex-start !important;
-  padding-bottom:.1rem !important;
+  padding-bottom:.14rem !important;
 }
 
 .sidebar-employer-icon {
-  padding-top:.08rem;
+  padding-top:.03rem;
 }
 
 .sidebar-employer-text {
@@ -218,19 +216,20 @@
 
 .sidebar-role {
   display:block;
-  margin:0 0 .08rem;
+  margin:0 0 .12rem;
   font-size:.73rem;
-  line-height:1.08;
-  font-weight:700;
-  color:#365748;
+  line-height:1.12;
+  font-weight:400;
+  color:#466253;
 }
 
 .sidebar-employer {
   display:block;
   margin:0;
   font-size:.73rem;
-  line-height:1.12;
-  color:#4c5b53;
+  line-height:1.15;
+  font-weight:700;
+  color:#395447;
 }
 
 
@@ -244,7 +243,7 @@
   align-items:center;
   justify-content:flex-start;
   width:23px;
-  height:14px;
+  height:15px;
   margin:0;
   font-size:.73rem;
   line-height:1;
@@ -335,7 +334,7 @@
 @media (max-width:1024px) {
 
   .sidebar-profile-card {
-    margin-bottom:.45rem;
+    margin-bottom:.47rem;
   }
 
 }
@@ -343,7 +342,7 @@
 @media (max-width:768px) {
 
   .sidebar-profile-card {
-    padding:.55rem .6rem;
+    padding:.58rem .63rem;
   }
 
   .custom-author-content .author__name {
