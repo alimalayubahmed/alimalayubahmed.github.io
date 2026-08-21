@@ -116,7 +116,7 @@
 
 .contact-profile-icons {
   display:grid;
-  grid-template-columns:repeat(9,58px);
+  grid-template-columns:repeat(10,58px);
   justify-content:start;
   align-items:center;
   column-gap:.42rem;
