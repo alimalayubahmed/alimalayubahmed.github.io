@@ -1,21 +1,15 @@
 /* =========================================================
    CUSTOM AUTHOR SIDEBAR
-   Prof. Dr. Alim Al Ayub Ahmed
    ========================================================= */
 
 .custom-author-profile,
 .custom-author-profile * { box-sizing:border-box; }
 
-
-/* =========================================================
-   AUTHOR PHOTO
-   ========================================================= */
-
 .custom-author-profile .author__avatar { margin-bottom:.8rem; }
 
 
 /* =========================================================
-   COMMON CARD STYLE
+   COMMON CARD
    ========================================================= */
 
 .sidebar-profile-card {
@@ -42,7 +36,7 @@
 
 
 /* =========================================================
-   CARD 01: NAME & BIO
+   CARD 01
    ========================================================= */
 
 .sidebar-profile-card--bio {
@@ -62,10 +56,7 @@
   box-shadow:none;
 }
 
-.custom-author-content {
-  margin:0;
-  padding:0;
-}
+.custom-author-content { margin:0; padding:0; }
 
 .custom-author-content .author__name {
   margin:0 0 .36rem;
@@ -85,7 +76,7 @@
 
 
 /* =========================================================
-   AUTHOR LINKS WRAPPER
+   WRAPPER
    ========================================================= */
 
 .custom-author-links-wrapper { width:100%; }
@@ -99,7 +90,7 @@
 
 
 /* =========================================================
-   CARD 02: PROFESSIONAL CONTACT
+   CARD 02
    ========================================================= */
 
 .sidebar-profile-card--contact {
@@ -121,7 +112,37 @@
 
 
 /* =========================================================
-   CARD 03: ACADEMIC PROFILES
+   PROFESSIONAL HEADING
+   ========================================================= */
+
+.sidebar-professional-heading {
+  margin:0 0 .18rem;
+  padding:0;
+}
+
+.sidebar-professional-role {
+  display:flex;
+  align-items:center;
+  margin:0;
+  padding:0;
+  font-size:.73rem;
+  line-height:1.13;
+  font-weight:400;
+  color:#466253;
+}
+
+.sidebar-professional-employer {
+  margin:.06rem 0 0 23px;
+  padding:0;
+  font-size:.73rem;
+  line-height:1.13;
+  font-weight:700;
+  color:#395447;
+}
+
+
+/* =========================================================
+   CARD 03
    ========================================================= */
 
 .sidebar-profile-card--academic {
@@ -143,20 +164,21 @@
 
 
 /* =========================================================
-   SIDEBAR LIST
+   LIST
    ========================================================= */
 
 .sidebar-profile-list {
-  list-style:none;
-  margin:0;
-  padding:0;
+  list-style:none !important;
+  margin:0 !important;
+  padding:0 !important;
 }
 
 .sidebar-profile-list li {
-  display:flex;
-  align-items:center;
+  display:flex !important;
+  align-items:center !important;
   margin:0 !important;
   padding:.07rem 0 !important;
+  min-height:0 !important;
   font-size:.74rem;
   line-height:1.16;
   color:#46545e;
@@ -167,14 +189,14 @@
 }
 
 .sidebar-profile-list li > a {
-  display:flex;
-  align-items:center;
+  display:flex !important;
+  align-items:center !important;
   width:100%;
   min-width:0;
-  margin:0;
+  margin:0 !important;
   padding:.035rem 0 !important;
-  color:#46545e;
   line-height:1.16;
+  color:#46545e;
   text-decoration:none;
   transition:color .15s ease,transform .15s ease;
 }
@@ -187,43 +209,7 @@
 
 
 /* =========================================================
-   FOUNDER & CEO + EMPLOYER
-   ========================================================= */
-
-.sidebar-role-row {
-  padding-bottom:.015rem !important;
-}
-
-.sidebar-employer-row {
-  padding-top:.015rem !important;
-  margin-top:0 !important;
-}
-
-.sidebar-role {
-  display:block;
-  margin:0;
-  font-size:.73rem;
-  line-height:1.12;
-  font-weight:400;
-  color:#466253;
-}
-
-.sidebar-employer {
-  display:block;
-  margin:0;
-  font-size:.73rem;
-  line-height:1.12;
-  font-weight:700;
-  color:#395447;
-}
-
-.sidebar-item-icon--blank {
-  visibility:hidden;
-}
-
-
-/* =========================================================
-   ICON COLUMN
+   ICONS
    ========================================================= */
 
 .sidebar-item-icon {
@@ -238,20 +224,7 @@
   line-height:1;
 }
 
-.sidebar-item-icon i {
-  margin:0;
-  padding:0;
-}
-
-
-/* =========================================================
-   CUSTOM IMAGE ICONS
-   SCOPUS + WEB OF SCIENCE
-   ========================================================= */
-
-.sidebar-item-icon--image {
-  align-items:center;
-}
+.sidebar-item-icon i { margin:0; padding:0; }
 
 .sidebar-item-icon--image img {
   display:block !important;
@@ -268,11 +241,6 @@
   object-fit:cover !important;
 }
 
-
-/* =========================================================
-   ITEM TEXT
-   ========================================================= */
-
 .sidebar-item-text {
   display:block;
   min-width:0;
@@ -280,24 +248,18 @@
 
 
 /* =========================================================
-   BRAND ICON COLORS
+   COLORS
    ========================================================= */
 
-.sidebar-profile-list .fa-building-columns { color:#3e6952; }
-
 .sidebar-profile-list .fa-globe { color:#2f6e83; }
-
 .sidebar-profile-list .fa-envelope { color:#426358; }
-
 .sidebar-profile-list .fa-whatsapp { color:#3d8060; }
-
 .sidebar-profile-list .ai-google-scholar { color:#435a76; }
-
 .sidebar-profile-list .ai-orcid { color:#a6ce39; }
-
 .sidebar-profile-list .fa-github { color:#3e4b59; }
-
 .sidebar-profile-list .fa-linkedin { color:#0077b5; }
+
+.sidebar-professional-role .fa-building-columns { color:#3e6952; }
 
 
 /* =========================================================
@@ -309,12 +271,10 @@
 }
 
 @media (max-width:768px) {
-
   .sidebar-profile-card { padding:.58rem .63rem; }
 
   .custom-author-content .author__name { font-size:.95rem; }
 
   .custom-author-content .author__bio,
   .sidebar-profile-list li { font-size:.73rem; }
-
 }
