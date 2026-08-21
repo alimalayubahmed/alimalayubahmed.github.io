@@ -14,7 +14,7 @@
    ========================================================= */
 
 .custom-author-profile .author__avatar {
-  margin-bottom:.85rem;
+  margin-bottom:.8rem;
 }
 
 
@@ -23,16 +23,27 @@
    ========================================================= */
 
 .sidebar-profile-card {
+  position:relative;
   width:100%;
-  margin:0 0 .65rem;
-  padding:.72rem .78rem;
-  border:1px solid #d9e2ea;
-  border-radius:8px;
-  transition:
-    transform .2s ease,
-    box-shadow .2s ease,
-    border-color .2s ease,
-    background .2s ease;
+  margin:0 0 .48rem;
+  padding:.58rem .64rem;
+  border:1px solid #dde4ea;
+  border-radius:7px;
+  overflow:hidden;
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease;
+}
+
+/* Small vertical accent on right */
+.sidebar-profile-card::after {
+  content:"";
+  position:absolute;
+  top:45%;
+  right:0;
+  width:2px;
+  height:10%;
+  min-height:12px;
+  border-radius:2px 0 0 2px;
+  opacity:.45;
 }
 
 
@@ -41,15 +52,19 @@
    ========================================================= */
 
 .sidebar-profile-card--bio {
-  border-color:#d7e1ea;
-  background:#fbfcfd;
+  border-color:#dce4ea;
+  background:#fcfdfe;
+}
+
+.sidebar-profile-card--bio::after {
+  background:#adc4d5;
 }
 
 .sidebar-profile-card--bio:hover {
-  transform:translateY(-2px);
-  border-color:#9ebbd2;
-  background:#f6fafd;
-  box-shadow:0 5px 14px rgba(32,72,105,.08);
+  transform:translateY(-1px);
+  border-color:#c1d2df;
+  background:#f9fbfd;
+  box-shadow:0 3px 9px rgba(32,72,105,.06);
 }
 
 .custom-author-content {
@@ -58,18 +73,19 @@
 }
 
 .custom-author-content .author__name {
-  margin:0 0 .55rem;
+  margin:0 0 .38rem;
   padding:0;
-  font-size:1.12rem;
-  line-height:1.28;
-  color:#374552;
+  font-size:.98rem;
+  line-height:1.25;
+  font-weight:700;
+  color:#3f4a53;
 }
 
 .custom-author-content .author__bio {
   margin:0;
-  font-size:.83rem;
-  line-height:1.52;
-  color:#505b65;
+  font-size:.74rem;
+  line-height:1.45;
+  color:#545e66;
 }
 
 
@@ -94,15 +110,19 @@
    ========================================================= */
 
 .sidebar-profile-card--contact {
-  border-color:#d7e5dd;
-  background:#fbfdfc;
+  border-color:#dce7e0;
+  background:#fcfdfc;
+}
+
+.sidebar-profile-card--contact::after {
+  background:#b2cdbd;
 }
 
 .sidebar-profile-card--contact:hover {
-  transform:translateY(-2px);
-  border-color:#9fc4ad;
-  background:#f5faf7;
-  box-shadow:0 5px 14px rgba(55,105,76,.09);
+  transform:translateY(-1px);
+  border-color:#bfd6c8;
+  background:#f9fcfa;
+  box-shadow:0 3px 9px rgba(55,105,76,.06);
 }
 
 
@@ -111,21 +131,25 @@
    ========================================================= */
 
 .sidebar-profile-card--academic {
-  border-color:#d8e0ef;
-  background:#fbfcff;
+  border-color:#dce3ed;
+  background:#fcfdff;
+}
+
+.sidebar-profile-card--academic::after {
+  background:#b5c5dc;
 }
 
 .sidebar-profile-card--academic:hover {
-  transform:translateY(-2px);
-  border-color:#9fb5dc;
-  background:#f6f8fd;
-  box-shadow:0 5px 14px rgba(42,74,128,.09);
+  transform:translateY(-1px);
+  border-color:#c1cee0;
+  background:#fafbfe;
+  box-shadow:0 3px 9px rgba(42,74,128,.06);
 }
 
 
 /* =========================================================
    SIDEBAR LIST
-   Reduced vertical spacing
+   Compact vertical spacing
    ========================================================= */
 
 .sidebar-profile-list {
@@ -137,16 +161,15 @@
 .sidebar-profile-list li {
   display:flex;
   align-items:center;
-  min-height:27px;
   margin:0;
-  padding:.13rem 0;
-  font-size:.82rem;
-  line-height:1.25;
+  padding:.08rem 0;
+  font-size:.74rem;
+  line-height:1.18;
   color:#50585f;
 }
 
 .sidebar-profile-list li + li {
-  margin-top:.08rem;
+  margin-top:.12rem;
 }
 
 .sidebar-profile-list li > a {
@@ -154,15 +177,16 @@
   align-items:center;
   width:100%;
   min-width:0;
+  padding:.02rem 0;
   color:#50585f;
   text-decoration:none;
-  transition:color .16s ease, transform .16s ease;
+  transition:color .15s ease,transform .15s ease;
 }
 
 .sidebar-profile-list li > a:hover {
   color:#1f5f99;
   text-decoration:none;
-  transform:translateX(2px);
+  transform:translateX(1px);
 }
 
 
@@ -171,14 +195,14 @@
    ========================================================= */
 
 .sidebar-item-icon {
-  flex:0 0 25px;
+  flex:0 0 23px;
   display:inline-flex;
   align-items:center;
   justify-content:flex-start;
-  width:25px;
-  height:18px;
+  width:23px;
+  height:15px;
   margin:0;
-  font-size:.82rem;
+  font-size:.74rem;
   line-height:1;
 }
 
@@ -199,12 +223,12 @@
 
 .sidebar-item-icon--image img {
   display:block !important;
-  width:16px !important;
-  height:16px !important;
-  min-width:16px !important;
-  min-height:16px !important;
-  max-width:16px !important;
-  max-height:16px !important;
+  width:14px !important;
+  height:14px !important;
+  min-width:14px !important;
+  min-height:14px !important;
+  max-width:14px !important;
+  max-height:14px !important;
   margin:0 !important;
   padding:0 !important;
   border:0 !important;
@@ -228,11 +252,11 @@
    ========================================================= */
 
 .sidebar-profile-list .fa-whatsapp {
-  color:#4f6f61;
+  color:#557566;
 }
 
 .sidebar-profile-list .ai-google-scholar {
-  color:#4c5963;
+  color:#53606a;
 }
 
 .sidebar-profile-list .ai-orcid {
@@ -240,7 +264,7 @@
 }
 
 .sidebar-profile-list .fa-github {
-  color:#444c53;
+  color:#48515a;
 }
 
 .sidebar-profile-list .fa-linkedin {
@@ -249,13 +273,13 @@
 
 
 /* =========================================================
-   MOBILE / FOLLOW BUTTON
+   RESPONSIVE
    ========================================================= */
 
 @media (max-width:1024px) {
 
   .sidebar-profile-card {
-    margin-bottom:.6rem;
+    margin-bottom:.45rem;
   }
 
 }
@@ -263,11 +287,16 @@
 @media (max-width:768px) {
 
   .sidebar-profile-card {
-    padding:.68rem .72rem;
+    padding:.55rem .6rem;
   }
 
+  .custom-author-content .author__name {
+    font-size:.95rem;
+  }
+
+  .custom-author-content .author__bio,
   .sidebar-profile-list li {
-    min-height:26px;
+    font-size:.73rem;
   }
 
 }
