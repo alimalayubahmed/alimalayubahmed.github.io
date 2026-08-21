@@ -4,18 +4,14 @@
    ========================================================= */
 
 .custom-author-profile,
-.custom-author-profile * {
-  box-sizing:border-box;
-}
+.custom-author-profile * { box-sizing:border-box; }
 
 
 /* =========================================================
    AUTHOR PHOTO
    ========================================================= */
 
-.custom-author-profile .author__avatar {
-  margin-bottom:.8rem;
-}
+.custom-author-profile .author__avatar { margin-bottom:.8rem; }
 
 
 /* =========================================================
@@ -47,8 +43,6 @@
 
 /* =========================================================
    CARD 01: NAME & BIO
-   Permanent light blue
-   No hover effect
    ========================================================= */
 
 .sidebar-profile-card--bio {
@@ -94,9 +88,7 @@
    AUTHOR LINKS WRAPPER
    ========================================================= */
 
-.custom-author-links-wrapper {
-  width:100%;
-}
+.custom-author-links-wrapper { width:100%; }
 
 .custom-author-links {
   display:block;
@@ -151,8 +143,7 @@
 
 
 /* =========================================================
-   LISTS
-   Slightly relaxed spacing
+   SIDEBAR LIST
    ========================================================= */
 
 .sidebar-profile-list {
@@ -165,14 +156,14 @@
   display:flex;
   align-items:center;
   margin:0 !important;
-  padding:.075rem 0 !important;
+  padding:.07rem 0 !important;
   font-size:.74rem;
-  line-height:1.15;
+  line-height:1.16;
   color:#46545e;
 }
 
 .sidebar-profile-list li + li {
-  margin-top:.075rem !important;
+  margin-top:.065rem !important;
 }
 
 .sidebar-profile-list li > a {
@@ -181,9 +172,9 @@
   width:100%;
   min-width:0;
   margin:0;
-  padding:.04rem 0 !important;
+  padding:.035rem 0 !important;
   color:#46545e;
-  line-height:1.15;
+  line-height:1.16;
   text-decoration:none;
   transition:color .15s ease,transform .15s ease;
 }
@@ -196,27 +187,21 @@
 
 
 /* =========================================================
-   POSITION + EMPLOYER
+   FOUNDER & CEO + EMPLOYER
    ========================================================= */
 
-.sidebar-employer-item {
-  align-items:flex-start !important;
-  padding-bottom:.14rem !important;
+.sidebar-role-row {
+  padding-bottom:.015rem !important;
 }
 
-.sidebar-employer-icon {
-  padding-top:.03rem;
-}
-
-.sidebar-employer-text {
-  display:flex;
-  flex-direction:column;
-  min-width:0;
+.sidebar-employer-row {
+  padding-top:.015rem !important;
+  margin-top:0 !important;
 }
 
 .sidebar-role {
   display:block;
-  margin:0 0 .12rem;
+  margin:0;
   font-size:.73rem;
   line-height:1.12;
   font-weight:400;
@@ -227,9 +212,13 @@
   display:block;
   margin:0;
   font-size:.73rem;
-  line-height:1.15;
+  line-height:1.12;
   font-weight:700;
   color:#395447;
+}
+
+.sidebar-item-icon--blank {
+  visibility:hidden;
 }
 
 
@@ -294,37 +283,21 @@
    BRAND ICON COLORS
    ========================================================= */
 
-.sidebar-profile-list .fa-building-columns {
-  color:#3e6952;
-}
+.sidebar-profile-list .fa-building-columns { color:#3e6952; }
 
-.sidebar-profile-list .fa-link {
-  color:#426358;
-}
+.sidebar-profile-list .fa-globe { color:#2f6e83; }
 
-.sidebar-profile-list .fa-envelope {
-  color:#426358;
-}
+.sidebar-profile-list .fa-envelope { color:#426358; }
 
-.sidebar-profile-list .fa-whatsapp {
-  color:#3d8060;
-}
+.sidebar-profile-list .fa-whatsapp { color:#3d8060; }
 
-.sidebar-profile-list .ai-google-scholar {
-  color:#435a76;
-}
+.sidebar-profile-list .ai-google-scholar { color:#435a76; }
 
-.sidebar-profile-list .ai-orcid {
-  color:#a6ce39;
-}
+.sidebar-profile-list .ai-orcid { color:#a6ce39; }
 
-.sidebar-profile-list .fa-github {
-  color:#3e4b59;
-}
+.sidebar-profile-list .fa-github { color:#3e4b59; }
 
-.sidebar-profile-list .fa-linkedin {
-  color:#0077b5;
-}
+.sidebar-profile-list .fa-linkedin { color:#0077b5; }
 
 
 /* =========================================================
@@ -332,26 +305,16 @@
    ========================================================= */
 
 @media (max-width:1024px) {
-
-  .sidebar-profile-card {
-    margin-bottom:.47rem;
-  }
-
+  .sidebar-profile-card { margin-bottom:.47rem; }
 }
 
 @media (max-width:768px) {
 
-  .sidebar-profile-card {
-    padding:.58rem .63rem;
-  }
+  .sidebar-profile-card { padding:.58rem .63rem; }
 
-  .custom-author-content .author__name {
-    font-size:.95rem;
-  }
+  .custom-author-content .author__name { font-size:.95rem; }
 
   .custom-author-content .author__bio,
-  .sidebar-profile-list li {
-    font-size:.73rem;
-  }
+  .sidebar-profile-list li { font-size:.73rem; }
 
 }
