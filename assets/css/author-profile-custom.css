@@ -30,41 +30,42 @@
   border:1px solid #dde4ea;
   border-radius:7px;
   overflow:hidden;
-  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease;
+  transition:background .18s ease,border-color .18s ease,box-shadow .18s ease,transform .18s ease;
 }
 
-/* Small vertical accent on right */
 .sidebar-profile-card::after {
   content:"";
   position:absolute;
   top:45%;
   right:0;
   width:2px;
-  height:10%;
-  min-height:12px;
+  height:9%;
+  min-height:10px;
   border-radius:2px 0 0 2px;
-  opacity:.45;
 }
 
 
 /* =========================================================
    CARD 01: NAME & BIO
+   Permanent light blue
+   No hover effect
    ========================================================= */
 
 .sidebar-profile-card--bio {
-  border-color:#dce4ea;
-  background:#fcfdfe;
+  border-color:#cddfec;
+  background:#f1f8fd;
 }
 
 .sidebar-profile-card--bio::after {
-  background:#adc4d5;
+  background:#a8c9df;
+  opacity:.55;
 }
 
 .sidebar-profile-card--bio:hover {
-  transform:translateY(-1px);
-  border-color:#c1d2df;
-  background:#f9fbfd;
-  box-shadow:0 3px 9px rgba(32,72,105,.06);
+  transform:none;
+  border-color:#cddfec;
+  background:#f1f8fd;
+  box-shadow:none;
 }
 
 .custom-author-content {
@@ -73,19 +74,19 @@
 }
 
 .custom-author-content .author__name {
-  margin:0 0 .38rem;
+  margin:0 0 .36rem;
   padding:0;
   font-size:.98rem;
   line-height:1.25;
   font-weight:700;
-  color:#3f4a53;
+  color:#334c60;
 }
 
 .custom-author-content .author__bio {
   margin:0;
   font-size:.74rem;
-  line-height:1.45;
-  color:#545e66;
+  line-height:1.43;
+  color:#4e5d68;
 }
 
 
@@ -107,49 +108,53 @@
 
 /* =========================================================
    CARD 02: PROFESSIONAL CONTACT
+   Stronger green identity
    ========================================================= */
 
 .sidebar-profile-card--contact {
-  border-color:#dce7e0;
-  background:#fcfdfc;
+  border-color:#bdd9c8;
+  background:#f2faf5;
 }
 
 .sidebar-profile-card--contact::after {
-  background:#b2cdbd;
+  background:#72ad88;
+  opacity:.75;
 }
 
 .sidebar-profile-card--contact:hover {
   transform:translateY(-1px);
-  border-color:#bfd6c8;
-  background:#f9fcfa;
-  box-shadow:0 3px 9px rgba(55,105,76,.06);
+  border-color:#78b38e;
+  background:#e8f6ed;
+  box-shadow:0 4px 11px rgba(49,112,73,.13);
 }
 
 
 /* =========================================================
    CARD 03: ACADEMIC PROFILES
+   Stronger blue identity
    ========================================================= */
 
 .sidebar-profile-card--academic {
-  border-color:#dce3ed;
-  background:#fcfdff;
+  border-color:#bdcfe7;
+  background:#f2f6fc;
 }
 
 .sidebar-profile-card--academic::after {
-  background:#b5c5dc;
+  background:#7198ce;
+  opacity:.75;
 }
 
 .sidebar-profile-card--academic:hover {
   transform:translateY(-1px);
-  border-color:#c1cee0;
-  background:#fafbfe;
-  box-shadow:0 3px 9px rgba(42,74,128,.06);
+  border-color:#789dd0;
+  background:#eaf1fb;
+  box-shadow:0 4px 11px rgba(45,83,139,.13);
 }
 
 
 /* =========================================================
-   SIDEBAR LIST
-   Compact vertical spacing
+   LISTS
+   Very compact vertical spacing
    ========================================================= */
 
 .sidebar-profile-list {
@@ -161,15 +166,15 @@
 .sidebar-profile-list li {
   display:flex;
   align-items:center;
-  margin:0;
-  padding:.08rem 0;
+  margin:0 !important;
+  padding:.035rem 0 !important;
   font-size:.74rem;
-  line-height:1.18;
-  color:#50585f;
+  line-height:1.08;
+  color:#46545e;
 }
 
 .sidebar-profile-list li + li {
-  margin-top:.12rem;
+  margin-top:.02rem !important;
 }
 
 .sidebar-profile-list li > a {
@@ -177,16 +182,55 @@
   align-items:center;
   width:100%;
   min-width:0;
-  padding:.02rem 0;
-  color:#50585f;
+  margin:0;
+  padding:.025rem 0 !important;
+  color:#46545e;
+  line-height:1.08;
   text-decoration:none;
   transition:color .15s ease,transform .15s ease;
 }
 
 .sidebar-profile-list li > a:hover {
-  color:#1f5f99;
+  color:#175e96;
   text-decoration:none;
   transform:translateX(1px);
+}
+
+
+/* =========================================================
+   POSITION + EMPLOYER
+   ========================================================= */
+
+.sidebar-employer-item {
+  align-items:flex-start !important;
+  padding-bottom:.1rem !important;
+}
+
+.sidebar-employer-icon {
+  padding-top:.08rem;
+}
+
+.sidebar-employer-text {
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+}
+
+.sidebar-role {
+  display:block;
+  margin:0 0 .08rem;
+  font-size:.73rem;
+  line-height:1.08;
+  font-weight:700;
+  color:#365748;
+}
+
+.sidebar-employer {
+  display:block;
+  margin:0;
+  font-size:.73rem;
+  line-height:1.12;
+  color:#4c5b53;
 }
 
 
@@ -200,9 +244,9 @@
   align-items:center;
   justify-content:flex-start;
   width:23px;
-  height:15px;
+  height:14px;
   margin:0;
-  font-size:.74rem;
+  font-size:.73rem;
   line-height:1;
 }
 
@@ -251,12 +295,24 @@
    BRAND ICON COLORS
    ========================================================= */
 
+.sidebar-profile-list .fa-building-columns {
+  color:#3e6952;
+}
+
+.sidebar-profile-list .fa-link {
+  color:#426358;
+}
+
+.sidebar-profile-list .fa-envelope {
+  color:#426358;
+}
+
 .sidebar-profile-list .fa-whatsapp {
-  color:#557566;
+  color:#3d8060;
 }
 
 .sidebar-profile-list .ai-google-scholar {
-  color:#53606a;
+  color:#435a76;
 }
 
 .sidebar-profile-list .ai-orcid {
@@ -264,7 +320,7 @@
 }
 
 .sidebar-profile-list .fa-github {
-  color:#48515a;
+  color:#3e4b59;
 }
 
 .sidebar-profile-list .fa-linkedin {
