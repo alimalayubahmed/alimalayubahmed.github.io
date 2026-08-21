@@ -2,80 +2,73 @@
    MASTHEAD
    ========================================================================== */
 
-.masthead {
-  position: fixed;
-  background: var(--global-bg-color);
-  height: fit-content;
-  top: 0;
-  width: 100%;
+.masthead { position:fixed; background:#f4f8fc; height:fit-content; top:0; width:100%; -webkit-animation:intro .3s both; animation:intro .3s both; -webkit-animation-delay:.15s; animation-delay:.15s; z-index:20; }
 
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
-  z-index: 20;
+.masthead::after { content:""; position:absolute; bottom:0; height:1px; background:#d7e2ec; width:100%; }
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 1px;
-    background: var(--global-border-color);
-    width: 100%;
-  }
+.masthead__inner-wrap { @include container; @include clearfix; padding:.5em 1em; font-family:$sans-serif-narrow; }
 
-  &__inner-wrap {
-    @include container;
-    @include clearfix;
-    padding: 0.5em 1em;
-    font-family: $sans-serif-narrow;
-
-    @include breakpoint($x-large) {
-      max-width: $x-large;
-    }
-
-    nav {
-      z-index: 10;
-    }
-
-    a {
-      text-decoration: none;
-    }
-  }
+@include breakpoint($x-large) {
+  .masthead__inner-wrap { max-width:$x-large; }
 }
 
-.masthead__menu {
+.masthead__inner-wrap nav { z-index:10; }
 
-  ul {
-    margin: 0;
-    padding: 0;
-    clear: both;
-    list-style-type: none;
-  }
-}
+.masthead__inner-wrap a { text-decoration:none; }
 
-.masthead__menu-item {
-  background-color: var(--global-bg-color);
-  display: block;
-  list-style-type: none;
-  white-space: nowrap;
 
-  &--lg {
-    padding-right: 2em;
-    font-weight: 700;
-  }
-}
+/* ==========================================================================
+   MASTHEAD MENU
+   ========================================================================== */
 
-.masthead__menu-item.selected a {
-  color: var(--global-text-color);
-  font-weight: 700;
-  border-bottom: 2px solid var(--global-text-color);
-  pointer-events: none; /* Move this here */
-  cursor: default; /* Move this here too */
-}
+.masthead__menu ul { margin:0; padding:0; clear:both; list-style-type:none; }
 
-.masthead__menu-item.selected a:hover {
-  color: var(--global-text-color);
-  border-bottom: 2px solid var(--global-text-color);
-  /* No need to repeat pointer-events and cursor here */
+
+/* ==========================================================================
+   MENU ITEMS
+   ========================================================================== */
+
+.masthead__menu-item { display:block; list-style-type:none; white-space:nowrap; background:#f4f8fc; transition:background-color .18s ease,color .18s ease; }
+
+.masthead__menu-item:hover { background:#eaf2f8; }
+
+.masthead__menu-item--lg { padding-right:2em; font-weight:700; }
+
+
+/* ==========================================================================
+   ACTIVE / SELECTED PAGE
+   ========================================================================== */
+
+.masthead__menu-item.selected { background:#eef4f9; }
+
+.masthead__menu-item.selected a { color:var(--global-text-color); font-weight:700; border-bottom:2px solid var(--global-text-color); pointer-events:none; cursor:default; }
+
+.masthead__menu-item.selected a:hover { color:var(--global-text-color); border-bottom:2px solid var(--global-text-color); }
+
+
+/* ==========================================================================
+   GREEDY NAV BACKGROUND SUPPORT
+   ========================================================================== */
+
+.masthead .greedy-nav { background:#f4f8fc; }
+
+.masthead .greedy-nav button { background:#f4f8fc; }
+
+.masthead .greedy-nav .visible-links { background:#f4f8fc; }
+
+.masthead .greedy-nav .visible-links li { background:#f4f8fc; }
+
+.masthead .greedy-nav .visible-links li:hover { background:#eaf2f8; }
+
+.masthead .greedy-nav .hidden-links { background:#fff; }
+
+
+/* ==========================================================================
+   MOBILE / SMALL SCREEN
+   ========================================================================== */
+
+@media (max-width:768px) {
+  .masthead { background:#f4f8fc; }
+  .masthead__inner-wrap { padding:.45em .8em; }
+  .masthead__menu-item--lg { padding-right:1em; }
 }
