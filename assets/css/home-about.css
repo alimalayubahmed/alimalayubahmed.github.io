@@ -11,18 +11,40 @@
    HOME HERO
    ========================================================= */
 
-.home-hero { max-width:855px; margin:0 0 1.3rem; padding:1.15rem 1.3rem; border:1px solid #d6e1ea; border-left:5px solid #2457a7; border-radius:10px; background:linear-gradient(135deg,#f7fbff 0%,#fff 72%); box-shadow:0 3px 10px rgba(32,65,95,.055); }
+.home-hero { max-width:855px; margin:0 0 1.15rem; padding:1.15rem 1.3rem; border:1px solid #d6e1ea; border-left:5px solid #2457a7; border-radius:10px; background:linear-gradient(135deg,#f7fbff 0%,#fff 72%); box-shadow:0 3px 10px rgba(32,65,95,.055); }
+
 .home-hero-label { display:inline-block; margin:0 0 .45rem; padding:.2rem .52rem; border:1px solid #bfd4e6; border-radius:12px; background:#edf5fb; color:#35658a; font-size:.67rem; font-weight:700; letter-spacing:.02em; }
+
 .home-hero h2 { margin:0 0 .48rem; padding:0; border:0; color:#234765; font-size:1.1rem; line-height:1.3; }
+
 .home-hero p { max-width:760px; margin:0 0 .52rem; color:#4c5965; font-size:.82rem; line-height:1.55; }
+
 .home-hero p:last-of-type { margin-bottom:0; }
-.home-hero-actions { display:flex; flex-wrap:wrap; gap:.52rem; margin-top:.82rem; }
-.home-btn { display:inline-flex; align-items:center; justify-content:center; padding:.44rem .76rem; border-radius:6px; font-size:.72rem; font-weight:700; line-height:1.15; text-decoration:none !important; transition:transform .18s ease,background .18s ease,border-color .18s ease,box-shadow .18s ease; }
-.home-btn:hover { transform:translateY(-1px); }
+
+.home-hero-actions { display:flex; flex-wrap:wrap; align-items:center; gap:.52rem; margin-top:.82rem; }
+
+
+/* =========================================================
+   HOME HERO BUTTONS
+   ========================================================= */
+
+.home-btn { display:inline-flex; align-items:center; justify-content:center; gap:.24rem; padding:.44rem .76rem; border-radius:6px; font-size:.72rem; font-weight:700; line-height:1.15; text-decoration:none !important; white-space:nowrap; transition:transform .18s ease,background .18s ease,border-color .18s ease,color .18s ease,box-shadow .18s ease; }
+
+.home-btn:hover { transform:translateY(-1px); text-decoration:none !important; }
+
 .home-btn-primary { color:#fff !important; background:#2457a7; border:1px solid #1e4a8e; }
+
 .home-btn-primary:hover { color:#fff !important; background:#17477d; border-color:#17477d; box-shadow:0 3px 8px rgba(36,87,167,.18); }
+
 .home-btn-secondary { color:#2457a7 !important; background:#f5f9fd; border:1px solid #a9c3da; }
+
 .home-btn-secondary:hover { color:#17477d !important; background:#eaf3fa; border-color:#86abc9; }
+
+.home-btn-video { color:#3f51c7 !important; background:#f7f9ff; border:1px solid #aebde7; }
+
+.home-btn-video:hover { color:#fff !important; background:#5063c8; border-color:#5063c8; box-shadow:0 3px 8px rgba(70,88,180,.16); }
+
+.home-btn-video i { margin:0; font-size:.68rem; }
 
 
 /* =========================================================
@@ -30,8 +52,11 @@
    ========================================================= */
 
 .home-section { max-width:855px; margin:0 0 1.15rem; }
+
 .home-section-heading { margin:0 0 .62rem; }
+
 .home-section-heading h2 { margin:0 0 .13rem; padding:0; border:0; color:#263f55; font-size:.9rem; line-height:1.3; }
+
 .home-section-heading p { margin:0; color:#697580; font-size:.71rem; line-height:1.42; }
 
 
@@ -40,8 +65,11 @@
    ========================================================= */
 
 .home-focus-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.55rem; }
+
 .home-focus-card { display:flex; align-items:center; gap:.48rem; min-height:50px; padding:.56rem .65rem; border:1px solid #dce4eb; border-radius:8px; background:#fff; color:#465460; font-size:.7rem; line-height:1.3; box-shadow:0 2px 6px rgba(20,50,80,.035); transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease; }
+
 .home-focus-card:hover { transform:translateY(-2px); border-color:#a9c3da; background:#f8fbfe; box-shadow:0 5px 12px rgba(36,87,167,.08); }
+
 .home-focus-icon { flex:0 0 26px; display:flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background:#f0f5f9; font-size:.82rem; }
 
 
@@ -50,13 +78,21 @@
    ========================================================= */
 
 .home-explore-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.62rem; }
+
 .home-explore-card { position:relative; display:flex; align-items:center; gap:.62rem; min-height:68px; padding:.65rem .72rem; border:1px solid #d9e2ea; border-left:4px solid #2457a7; border-radius:8px; background:#fff; color:#43515d !important; text-decoration:none !important; transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease; }
+
 .home-explore-card:hover { transform:translateX(3px); background:#f8fbfe; border-color:#a8bfd2; box-shadow:0 4px 10px rgba(36,87,167,.07); text-decoration:none !important; }
+
 .home-explore-icon { flex:0 0 32px; display:flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:8px; background:#f1f5f9; font-size:.94rem; }
+
 .home-explore-content { flex:1; display:flex; flex-direction:column; min-width:0; }
+
 .home-explore-content strong { margin:0 0 .07rem; color:#294d6b; font-size:.75rem; line-height:1.25; }
+
 .home-explore-content small { color:#717c86; font-size:.63rem; line-height:1.34; }
+
 .home-explore-arrow { color:#7891a5; font-size:.85rem; transition:transform .18s ease,color .18s ease; }
+
 .home-explore-card:hover .home-explore-arrow { transform:translateX(2px); color:#2457a7; }
 
 .home-explore-research { border-left-color:#2878b8; }
@@ -72,7 +108,9 @@
    ========================================================= */
 
 .home-note { display:flex; align-items:flex-start; gap:.48rem; max-width:855px; padding:.66rem .78rem; border:1px solid #e0e7ed; border-radius:8px; background:#f5f8fb; color:#56636e; }
+
 .home-note i { margin-top:.14rem; color:#2457a7; font-size:.73rem; }
+
 .home-note p { margin:0; font-size:.69rem; line-height:1.44; }
 
 
@@ -81,6 +119,7 @@
    ========================================================= */
 
 .about-intro { max-width:855px; margin:0 0 .9rem; padding:.78rem .95rem; border-left:4px solid #2457a7; border-radius:0 8px 8px 0; background:#f5f8fb; }
+
 .about-intro p { margin:0; color:#4b5864; font-size:.8rem; line-height:1.55; }
 
 
@@ -89,12 +128,17 @@
    ========================================================= */
 
 .about-card { display:flex; align-items:flex-start; gap:.7rem; max-width:855px; margin:0 0 .72rem; padding:.8rem .9rem; border:1px solid #d9e2ea; border-left:4px solid #2457a7; border-radius:9px; background:#fff; box-shadow:0 2px 7px rgba(25,55,85,.04); transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease; }
+
 .about-card:hover { transform:translateY(-2px); border-color:#adc2d4; background:#fbfdff; box-shadow:0 5px 12px rgba(36,87,167,.07); }
 
 .about-card-icon { flex:0 0 36px; display:flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:8px; background:#edf4fa; color:#2457a7; font-size:.84rem; }
+
 .about-card-content { flex:1; min-width:0; }
+
 .about-card-content h2 { margin:0 0 .32rem; padding:0; border:0; color:#294a65; font-size:.84rem; font-weight:700; line-height:1.3; }
+
 .about-card-content p { margin:0 0 .38rem; color:#55616c; font-size:.72rem; line-height:1.5; }
+
 .about-card-content p:last-of-type { margin-bottom:.32rem; }
 
 
@@ -103,26 +147,32 @@
    ========================================================= */
 
 .about-profile-card { border-left-color:#2457a7; }
+
 .about-profile-card .about-card-icon { background:#edf4fb; color:#2457a7; }
 
 .about-education-card { border-left-color:#b47b19; }
+
 .about-education-card .about-card-icon { background:#fff6e5; color:#9a6811; }
 
 .about-experience-card { border-left-color:#16848a; }
+
 .about-experience-card .about-card-icon { background:#edf8f8; color:#14757a; }
 
 .about-research-card { border-left-color:#6957a5; }
+
 .about-research-card .about-card-icon { background:#f3f0fa; color:#6957a5; }
 
 .about-service-card { border-left-color:#16814f; }
+
 .about-service-card .about-card-icon { background:#edf8f2; color:#16814f; }
 
 
 /* =========================================================
-   ABOUT BIOGRAPHY CARD
+   ABOUT BIOGRAPHY
    ========================================================= */
 
 .about-profile-card .about-card-content p { font-size:.72rem; line-height:1.52; }
+
 .about-profile-card .about-card-content p + p { margin-top:.1rem; }
 
 
@@ -131,7 +181,9 @@
    ========================================================= */
 
 .about-inline-link { display:inline-flex; align-items:center; color:#2457a7 !important; font-size:.69rem; font-weight:700; line-height:1.3; text-decoration:none !important; transition:color .18s ease,transform .18s ease; }
+
 .about-inline-link:hover { color:#0b6b3a !important; transform:translateX(2px); text-decoration:underline !important; text-underline-offset:3px; }
+
 .about-link-row { display:flex; flex-wrap:wrap; align-items:center; gap:.75rem; }
 
 
@@ -140,9 +192,13 @@
    ========================================================= */
 
 .about-contact-note { display:flex; align-items:flex-start; gap:.48rem; max-width:855px; padding:.65rem .78rem; border:1px solid #e0e7ed; border-radius:8px; background:#f5f8fb; color:#56636e; }
+
 .about-contact-note i { margin-top:.13rem; color:#2457a7; font-size:.72rem; }
+
 .about-contact-note p { margin:0; font-size:.69rem; line-height:1.43; }
+
 .about-contact-note a { color:#2457a7; font-weight:700; text-decoration:none; }
+
 .about-contact-note a:hover { color:#0b6b3a; text-decoration:underline; text-underline-offset:2px; }
 
 
@@ -166,6 +222,8 @@
   .home-hero { padding:.9rem; }
   .home-hero h2 { font-size:1rem; }
   .home-hero p { font-size:.78rem; }
+  .home-hero-actions { gap:.4rem; }
+  .home-btn { padding:.42rem .65rem; font-size:.69rem; }
   .home-focus-grid { grid-template-columns:1fr; }
   .home-focus-card { min-height:auto; }
   .home-explore-card { min-height:64px; }
@@ -182,7 +240,7 @@
    ========================================================= */
 
 @media (max-width:380px) {
-  .home-hero-actions { flex-direction:column; align-items:flex-start; }
+  .home-hero-actions { flex-direction:column; align-items:stretch; }
   .home-btn { width:100%; }
   .about-card { gap:.48rem; padding:.65rem; }
 }
