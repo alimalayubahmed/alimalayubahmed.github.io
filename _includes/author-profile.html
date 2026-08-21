@@ -8,37 +8,69 @@
 
 <div itemscope itemtype="http://schema.org/Person">
 
+  <!-- =====================================================
+       AUTHOR PHOTO
+       ===================================================== -->
+
   <div class="author__avatar">
+
     {% if author.avatar contains "://" %}
-      <img src="{{ author.avatar }}"
-           alt="{{ author.name }}"
-           fetchpriority="high" />
+
+      <img
+        src="{{ author.avatar }}"
+        alt="{{ author.name }}"
+        fetchpriority="high" />
+
     {% else %}
-      <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}"
-           class="author__avatar"
-           alt="{{ author.name }}"
-           fetchpriority="high" />
+
+      <img
+        src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}"
+        class="author__avatar"
+        alt="{{ author.name }}"
+        fetchpriority="high" />
+
     {% endif %}
+
   </div>
 
+
+  <!-- =====================================================
+       AUTHOR NAME & BIO
+       ===================================================== -->
+
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+
+    <h3 class="author__name">
+      {{ author.name }}
+    </h3>
 
     {% if author.pronouns %}
-      <p class="author__pronouns">{{ author.pronouns }}</p>
+      <p class="author__pronouns">
+        {{ author.pronouns }}
+      </p>
     {% endif %}
 
     {% if author.bio %}
-      <p class="author__bio">{{ author.bio }}</p>
+      <p class="author__bio">
+        {{ author.bio }}
+      </p>
     {% endif %}
+
   </div>
 
 
+  <!-- =====================================================
+       AUTHOR LINKS
+       ===================================================== -->
+
   <div class="author__urls-wrapper">
 
-    <button class="btn btn--inverse">Follow</button>
+    <button class="btn btn--inverse">
+      Follow
+    </button>
 
     <ul class="author__urls social-icons">
+
 
       <!-- =================================================
            EMPLOYER
@@ -46,8 +78,10 @@
 
       {% if author.employer %}
         <li class="author__desktop">
-          <i class="fas fa-fw fa-building-columns icon-pad-right"
-             aria-hidden="true"></i>
+          <i
+            class="fas fa-fw fa-building-columns icon-pad-right"
+            aria-hidden="true">
+          </i>
           {{ author.employer }}
         </li>
       {% endif %}
@@ -59,12 +93,18 @@
 
       {% if author.uri %}
         <li>
-          <a href="{{ author.uri }}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="fas fa-fw fa-link icon-pad-right"
-               aria-hidden="true"></i>
+          <a
+            href="{{ author.uri }}"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <i
+              class="fas fa-fw fa-link icon-pad-right"
+              aria-hidden="true">
+            </i>
+
             Website
+
           </a>
         </li>
       {% endif %}
@@ -77,9 +117,14 @@
       {% if author.email %}
         <li>
           <a href="mailto:{{ author.email }}">
-            <i class="fas fa-fw fa-envelope icon-pad-right"
-               aria-hidden="true"></i>
+
+            <i
+              class="fas fa-fw fa-envelope icon-pad-right"
+              aria-hidden="true">
+            </i>
+
             Email
+
           </a>
         </li>
       {% endif %}
@@ -91,12 +136,18 @@
 
       {% if author.whatsapp %}
         <li>
-          <a href="{{ author.whatsapp }}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="fab fa-fw fa-whatsapp icon-pad-right"
-               aria-hidden="true"></i>
+          <a
+            href="{{ author.whatsapp }}"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <i
+              class="fab fa-fw fa-whatsapp icon-pad-right"
+              aria-hidden="true">
+            </i>
+
             WhatsApp
+
           </a>
         </li>
       {% endif %}
@@ -108,12 +159,18 @@
 
       {% if author.googlescholar %}
         <li>
-          <a href="{{ author.googlescholar }}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="ai ai-google-scholar ai-fw icon-pad-right"
-               aria-hidden="true"></i>
+          <a
+            href="{{ author.googlescholar }}"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <i
+              class="ai ai-google-scholar ai-fw icon-pad-right"
+              aria-hidden="true">
+            </i>
+
             Google Scholar
+
           </a>
         </li>
       {% endif %}
@@ -121,20 +178,55 @@
 
       <!-- =================================================
            SCOPUS
-           Uses custom uploaded profile logo
+           Custom uploaded Scopus logo
            ================================================= -->
 
       {% if author.scopus %}
         <li>
-          <a href="{{ author.scopus }}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <img
-              src="{{ '/images/profile-logos/scopus.png' | relative_url }}"
-              class="author-custom-profile-icon"
-              alt=""
-              aria-hidden="true">
-            Scopus
+          <a
+            href="{{ author.scopus }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="display:flex; align-items:center;">
+
+            <span
+              style="
+                display:inline-flex;
+                flex:0 0 16px;
+                width:16px;
+                height:16px;
+                margin-right:9px;
+                align-items:center;
+                justify-content:center;
+                overflow:hidden;
+                border-radius:50%;
+              ">
+
+              <img
+                src="{{ '/images/profile-logos/scopus.png' | relative_url }}"
+                alt=""
+                aria-hidden="true"
+                width="16"
+                height="16"
+                style="
+                  display:block;
+                  width:16px !important;
+                  height:16px !important;
+                  min-width:16px;
+                  max-width:16px !important;
+                  min-height:16px;
+                  max-height:16px !important;
+                  margin:0 !important;
+                  padding:0 !important;
+                  border:0;
+                  border-radius:50%;
+                  object-fit:cover;
+                ">
+
+            </span>
+
+            <span>Scopus</span>
+
           </a>
         </li>
       {% endif %}
@@ -146,12 +238,18 @@
 
       {% if author.webofscience %}
         <li>
-          <a href="{{ author.webofscience }}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="fas fa-fw fa-chart-line icon-pad-right"
-               aria-hidden="true"></i>
+          <a
+            href="{{ author.webofscience }}"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <i
+              class="fas fa-fw fa-chart-line icon-pad-right"
+              aria-hidden="true">
+            </i>
+
             Web of Science
+
           </a>
         </li>
       {% endif %}
@@ -163,12 +261,18 @@
 
       {% if author.orcid %}
         <li>
-          <a href="{{ author.orcid }}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="ai ai-orcid ai-fw icon-pad-right"
-               aria-hidden="true"></i>
+          <a
+            href="{{ author.orcid }}"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <i
+              class="ai ai-orcid ai-fw icon-pad-right"
+              aria-hidden="true">
+            </i>
+
             ORCID
+
           </a>
         </li>
       {% endif %}
@@ -180,12 +284,18 @@
 
       {% if author.github %}
         <li>
-          <a href="https://github.com/{{ author.github }}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="fab fa-fw fa-github icon-pad-right"
-               aria-hidden="true"></i>
+          <a
+            href="https://github.com/{{ author.github }}"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <i
+              class="fab fa-fw fa-github icon-pad-right"
+              aria-hidden="true">
+            </i>
+
             GitHub
+
           </a>
         </li>
       {% endif %}
@@ -197,12 +307,18 @@
 
       {% if author.linkedin %}
         <li>
-          <a href="https://www.linkedin.com/in/{{ author.linkedin }}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <i class="fab fa-fw fa-linkedin icon-pad-right"
-               aria-hidden="true"></i>
+          <a
+            href="https://www.linkedin.com/in/{{ author.linkedin }}"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <i
+              class="fab fa-fw fa-linkedin icon-pad-right"
+              aria-hidden="true">
+            </i>
+
             LinkedIn
+
           </a>
         </li>
       {% endif %}
@@ -212,16 +328,3 @@
   </div>
 
 </div>
-
-
-<style>
-.author-custom-profile-icon {
-  display:inline-block;
-  width:16px;
-  height:16px;
-  margin-right:.35em;
-  object-fit:cover;
-  border-radius:50%;
-  vertical-align:-2px;
-}
-</style>
