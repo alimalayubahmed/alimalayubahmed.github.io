@@ -102,7 +102,7 @@
 
 .contact-profiles { margin-top:0; padding:1.3rem 1.35rem 1.4rem; border:1px solid #dce3e9; border-radius:10px; background:#fff; }
 
-.contact-profiles-heading { margin-bottom:1.15rem; }
+.contact-profiles-heading { margin-bottom:1.05rem; }
 
 .contact-profiles-heading h2 { margin:0 0 .25rem; padding:0; border:0; font-size:1.03rem; line-height:1.35; color:#243d53; }
 
@@ -111,16 +111,58 @@
 
 /* =========================================================
    PROFILE LOGO GRID
-   Order runs left to right, then top to bottom
+   9 logos per row on desktop
    ========================================================= */
 
-.contact-profile-icons { display:grid; grid-template-columns:repeat(9,minmax(0,1fr)); align-items:center; gap:.85rem .7rem; }
+.contact-profile-icons {
+  display:grid;
+  grid-template-columns:repeat(9,minmax(0,1fr));
+  align-items:center;
+  column-gap:.42rem;
+  row-gap:.52rem;
+}
 
-.profile-logo { display:flex; align-items:center; justify-content:center; width:54px; height:54px; margin:0 auto; padding:6px; border:1px solid #d9e1e7; border-radius:50%; background:#fff; text-decoration:none !important; box-shadow:0 2px 6px rgba(24,45,66,.05); transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease; }
 
-.profile-logo:hover { transform:translateY(-3px) scale(1.04); border-color:#adc5d9; background:#f8fbfd; box-shadow:0 6px 14px rgba(24,45,66,.12); }
+/* =========================================================
+   PROFILE LOGOS
 
-.profile-logo img { display:block; width:100%; height:100%; max-width:40px; max-height:40px; margin:0; padding:0; border:0; object-fit:contain; }
+   The full square logo fills the circular frame.
+   overflow:hidden clips the four corners automatically.
+   ========================================================= */
+
+.profile-logo {
+  display:block;
+  width:58px;
+  height:58px;
+  margin:0 auto;
+  padding:0;
+  overflow:hidden;
+  border:1px solid #d9e1e7;
+  border-radius:50%;
+  background:#fff;
+  text-decoration:none !important;
+  box-shadow:0 2px 6px rgba(24,45,66,.05);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+}
+
+.profile-logo:hover {
+  transform:translateY(-3px) scale(1.04);
+  border-color:#adc5d9;
+  box-shadow:0 6px 14px rgba(24,45,66,.12);
+}
+
+.profile-logo img {
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:none;
+  max-height:none;
+  margin:0;
+  padding:0;
+  border:0;
+  border-radius:50%;
+  object-fit:cover;
+}
 
 
 /* =========================================================
@@ -128,22 +170,36 @@
    ========================================================= */
 
 @media (max-width:1050px) {
-  .contact-profile-icons { grid-template-columns:repeat(8,minmax(0,1fr)); }
+  .contact-profile-icons {
+    grid-template-columns:repeat(8,minmax(0,1fr));
+    column-gap:.4rem;
+  }
 }
 
 @media (max-width:900px) {
-  .contact-profile-icons { grid-template-columns:repeat(7,minmax(0,1fr)); }
+  .contact-profile-icons {
+    grid-template-columns:repeat(7,minmax(0,1fr));
+  }
 }
 
 @media (max-width:820px) {
+
   .contact-grid { grid-template-columns:1fr; }
+
   .contact-card { min-height:250px; }
+
   .contact-description { min-height:auto; }
-  .contact-profile-icons { grid-template-columns:repeat(6,minmax(0,1fr)); }
+
+  .contact-profile-icons {
+    grid-template-columns:repeat(6,minmax(0,1fr));
+  }
+
 }
 
 @media (max-width:650px) {
-  .contact-profile-icons { grid-template-columns:repeat(5,minmax(0,1fr)); }
+  .contact-profile-icons {
+    grid-template-columns:repeat(5,minmax(0,1fr));
+  }
 }
 
 @media (max-width:520px) {
@@ -152,7 +208,12 @@
 
   .contact-card { min-height:auto; gap:.8rem; padding:1.1rem; }
 
-  .contact-icon { flex-basis:40px; width:40px; height:40px; font-size:1rem; }
+  .contact-icon {
+    flex-basis:40px;
+    width:40px;
+    height:40px;
+    font-size:1rem;
+  }
 
   .contact-card h2 { font-size:1.04rem; }
 
@@ -160,24 +221,47 @@
 
   .contact-detail { display:block; }
 
-  .contact-label { display:block; min-width:0; margin-bottom:.12rem; }
+  .contact-label {
+    display:block;
+    min-width:0;
+    margin-bottom:.12rem;
+  }
 
-  .contact-actions { margin-top:.85rem; padding-top:0; }
+  .contact-actions {
+    margin-top:.85rem;
+    padding-top:0;
+  }
 
-  .contact-office { align-items:flex-start; padding:1rem; }
+  .contact-office {
+    align-items:flex-start;
+    padding:1rem;
+  }
 
-  .contact-office-icon { flex-basis:44px; width:44px; height:44px; }
+  .contact-office-icon {
+    flex-basis:44px;
+    width:44px;
+    height:44px;
+  }
 
   .contact-profiles { padding:1.05rem; }
 
-  .contact-profile-icons { grid-template-columns:repeat(4,minmax(0,1fr)); gap:.75rem .5rem; }
+  .contact-profile-icons {
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    column-gap:.35rem;
+    row-gap:.45rem;
+  }
 
-  .profile-logo { width:48px; height:48px; padding:5px; }
-
-  .profile-logo img { max-width:36px; max-height:36px; }
+  .profile-logo {
+    width:52px;
+    height:52px;
+  }
 
 }
 
 @media (max-width:380px) {
-  .contact-profile-icons { grid-template-columns:repeat(3,minmax(0,1fr)); }
+
+  .contact-profile-icons {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+
 }
