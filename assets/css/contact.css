@@ -1,11 +1,22 @@
 /* =========================================================
    CONTACT PAGE
    Prof. Dr. Alim Al Ayub Ahmed
-   Compact Version
+   Compact 80% Desktop Layout
    ========================================================= */
 
-.contact-page { width:100%; margin:0; padding:0 0 1.2rem; color:#2f3542; box-sizing:border-box; }
-.contact-page *, .contact-page *::before, .contact-page *::after { box-sizing:border-box; }
+.contact-page {
+  width:100%;
+  margin:0;
+  padding:0 0 1.2rem;
+  color:#2f3542;
+  box-sizing:border-box;
+}
+
+.contact-page *,
+.contact-page *::before,
+.contact-page *::after {
+  box-sizing:border-box;
+}
 
 
 /* =========================================================
@@ -13,8 +24,9 @@
    ========================================================= */
 
 .contact-intro {
-  margin:0 0 1.45rem;
-  padding:.9rem 1.05rem;
+  width:80%;
+  margin:0 0 1.3rem;
+  padding:.85rem 1rem;
   border-left:3px solid #1f5f99;
   border-radius:0 7px 7px 0;
   background:#f5f8fb;
@@ -22,55 +34,58 @@
 
 .contact-intro p {
   margin:0;
-  font-size:.88rem;
-  line-height:1.55;
+  font-size:.86rem;
+  line-height:1.5;
   color:#46515c;
 }
 
 
 /* =========================================================
    MAIN CONTACT GRID
+   Each card is about 20% narrower than before
    ========================================================= */
 
 .contact-grid {
   display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-columns:repeat(2,40%);
+  justify-content:start;
   gap:1rem;
-  margin-bottom:1.05rem;
+  width:100%;
+  margin-bottom:1rem;
 }
 
 .contact-card {
   position:relative;
   display:flex;
-  gap:.8rem;
-  min-height:205px;
+  gap:.72rem;
+  min-height:175px;
   margin:0;
-  padding:1.12rem;
+  padding:.9rem;
   border:1px solid #dce3e9;
-  border-radius:10px;
+  border-radius:9px;
   background:#fff;
-  box-shadow:0 2px 9px rgba(24,45,66,.05);
+  box-shadow:0 2px 8px rgba(24,45,66,.05);
   transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
 }
 
 .contact-card:hover {
   transform:translateY(-2px);
   border-color:#b9ccdd;
-  box-shadow:0 6px 17px rgba(24,45,66,.085);
+  box-shadow:0 5px 14px rgba(24,45,66,.08);
 }
 
 .contact-icon {
-  flex:0 0 38px;
+  flex:0 0 34px;
   display:flex;
   align-items:center;
   justify-content:center;
-  width:38px;
-  height:38px;
-  margin-top:.03rem;
+  width:34px;
+  height:34px;
+  margin-top:.02rem;
   border-radius:50%;
   background:#eef5fb;
   color:#1f5f99;
-  font-size:.92rem;
+  font-size:.84rem;
 }
 
 .contact-card-content {
@@ -81,19 +96,19 @@
 }
 
 .contact-card h2 {
-  margin:0 0 .52rem;
+  margin:0 0 .4rem;
   padding:0;
   border:0;
-  font-size:.94rem;
-  line-height:1.3;
+  font-size:.86rem;
+  line-height:1.28;
   color:#183b5b;
 }
 
 .contact-description {
-  min-height:3.7rem;
-  margin:0 0 .68rem !important;
-  font-size:.80rem !important;
-  line-height:1.5 !important;
+  min-height:3.35rem;
+  margin:0 0 .5rem !important;
+  font-size:.73rem !important;
+  line-height:1.45 !important;
   color:#596673 !important;
 }
 
@@ -106,13 +121,13 @@
   display:flex;
   flex-wrap:wrap;
   align-items:center;
-  gap:.2rem .42rem;
-  margin:.2rem 0;
-  font-size:.79rem;
+  gap:.18rem .35rem;
+  margin:.15rem 0;
+  font-size:.72rem;
 }
 
 .contact-label {
-  min-width:56px;
+  min-width:48px;
   font-weight:700;
   color:#354250;
 }
@@ -137,24 +152,24 @@
   display:flex;
   flex-wrap:wrap;
   align-items:center;
-  gap:.48rem;
+  gap:.4rem;
   margin-top:auto;
-  padding-top:.72rem;
+  padding-top:.55rem;
 }
 
 .contact-button {
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  gap:.35rem;
-  padding:.44rem .72rem;
+  gap:.3rem;
+  padding:.36rem .62rem;
   border:1px solid #1f5f99;
   border-radius:5px;
   background:#1f5f99;
   color:#fff !important;
-  font-size:.72rem;
+  font-size:.67rem;
   font-weight:600;
-  line-height:1.15;
+  line-height:1.1;
   text-decoration:none !important;
   transition:background .18s ease,border-color .18s ease,transform .18s ease;
 }
@@ -184,25 +199,26 @@
 .contact-office {
   display:flex;
   align-items:center;
-  gap:.8rem;
-  margin:0 0 1.05rem;
-  padding:.9rem 1.05rem;
+  gap:.7rem;
+  width:80%;
+  margin:0 0 1rem;
+  padding:.78rem .9rem;
   border:1px solid #dce3e9;
-  border-radius:9px;
+  border-radius:8px;
   background:#fafbfc;
 }
 
 .contact-office-icon {
-  flex:0 0 40px;
+  flex:0 0 36px;
   display:flex;
   align-items:center;
   justify-content:center;
-  width:40px;
-  height:40px;
-  border-radius:8px;
+  width:36px;
+  height:36px;
+  border-radius:7px;
   background:#edf2f6;
   color:#506274;
-  font-size:.94rem;
+  font-size:.85rem;
   text-decoration:none !important;
   transition:background .18s ease,color .18s ease,transform .18s ease;
 }
@@ -218,31 +234,31 @@
 }
 
 .contact-office h2 {
-  margin:0 0 .18rem;
+  margin:0 0 .12rem;
   padding:0;
   border:0;
-  font-size:.88rem;
-  line-height:1.3;
+  font-size:.8rem;
+  line-height:1.28;
   color:#243d53;
 }
 
 .contact-office-role {
-  margin:0 0 .08rem;
-  font-size:.78rem;
+  margin:0 0 .05rem;
+  font-size:.7rem;
   font-weight:600;
   color:#64717e;
 }
 
 .contact-office-name {
-  margin:0 0 .12rem;
-  font-size:.81rem;
+  margin:0 0 .08rem;
+  font-size:.73rem;
   font-weight:700;
   color:#384956;
 }
 
 .contact-office-location {
   margin:0;
-  font-size:.77rem;
+  font-size:.69rem;
   color:#67737e;
 }
 
@@ -257,7 +273,7 @@
 }
 
 .contact-office-location i {
-  margin-right:.25rem;
+  margin-right:.22rem;
   color:#748390;
 }
 
@@ -269,24 +285,25 @@
 .contact-note {
   display:flex;
   align-items:flex-start;
-  gap:.55rem;
-  margin-bottom:1.05rem;
-  padding:.78rem .9rem;
+  gap:.45rem;
+  width:80%;
+  margin-bottom:1rem;
+  padding:.68rem .82rem;
   border-radius:7px;
   background:#f5f8fb;
   color:#53606c;
 }
 
 .contact-note > i {
-  margin-top:.16rem;
+  margin-top:.14rem;
   color:#1f5f99;
-  font-size:.82rem;
+  font-size:.75rem;
 }
 
 .contact-note p {
   margin:0;
-  font-size:.77rem;
-  line-height:1.48;
+  font-size:.7rem;
+  line-height:1.42;
 }
 
 
@@ -295,46 +312,46 @@
    ========================================================= */
 
 .contact-profiles {
+  width:80%;
   margin-top:0;
-  padding:1rem 1.05rem 1.08rem;
+  padding:.85rem .9rem .92rem;
   border:1px solid #dce3e9;
-  border-radius:9px;
+  border-radius:8px;
   background:#fff;
 }
 
 .contact-profiles-heading {
-  margin-bottom:.82rem;
+  margin-bottom:.7rem;
 }
 
 .contact-profiles-heading h2 {
-  margin:0 0 .18rem;
+  margin:0 0 .12rem;
   padding:0;
   border:0;
-  font-size:.88rem;
-  line-height:1.3;
+  font-size:.8rem;
+  line-height:1.28;
   color:#243d53;
 }
 
 .contact-profiles-heading p {
   margin:0;
-  font-size:.75rem;
-  line-height:1.4;
+  font-size:.68rem;
+  line-height:1.38;
   color:#6a7681;
 }
 
 
 /* =========================================================
    PROFILE LOGO GRID
-   10 logos per row, left aligned
    ========================================================= */
 
 .contact-profile-icons {
   display:grid;
-  grid-template-columns:repeat(10,50px);
+  grid-template-columns:repeat(10,46px);
   justify-content:start;
   align-items:center;
-  column-gap:.72rem;
-  row-gap:.44rem;
+  column-gap:.65rem;
+  row-gap:.4rem;
 }
 
 
@@ -344,8 +361,8 @@
 
 .profile-logo {
   display:block;
-  width:50px;
-  height:50px;
+  width:46px;
+  height:46px;
   margin:0;
   padding:0;
   overflow:hidden;
@@ -360,7 +377,7 @@
 .profile-logo:hover {
   transform:translateY(-2px) scale(1.04);
   border-color:#adc5d9;
-  box-shadow:0 5px 11px rgba(24,45,66,.11);
+  box-shadow:0 5px 10px rgba(24,45,66,.11);
 }
 
 .profile-logo img {
@@ -381,14 +398,41 @@
    RESPONSIVE
    ========================================================= */
 
+@media (max-width:1000px) {
+
+  .contact-grid {
+    grid-template-columns:repeat(2,44%);
+  }
+
+  .contact-intro,
+  .contact-office,
+  .contact-note,
+  .contact-profiles {
+    width:90%;
+  }
+
+  .contact-profile-icons {
+    grid-template-columns:repeat(8,46px);
+  }
+
+}
+
 @media (max-width:820px) {
+
+  .contact-intro,
+  .contact-office,
+  .contact-note,
+  .contact-profiles {
+    width:100%;
+  }
 
   .contact-grid {
     grid-template-columns:1fr;
+    width:100%;
   }
 
   .contact-card {
-    min-height:190px;
+    min-height:auto;
   }
 
   .contact-description {
@@ -396,8 +440,7 @@
   }
 
   .contact-profile-icons {
-    grid-template-columns:repeat(6,50px);
-    justify-content:start;
+    grid-template-columns:repeat(6,46px);
   }
 
 }
@@ -405,14 +448,14 @@
 @media (max-width:650px) {
 
   .contact-profile-icons {
-    grid-template-columns:repeat(5,48px);
+    grid-template-columns:repeat(5,44px);
     column-gap:.4rem;
-    row-gap:.42rem;
+    row-gap:.38rem;
   }
 
   .profile-logo {
-    width:48px;
-    height:48px;
+    width:44px;
+    height:44px;
   }
 
 }
@@ -420,29 +463,27 @@
 @media (max-width:520px) {
 
   .contact-intro {
-    padding:.78rem .85rem;
+    padding:.72rem .8rem;
   }
 
   .contact-card {
-    min-height:auto;
-    gap:.68rem;
-    padding:.92rem;
+    gap:.6rem;
+    padding:.78rem;
   }
 
   .contact-icon {
-    flex-basis:34px;
-    width:34px;
-    height:34px;
-    font-size:.84rem;
+    flex-basis:32px;
+    width:32px;
+    height:32px;
+    font-size:.78rem;
   }
 
   .contact-card h2 {
-    font-size:.9rem;
+    font-size:.82rem;
   }
 
   .contact-description {
-    min-height:auto;
-    font-size:.78rem !important;
+    font-size:.72rem !important;
   }
 
   .contact-detail {
@@ -452,38 +493,38 @@
   .contact-label {
     display:block;
     min-width:0;
-    margin-bottom:.08rem;
+    margin-bottom:.05rem;
   }
 
   .contact-actions {
-    margin-top:.65rem;
+    margin-top:.55rem;
     padding-top:0;
   }
 
   .contact-office {
     align-items:flex-start;
-    padding:.82rem .9rem;
+    padding:.72rem .8rem;
   }
 
   .contact-office-icon {
-    flex-basis:36px;
-    width:36px;
-    height:36px;
+    flex-basis:34px;
+    width:34px;
+    height:34px;
   }
 
   .contact-profiles {
-    padding:.9rem;
+    padding:.8rem;
   }
 
   .contact-profile-icons {
-    grid-template-columns:repeat(4,46px);
+    grid-template-columns:repeat(4,42px);
     column-gap:.35rem;
-    row-gap:.4rem;
+    row-gap:.35rem;
   }
 
   .profile-logo {
-    width:46px;
-    height:46px;
+    width:42px;
+    height:42px;
   }
 
 }
@@ -491,7 +532,7 @@
 @media (max-width:380px) {
 
   .contact-profile-icons {
-    grid-template-columns:repeat(3,46px);
+    grid-template-columns:repeat(3,42px);
   }
 
 }
