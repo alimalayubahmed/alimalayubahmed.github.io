@@ -66,18 +66,24 @@
 
 
 /* =========================================================
-   PROFESSIONAL LOCATION
+   PRESENT PROFESSIONAL LOCATION
    ========================================================= */
 
 .contact-office { display:flex; align-items:center; gap:1rem; margin:0 0 1.4rem; padding:1.15rem 1.35rem; border:1px solid #dce3e9; border-radius:10px; background:#fafbfc; }
 
-.contact-office-icon { flex:0 0 44px; display:flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:8px; background:#edf2f6; color:#506274; font-size:1.05rem; }
+.contact-office-icon { flex:0 0 44px; display:flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:8px; background:#edf2f6; color:#506274; font-size:1.05rem; text-decoration:none !important; transition:background .18s ease,color .18s ease,transform .18s ease; }
+
+.contact-office-icon:hover { background:#e0ebf4; color:#1f5f99; transform:translateY(-1px); }
 
 .contact-office h2 { margin:0 0 .35rem; padding:0; border:0; font-size:1.03rem; color:#243d53; }
 
 .contact-office-name { margin:0 0 .22rem; font-size:.94rem; font-weight:600; color:#384956; }
 
 .contact-office-location { margin:0; font-size:.9rem; color:#67737e; }
+
+.contact-office-location a { color:#67737e; text-decoration:none; }
+
+.contact-office-location a:hover { color:#1f5f99; text-decoration:underline; }
 
 .contact-office-location i { margin-right:.3rem; color:#748390; }
 
