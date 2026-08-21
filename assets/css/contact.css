@@ -28,18 +28,18 @@
 
 .contact-icon { flex:0 0 46px; display:flex; align-items:center; justify-content:center; width:46px; height:46px; margin-top:.05rem; border-radius:50%; background:#eef5fb; color:#1f5f99; font-size:1.1rem; }
 
-.contact-card-content { flex:1; min-width:0; }
+.contact-card-content { flex:1; display:flex; flex-direction:column; min-width:0; }
 
 .contact-card h2 { margin:0 0 .7rem; padding:0; border:0; font-size:1.12rem; line-height:1.35; color:#183b5b; }
 
-.contact-card p { margin:0 0 1rem; font-size:.94rem; line-height:1.65; color:#596673; }
+.contact-description { min-height:4.65rem; margin:0 0 .9rem !important; font-size:.94rem !important; line-height:1.65 !important; color:#596673 !important; }
 
 
 /* =========================================================
    CONTACT DETAILS
    ========================================================= */
 
-.contact-detail { display:flex; flex-wrap:wrap; align-items:center; gap:.3rem .55rem; margin:.48rem 0; font-size:.93rem; }
+.contact-detail { display:flex; flex-wrap:wrap; align-items:center; gap:.3rem .55rem; margin:.3rem 0; font-size:.93rem; }
 
 .contact-label { min-width:68px; font-weight:700; color:#354250; }
 
@@ -49,14 +49,12 @@
 
 
 /* =========================================================
-   BUTTONS
+   CONTACT BUTTONS
    ========================================================= */
 
-.contact-actions { display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1.05rem; }
+.contact-actions { display:flex; flex-wrap:wrap; align-items:center; gap:.6rem; margin-top:auto; padding-top:1rem; }
 
-.contact-button { display:inline-flex; align-items:center; justify-content:center; gap:.45rem; margin-top:1.05rem; padding:.55rem .92rem; border:1px solid #1f5f99; border-radius:6px; background:#1f5f99; color:#fff !important; font-size:.84rem; font-weight:600; line-height:1.2; text-decoration:none !important; transition:background .18s ease,border-color .18s ease,transform .18s ease; }
-
-.contact-actions .contact-button { margin-top:0; }
+.contact-button { display:inline-flex; align-items:center; justify-content:center; gap:.45rem; padding:.55rem .92rem; border:1px solid #1f5f99; border-radius:6px; background:#1f5f99; color:#fff !important; font-size:.84rem; font-weight:600; line-height:1.2; text-decoration:none !important; transition:background .18s ease,border-color .18s ease,transform .18s ease; }
 
 .contact-button:hover { transform:translateY(-1px); border-color:#174b79; background:#174b79; color:#fff !important; }
 
@@ -75,9 +73,13 @@
 
 .contact-office-icon:hover { background:#e0ebf4; color:#1f5f99; transform:translateY(-1px); }
 
-.contact-office h2 { margin:0 0 .35rem; padding:0; border:0; font-size:1.03rem; color:#243d53; }
+.contact-office-content { min-width:0; }
 
-.contact-office-name { margin:0 0 .22rem; font-size:.94rem; font-weight:600; color:#384956; }
+.contact-office h2 { margin:0 0 .25rem; padding:0; border:0; font-size:1.03rem; line-height:1.35; color:#243d53; }
+
+.contact-office-role { margin:0 0 .12rem; font-size:.91rem; font-weight:600; color:#64717e; }
+
+.contact-office-name { margin:0 0 .18rem; font-size:.95rem; font-weight:700; color:#384956; }
 
 .contact-office-location { margin:0; font-size:.9rem; color:#67737e; }
 
@@ -92,7 +94,7 @@
    CLOSING NOTE
    ========================================================= */
 
-.contact-note { display:flex; align-items:flex-start; gap:.7rem; padding:1rem 1.15rem; border-radius:8px; background:#f5f8fb; color:#53606c; }
+.contact-note { display:flex; align-items:flex-start; gap:.7rem; margin-bottom:1.4rem; padding:1rem 1.15rem; border-radius:8px; background:#f5f8fb; color:#53606c; }
 
 .contact-note > i { margin-top:.23rem; color:#1f5f99; }
 
@@ -100,30 +102,70 @@
 
 
 /* =========================================================
+   ACADEMIC & PROFESSIONAL PROFILES
+   ========================================================= */
+
+.contact-profiles { margin-top:0; padding:1.3rem 1.35rem 1.4rem; border:1px solid #dce3e9; border-radius:10px; background:#fff; }
+
+.contact-profiles-heading { margin-bottom:1rem; }
+
+.contact-profiles-heading h2 { margin:0 0 .25rem; padding:0; border:0; font-size:1.03rem; line-height:1.35; color:#243d53; }
+
+.contact-profiles-heading p { margin:0; font-size:.88rem; line-height:1.55; color:#6a7681; }
+
+.contact-profile-icons { display:flex; flex-wrap:wrap; align-items:center; gap:.7rem; }
+
+.profile-icon { display:flex; align-items:center; justify-content:center; width:46px; height:46px; border:1px solid #d9e1e7; border-radius:50%; background:#f7f9fb; color:#526271 !important; font-size:1.35rem; text-decoration:none !important; box-shadow:0 2px 6px rgba(24,45,66,.04); transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,color .18s ease,background .18s ease; }
+
+.profile-icon:hover { transform:translateY(-3px); border-color:#afc5d7; background:#eef5fb; color:#1f5f99 !important; box-shadow:0 5px 12px rgba(24,45,66,.10); }
+
+.profile-icon i { margin:0; line-height:1; }
+
+.profile-linkedin { font-size:1.25rem; }
+
+.profile-github { font-size:1.35rem; }
+
+.profile-medium { font-size:1.25rem; }
+
+
+/* =========================================================
    RESPONSIVE
    ========================================================= */
 
 @media (max-width:820px) {
+
   .contact-grid { grid-template-columns:1fr; }
-  .contact-card { min-height:auto; }
+
+  .contact-card { min-height:250px; }
+
+  .contact-description { min-height:auto; }
+
 }
 
 @media (max-width:520px) {
+
   .contact-intro { padding:1rem; }
 
-  .contact-card { gap:.8rem; padding:1.1rem; }
+  .contact-card { min-height:auto; gap:.8rem; padding:1.1rem; }
 
   .contact-icon { flex-basis:40px; width:40px; height:40px; font-size:1rem; }
 
   .contact-card h2 { font-size:1.04rem; }
 
+  .contact-description { min-height:auto; }
+
   .contact-detail { display:block; }
 
   .contact-label { display:block; min-width:0; margin-bottom:.12rem; }
 
-  .contact-actions { display:block; }
-
-  .contact-actions .contact-button { margin:.25rem .35rem .25rem 0; }
+  .contact-actions { margin-top:.85rem; padding-top:0; }
 
   .contact-office { align-items:flex-start; padding:1rem; }
+
+  .contact-profiles { padding:1.05rem; }
+
+  .contact-profile-icons { gap:.55rem; }
+
+  .profile-icon { width:42px; height:42px; font-size:1.2rem; }
+
 }
