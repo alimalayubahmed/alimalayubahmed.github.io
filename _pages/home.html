@@ -7,6 +7,10 @@ author_profile: true
 
 <link rel="stylesheet" href="{{ '/assets/css/home-about.css' | relative_url }}">
 
+<style>
+.page__title { display:none !important; }
+</style>
+
 <div class="home-page">
 
   <!-- =====================================================
@@ -14,10 +18,6 @@ author_profile: true
        ===================================================== -->
 
   <section class="home-hero">
-
-    <div class="home-hero-label">
-      Academic • Research • Scholarly Publishing
-    </div>
 
     <h2>Academic and Research Profile</h2>
 
@@ -79,6 +79,7 @@ author_profile: true
 
     <div class="home-section-heading">
       <h2>Research Focus</h2>
+
       <p>
         Selected areas connecting accounting, governance, emerging technologies,
         and digital scholarship.
@@ -130,6 +131,7 @@ author_profile: true
 
     <div class="home-section-heading">
       <h2>Explore My Academic Profile</h2>
+
       <p>
         Access the principal sections of this academic website.
       </p>
@@ -137,20 +139,8 @@ author_profile: true
 
     <div class="home-explore-grid">
 
-      <a
-        class="home-explore-card home-explore-research"
-        href="{{ '/research/' | relative_url }}"
-      >
-        <span class="home-explore-icon">🔬</span>
 
-        <span class="home-explore-content">
-          <strong>Research</strong>
-          <small>Research interests, projects, and scholarly activities</small>
-        </span>
-
-        <span class="home-explore-arrow">→</span>
-      </a>
-
+      <!-- Publications -->
 
       <a
         class="home-explore-card home-explore-publications"
@@ -169,22 +159,7 @@ author_profile: true
       </a>
 
 
-      <a
-        class="home-explore-card home-explore-teaching"
-        href="{{ '/teaching/' | relative_url }}"
-      >
-        <span class="home-explore-icon">🎓</span>
-
-        <span class="home-explore-content">
-          <strong>Teaching</strong>
-          <small>
-            University teaching experience and academic leadership
-          </small>
-        </span>
-
-        <span class="home-explore-arrow">→</span>
-      </a>
-
+      <!-- Academic Service -->
 
       <a
         class="home-explore-card home-explore-service"
@@ -203,6 +178,46 @@ author_profile: true
       </a>
 
 
+      <!-- Teaching -->
+
+      <a
+        class="home-explore-card home-explore-teaching"
+        href="{{ '/teaching/' | relative_url }}"
+      >
+        <span class="home-explore-icon">🎓</span>
+
+        <span class="home-explore-content">
+          <strong>Teaching</strong>
+          <small>
+            University teaching experience and academic leadership
+          </small>
+        </span>
+
+        <span class="home-explore-arrow">→</span>
+      </a>
+
+
+      <!-- Education -->
+
+      <a
+        class="home-explore-card home-explore-education"
+        href="{{ '/education/' | relative_url }}"
+      >
+        <span class="home-explore-icon">🎓</span>
+
+        <span class="home-explore-content">
+          <strong>Education</strong>
+          <small>
+            Academic qualifications, degrees, and educational background
+          </small>
+        </span>
+
+        <span class="home-explore-arrow">→</span>
+      </a>
+
+
+      <!-- About -->
+
       <a
         class="home-explore-card home-explore-about"
         href="{{ '/about/' | relative_url }}"
@@ -212,13 +227,15 @@ author_profile: true
         <span class="home-explore-content">
           <strong>About</strong>
           <small>
-            Biography, professional background, and education
+            Biography, professional background, and academic profile
           </small>
         </span>
 
         <span class="home-explore-arrow">→</span>
       </a>
 
+
+      <!-- Contact -->
 
       <a
         class="home-explore-card home-explore-contact"
@@ -250,9 +267,9 @@ author_profile: true
     <i class="fas fa-lightbulb" aria-hidden="true"></i>
 
     <p>
-      Current academic interests emphasize responsible applications of emerging
-      technologies in accounting, governance, financial transparency, scholarly
-      communication, and research visibility.
+      Current academic interests include emerging technologies in accounting,
+      blockchain &amp; distributed ledger systems, financial transparency,
+      scholarly communication, and research visibility.
     </p>
 
   </section>
