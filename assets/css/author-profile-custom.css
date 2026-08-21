@@ -1,0 +1,273 @@
+/* =========================================================
+   CUSTOM AUTHOR SIDEBAR
+   Prof. Dr. Alim Al Ayub Ahmed
+   ========================================================= */
+
+.custom-author-profile,
+.custom-author-profile * {
+  box-sizing:border-box;
+}
+
+
+/* =========================================================
+   AUTHOR PHOTO
+   ========================================================= */
+
+.custom-author-profile .author__avatar {
+  margin-bottom:.85rem;
+}
+
+
+/* =========================================================
+   COMMON CARD STYLE
+   ========================================================= */
+
+.sidebar-profile-card {
+  width:100%;
+  margin:0 0 .65rem;
+  padding:.72rem .78rem;
+  border:1px solid #d9e2ea;
+  border-radius:8px;
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    border-color .2s ease,
+    background .2s ease;
+}
+
+
+/* =========================================================
+   CARD 01: NAME & BIO
+   ========================================================= */
+
+.sidebar-profile-card--bio {
+  border-color:#d7e1ea;
+  background:#fbfcfd;
+}
+
+.sidebar-profile-card--bio:hover {
+  transform:translateY(-2px);
+  border-color:#9ebbd2;
+  background:#f6fafd;
+  box-shadow:0 5px 14px rgba(32,72,105,.08);
+}
+
+.custom-author-content {
+  margin:0;
+  padding:0;
+}
+
+.custom-author-content .author__name {
+  margin:0 0 .55rem;
+  padding:0;
+  font-size:1.12rem;
+  line-height:1.28;
+  color:#374552;
+}
+
+.custom-author-content .author__bio {
+  margin:0;
+  font-size:.83rem;
+  line-height:1.52;
+  color:#505b65;
+}
+
+
+/* =========================================================
+   AUTHOR LINKS WRAPPER
+   ========================================================= */
+
+.custom-author-links-wrapper {
+  width:100%;
+}
+
+.custom-author-links {
+  display:block;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+
+/* =========================================================
+   CARD 02: PROFESSIONAL CONTACT
+   ========================================================= */
+
+.sidebar-profile-card--contact {
+  border-color:#d7e5dd;
+  background:#fbfdfc;
+}
+
+.sidebar-profile-card--contact:hover {
+  transform:translateY(-2px);
+  border-color:#9fc4ad;
+  background:#f5faf7;
+  box-shadow:0 5px 14px rgba(55,105,76,.09);
+}
+
+
+/* =========================================================
+   CARD 03: ACADEMIC PROFILES
+   ========================================================= */
+
+.sidebar-profile-card--academic {
+  border-color:#d8e0ef;
+  background:#fbfcff;
+}
+
+.sidebar-profile-card--academic:hover {
+  transform:translateY(-2px);
+  border-color:#9fb5dc;
+  background:#f6f8fd;
+  box-shadow:0 5px 14px rgba(42,74,128,.09);
+}
+
+
+/* =========================================================
+   SIDEBAR LIST
+   Reduced vertical spacing
+   ========================================================= */
+
+.sidebar-profile-list {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.sidebar-profile-list li {
+  display:flex;
+  align-items:center;
+  min-height:27px;
+  margin:0;
+  padding:.13rem 0;
+  font-size:.82rem;
+  line-height:1.25;
+  color:#50585f;
+}
+
+.sidebar-profile-list li + li {
+  margin-top:.08rem;
+}
+
+.sidebar-profile-list li > a {
+  display:flex;
+  align-items:center;
+  width:100%;
+  min-width:0;
+  color:#50585f;
+  text-decoration:none;
+  transition:color .16s ease, transform .16s ease;
+}
+
+.sidebar-profile-list li > a:hover {
+  color:#1f5f99;
+  text-decoration:none;
+  transform:translateX(2px);
+}
+
+
+/* =========================================================
+   ICON COLUMN
+   ========================================================= */
+
+.sidebar-item-icon {
+  flex:0 0 25px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-start;
+  width:25px;
+  height:18px;
+  margin:0;
+  font-size:.82rem;
+  line-height:1;
+}
+
+.sidebar-item-icon i {
+  margin:0;
+  padding:0;
+}
+
+
+/* =========================================================
+   CUSTOM IMAGE ICONS
+   SCOPUS + WEB OF SCIENCE
+   ========================================================= */
+
+.sidebar-item-icon--image {
+  align-items:center;
+}
+
+.sidebar-item-icon--image img {
+  display:block !important;
+  width:16px !important;
+  height:16px !important;
+  min-width:16px !important;
+  min-height:16px !important;
+  max-width:16px !important;
+  max-height:16px !important;
+  margin:0 !important;
+  padding:0 !important;
+  border:0 !important;
+  border-radius:50% !important;
+  object-fit:cover !important;
+}
+
+
+/* =========================================================
+   ITEM TEXT
+   ========================================================= */
+
+.sidebar-item-text {
+  display:block;
+  min-width:0;
+}
+
+
+/* =========================================================
+   BRAND ICON COLORS
+   ========================================================= */
+
+.sidebar-profile-list .fa-whatsapp {
+  color:#4f6f61;
+}
+
+.sidebar-profile-list .ai-google-scholar {
+  color:#4c5963;
+}
+
+.sidebar-profile-list .ai-orcid {
+  color:#a6ce39;
+}
+
+.sidebar-profile-list .fa-github {
+  color:#444c53;
+}
+
+.sidebar-profile-list .fa-linkedin {
+  color:#0077b5;
+}
+
+
+/* =========================================================
+   MOBILE / FOLLOW BUTTON
+   ========================================================= */
+
+@media (max-width:1024px) {
+
+  .sidebar-profile-card {
+    margin-bottom:.6rem;
+  }
+
+}
+
+@media (max-width:768px) {
+
+  .sidebar-profile-card {
+    padding:.68rem .72rem;
+  }
+
+  .sidebar-profile-list li {
+    min-height:26px;
+  }
+
+}
