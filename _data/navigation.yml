@@ -1,8 +1,11 @@
 # Main navigation for Prof. Dr. Alim Al Ayub Ahmed
 
 main:
-  - title: "About"
+  - title: "Home"
     url: /
+
+  - title: "About"
+    url: /about/
 
   - title: "Research"
     url: /research/
@@ -16,8 +19,8 @@ main:
   - title: "Academic Service"
     url: /academic-service/
 
-  - title: "CV"
-    url: /cv/
+  - title: "Gallery"
+    url: /gallery/
 
   - title: "Contact"
     url: /contact/
