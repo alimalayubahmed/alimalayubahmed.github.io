@@ -27,7 +27,7 @@
 
 
 /* =========================================================
-   SECTIONS
+   SECTION HEADINGS
    ========================================================= */
 
 .as-section {
@@ -213,7 +213,7 @@
 
 .review-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 82px 150px;
+  grid-template-columns: minmax(0, 1fr) 82px 160px;
   align-items: center;
   gap: 9px;
   min-height: 53px;
@@ -279,12 +279,6 @@
   border: 1px solid #b9dbc9;
 }
 
-.certificate-proof {
-  color: #745711;
-  background: #fff7e1;
-  border: 1px solid #dfc77e;
-}
-
 .public-proof {
   color: #2457a7;
   background: #edf4fb;
@@ -299,13 +293,26 @@
 
 
 /* =========================================================
-   SMALL PROOF BUTTON
+   CERTIFICATE BUTTON
    ========================================================= */
 
-.mini-proof-btn {
+.mini-proof-btn,
+.training-btn,
+.conference-record-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  transition:
+    background-color .18s ease,
+    color .18s ease,
+    border-color .18s ease,
+    transform .18s ease,
+    box-shadow .18s ease;
+}
+
+.mini-proof-btn {
   padding: 5px 8px;
   color: #2457a7 !important;
   background: #edf4fb;
@@ -313,12 +320,7 @@
   border-radius: 6px;
   font-size: .63em;
   font-weight: 750;
-  text-decoration: none !important;
-  transition:
-    background-color .18s ease,
-    color .18s ease,
-    border-color .18s ease,
-    transform .18s ease;
+  white-space: nowrap;
 }
 
 .mini-proof-btn:hover,
@@ -483,7 +485,6 @@
 }
 
 .conference-record-btn {
-  display: inline-flex;
   padding: 4px 7px;
   color: #2457a7 !important;
   background: #edf4fb;
@@ -491,7 +492,6 @@
   border-radius: 5px;
   font-size: .61em;
   font-weight: 700;
-  text-decoration: none !important;
 }
 
 .conference-record-btn:hover,
@@ -546,7 +546,7 @@
 
 
 /* =========================================================
-   MEMBERSHIPS
+   MEMBERSHIP
    ========================================================= */
 
 .membership-grid {
@@ -608,6 +608,87 @@
   color: #626d77;
   font-size: .68em;
   line-height: 1.37;
+}
+
+
+/* =========================================================
+   TRAINING
+   ========================================================= */
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.training-card {
+  padding: 15px 16px;
+  background: #ffffff;
+  border: 1.5px solid #ccd4dc;
+  border-top: 4px solid #6742b8;
+  border-radius: 10px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, .05);
+  transition:
+    transform .18s ease,
+    border-color .18s ease,
+    box-shadow .18s ease;
+}
+
+.training-card:hover {
+  transform: translateY(-2px);
+  border-color: #a795d0;
+  box-shadow: 0 6px 14px rgba(80, 55, 150, .10);
+}
+
+.training-provider {
+  margin-bottom: 5px;
+  color: #6742b8;
+  font-size: .67em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+}
+
+.training-card h3 {
+  margin: 0;
+  color: #33404c;
+  font-size: .82em;
+  line-height: 1.38;
+}
+
+.training-meta {
+  margin-top: 5px;
+}
+
+.training-meta span {
+  color: #78838d;
+  font-size: .65em;
+  font-weight: 600;
+}
+
+.training-card p {
+  margin: 8px 0 10px;
+  color: #65707a;
+  font-size: .68em;
+  line-height: 1.48;
+}
+
+.training-btn {
+  padding: 5px 9px;
+  color: #6742b8 !important;
+  background: #f4f0fb;
+  border: 1px solid #cfc2e9;
+  border-radius: 6px;
+  font-size: .64em;
+  font-weight: 750;
+}
+
+.training-btn:hover,
+.training-btn:focus {
+  color: #ffffff !important;
+  background: #6742b8;
+  border-color: #6742b8;
+  transform: translateY(-1px);
 }
 
 
@@ -702,7 +783,7 @@
 
 
 /* =========================================================
-   HOVER
+   GENERAL HOVER
    ========================================================= */
 
 .editorial-row:not(.editorial-head),
@@ -748,6 +829,7 @@
 
   .conference-featured-grid,
   .membership-grid,
+  .training-grid,
   .scholarly-grid {
     grid-template-columns: 1fr;
   }
@@ -779,7 +861,6 @@
     padding: 4px 12px;
   }
 
-
   .review-row {
     grid-template-columns: 1fr auto;
   }
@@ -793,7 +874,6 @@
     grid-column: 1 / -1;
     text-align: left;
   }
-
 
   .leadership-row {
     grid-template-columns: 1fr;
