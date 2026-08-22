@@ -1,0 +1,119 @@
+/* =========================================================
+   GALLERY PAGE
+   Prof. Dr. Alim Al Ayub Ahmed
+   ========================================================= */
+
+.gallery-page { width:100%; max-width:855px; margin:0; padding:0 0 1.3rem; color:#34414d; box-sizing:border-box; }
+.gallery-page *,.gallery-page *::before,.gallery-page *::after { box-sizing:border-box; }
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.gallery-intro { display:flex; align-items:flex-start; gap:.72rem; margin:0 0 1rem; padding:.9rem 1rem; border:1px solid #d5e1eb; border-left:5px solid #2457a7; border-radius:10px; background:linear-gradient(135deg,#f6faff 0%,#fff 78%); box-shadow:0 3px 10px rgba(32,65,95,.05); }
+.gallery-intro-icon { flex:0 0 39px; display:flex; align-items:center; justify-content:center; width:39px; height:39px; border-radius:9px; background:#eaf3fb; color:#2457a7; font-size:.88rem; }
+.gallery-intro-content { flex:1; min-width:0; }
+.gallery-intro h2 { margin:0 0 .25rem; padding:0; border:0; color:#234765; font-size:.95rem; line-height:1.3; }
+.gallery-intro p { margin:0; color:#5c6873; font-size:.72rem; line-height:1.5; }
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.gallery-section { margin:0 0 1rem; padding:.85rem .9rem .9rem; border:1px solid #d9e2ea; border-radius:10px; background:#fff; box-shadow:0 2px 8px rgba(25,55,85,.035); }
+.gallery-section-heading { margin:0 0 .68rem; padding:0 0 .45rem; border-bottom:1px solid #dde5ec; }
+.gallery-section-heading h2 { margin:0 0 .12rem; padding:0; border:0; color:#294a65; font-size:.86rem; line-height:1.3; }
+.gallery-section-heading p { margin:0; color:#74808a; font-size:.66rem; line-height:1.4; }
+
+
+/* =========================================================
+   GALLERY GRID
+   ========================================================= */
+
+.gallery-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.68rem; }
+.gallery-card { overflow:hidden; margin:0; border:1px solid #dce4eb; border-radius:9px; background:#fff; box-shadow:0 2px 7px rgba(25,55,85,.045); transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
+.gallery-card:hover { transform:translateY(-3px); border-color:#a3bfd5; box-shadow:0 6px 15px rgba(36,87,167,.09); }
+.gallery-card-wide { grid-column:span 2; }
+.gallery-card-featured { border-left:4px solid #b47b19; }
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.gallery-image-button { display:block; width:100%; margin:0; padding:0; border:0; background:#eef2f5; cursor:zoom-in; overflow:hidden; }
+.gallery-image-button img { display:block; width:100%; height:175px; margin:0; object-fit:cover; transition:transform .28s ease,filter .28s ease; }
+.gallery-card-wide .gallery-image-button img { height:250px; }
+.gallery-image-button:hover img { transform:scale(1.035); filter:brightness(.96); }
+
+
+/* =========================================================
+   CAPTION
+   ========================================================= */
+
+.gallery-card figcaption { padding:.52rem .58rem .58rem; }
+.gallery-card figcaption strong { display:block; margin:0 0 .13rem; color:#304e67; font-size:.68rem; line-height:1.3; }
+.gallery-card figcaption span { display:block; color:#727d86; font-size:.59rem; line-height:1.4; }
+
+
+/* =========================================================
+   SECTION COLOR ACCENTS
+   ========================================================= */
+
+.gallery-section:nth-of-type(2) { border-left:4px solid #2457a7; }
+.gallery-section:nth-of-type(3) { border-left:4px solid #6957a5; }
+.gallery-section:nth-of-type(4) { border-left:4px solid #16848a; }
+.gallery-section:nth-of-type(5) { border-left:4px solid #b47b19; }
+
+
+/* =========================================================
+   GALLERY NOTE
+   ========================================================= */
+
+.gallery-note { display:flex; align-items:flex-start; gap:.48rem; padding:.65rem .75rem; border:1px solid #e0e7ed; border-radius:8px; background:#f5f8fb; color:#5d6974; }
+.gallery-note i { margin-top:.13rem; color:#2457a7; font-size:.68rem; }
+.gallery-note p { margin:0; font-size:.63rem; line-height:1.42; }
+
+
+/* =========================================================
+   LIGHTBOX
+   ========================================================= */
+
+.gallery-lightbox { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; padding:2rem; background:rgba(15,25,35,.88); opacity:0; visibility:hidden; z-index:9999; transition:opacity .2s ease,visibility .2s ease; }
+.gallery-lightbox.is-open { opacity:1; visibility:visible; }
+.gallery-lightbox-inner { width:auto; max-width:1100px; max-height:92vh; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.gallery-lightbox img { display:block; max-width:100%; max-height:82vh; width:auto; height:auto; border-radius:7px; box-shadow:0 8px 30px rgba(0,0,0,.35); }
+.gallery-lightbox-caption { max-width:900px; margin-top:.6rem; color:#f3f5f7; font-size:.7rem; line-height:1.4; text-align:center; }
+.gallery-lightbox-close { position:absolute; top:18px; right:24px; width:38px; height:38px; padding:0; border:1px solid rgba(255,255,255,.28); border-radius:50%; background:rgba(0,0,0,.25); color:#fff; font-size:1.5rem; line-height:1; cursor:pointer; transition:background .18s ease,transform .18s ease; }
+.gallery-lightbox-close:hover { background:rgba(255,255,255,.18); transform:scale(1.05); }
+.gallery-lightbox-open { overflow:hidden; }
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width:768px) {
+  .gallery-page { max-width:100%; }
+  .gallery-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .gallery-card-wide { grid-column:span 2; }
+  .gallery-card:hover { transform:none; }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width:520px) {
+  .gallery-intro { gap:.55rem; padding:.75rem; }
+  .gallery-intro-icon { flex-basis:34px; width:34px; height:34px; }
+  .gallery-section { padding:.7rem; }
+  .gallery-grid { grid-template-columns:1fr; gap:.6rem; }
+  .gallery-card-wide { grid-column:span 1; }
+  .gallery-image-button img,.gallery-card-wide .gallery-image-button img { height:auto; max-height:none; object-fit:contain; }
+  .gallery-lightbox { padding:1rem; }
+  .gallery-lightbox-close { top:10px; right:12px; }
+}
