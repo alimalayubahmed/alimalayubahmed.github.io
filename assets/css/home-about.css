@@ -191,3 +191,32 @@
   .home-btn { width:100%; }
   .about-card { gap:.48rem; padding:.65rem; }
 }
+/* =========================================================
+   INTRODUCTION VIDEO PAGE
+   ========================================================= */
+
+.intro-video-page { width:100%; margin:0; padding:0 0 1.3rem; box-sizing:border-box; }
+
+.intro-video-card { max-width:855px; margin:0; padding:1rem 1.1rem 1.05rem; border:1px solid #d6e1ea; border-left:5px solid #2457a7; border-radius:10px; background:#fff; box-shadow:0 3px 10px rgba(32,65,95,.055); }
+
+.intro-video-heading { margin:0 0 .8rem; }
+
+.intro-video-heading h2 { margin:0 0 .18rem; padding:0; border:0; color:#234765; font-size:1rem; line-height:1.3; }
+
+.intro-video-heading p { margin:0; color:#66727d; font-size:.73rem; line-height:1.45; }
+
+.intro-video-player-wrap { width:100%; overflow:hidden; border:1px solid #d5dee7; border-radius:9px; background:#000; box-shadow:0 4px 12px rgba(0,0,0,.08); }
+
+.intro-video-player { display:block; width:100%; height:auto; max-height:560px; background:#000; }
+
+.intro-video-actions { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.8rem; }
+
+@media (max-width:768px) {
+  .intro-video-card { max-width:100%; }
+}
+
+@media (max-width:520px) {
+  .intro-video-card { padding:.8rem; }
+  .intro-video-heading h2 { font-size:.92rem; }
+  .intro-video-heading p { font-size:.7rem; }
+}
