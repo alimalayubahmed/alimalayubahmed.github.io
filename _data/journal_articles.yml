@@ -12,11 +12,13 @@
 # - ABDC ratings may reflect the applicable historical
 #   Journal Quality List for the publication period.
 #
-# ARTICLE LINK POLICY
+# ARTICLE LINK PRIORITY
 # ----------------------------------------------------------
-# - DOI URL is preferred whenever available.
-# - If a DOI is unavailable, an available publisher/article/
-#   repository URL is used.
+# 1. DOI URL, whenever available
+# 2. HAL record, when DOI is unavailable
+# 3. Official journal/publisher article page
+# 4. ResearchGate
+# 5. Other reliable available source
 #
 # Supported labels:
 # SSCI, SCIE, ESCI, AHCI, Scopus,
@@ -28,7 +30,7 @@
   journal: "American Digits: Journal of Computing and Digital Technologies"
   year: 2026
   authors: "Alim Al Ayub Ahmed; Md. Nur-E-Alam Siddique"
-  url: "https://www.researchgate.net/publication/406847839"
+  url: "https://hal.science/hal-05652606"
   indexes: []
 
 
@@ -159,7 +161,9 @@
   year: 2022
   authors: "Alim Al Ayub Ahmed"
   url: "https://doi.org/10.1504/IJIPM.2022.124636"
-  indexes: []
+  indexes:
+    - Scopus
+    - ABDC C
 
 
 - title: "Investigating the Effect of Using Game-Based Learning on EFL Learners’ Motivation and Anxiety"
@@ -568,7 +572,7 @@
   journal: "Industrial Engineering & Management Systems"
   year: 2021
   authors: "Dadang Mohamad; Alim Al Ayub Ahmed; Gunawan Widjaja; Tawfeeq Alghazali; John William Grimaldo Guerrero; Irina Fardeeva; Alireza Hasanzadeh"
-  url: ""
+  url: "https://doi.org/10.7232/iems.2021.20.4.613"
   indexes:
     - Scopus
 
