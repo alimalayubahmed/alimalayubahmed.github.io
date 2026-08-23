@@ -13,10 +13,18 @@
 
 
 /* =========================================================
+   PUBLICATIONS PAGE WIDTH
+   Match one publication category card
+   ========================================================= */
+
+body:has(.publication-hub-grid) .scholarly-profiles { width:calc(50% - .35rem); max-width:calc(50% - .35rem); }
+
+
+/* =========================================================
    PROFILE LOGO GRID
    ========================================================= */
 
-.scholarly-profile-icons { display:grid; grid-template-columns:repeat(10,44px); justify-content:start; align-items:center; column-gap:.62rem; row-gap:.38rem; }
+.scholarly-profile-icons { display:grid; grid-template-columns:repeat(5,44px); justify-content:start; align-items:center; column-gap:.62rem; row-gap:.38rem; }
 
 
 /* =========================================================
@@ -31,28 +39,43 @@
 
 
 /* =========================================================
+   RESEARCH PAGE
+   Keep full width
+   ========================================================= */
+
+.research-page .scholarly-profiles { width:100%; max-width:100%; }
+
+.research-page .scholarly-profile-icons { grid-template-columns:repeat(10,44px); }
+
+
+/* =========================================================
    RESPONSIVE
    ========================================================= */
 
 @media (max-width:1000px) {
-  .scholarly-profile-icons { grid-template-columns:repeat(8,44px); }
+  .research-page .scholarly-profile-icons { grid-template-columns:repeat(8,44px); }
 }
 
 @media (max-width:820px) {
+  .research-page .scholarly-profile-icons { grid-template-columns:repeat(6,44px); }
+}
+
+@media (max-width:768px) {
+  body:has(.publication-hub-grid) .scholarly-profiles { width:100%; max-width:100%; }
   .scholarly-profile-icons { grid-template-columns:repeat(6,44px); }
 }
 
 @media (max-width:650px) {
-  .scholarly-profile-icons { grid-template-columns:repeat(5,42px); column-gap:.4rem; row-gap:.36rem; }
+  .scholarly-profile-icons,.research-page .scholarly-profile-icons { grid-template-columns:repeat(5,42px); column-gap:.4rem; row-gap:.36rem; }
   .scholarly-profile-logo { width:42px; height:42px; }
 }
 
 @media (max-width:520px) {
   .scholarly-profiles { padding:.72rem .75rem; }
-  .scholarly-profile-icons { grid-template-columns:repeat(4,40px); column-gap:.35rem; row-gap:.34rem; }
+  .scholarly-profile-icons,.research-page .scholarly-profile-icons { grid-template-columns:repeat(4,40px); column-gap:.35rem; row-gap:.34rem; }
   .scholarly-profile-logo { width:40px; height:40px; }
 }
 
 @media (max-width:380px) {
-  .scholarly-profile-icons { grid-template-columns:repeat(3,40px); }
+  .scholarly-profile-icons,.research-page .scholarly-profile-icons { grid-template-columns:repeat(3,40px); }
 }
