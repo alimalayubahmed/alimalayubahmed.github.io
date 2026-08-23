@@ -12,13 +12,9 @@
    ========================================================= */
 
 .research-hero { display:flex; align-items:flex-start; gap:.8rem; margin:0 0 1rem; padding:1rem 1.1rem; border:1px solid #d3e0eb; border-left:5px solid #2457a7; border-radius:10px; background:linear-gradient(135deg,#f5faff 0%,#fff 75%); box-shadow:0 3px 10px rgba(32,65,95,.055); }
-
 .research-hero-icon { flex:0 0 42px; display:flex; align-items:center; justify-content:center; width:42px; height:42px; border-radius:9px; background:#eaf3fb; color:#2457a7; font-size:.95rem; }
-
 .research-hero-content { flex:1; min-width:0; }
-
 .research-hero h2 { margin:0 0 .32rem; padding:0; border:0; color:#214765; font-size:1rem; line-height:1.3; }
-
 .research-hero p { margin:0; color:#53616d; font-size:.76rem; line-height:1.55; }
 
 
@@ -27,11 +23,8 @@
    ========================================================= */
 
 .research-section { margin:0 0 1rem; padding:.9rem 1rem; border:1px solid #d9e2ea; border-radius:10px; background:#fff; box-shadow:0 2px 8px rgba(25,55,85,.04); }
-
 .research-section-heading { margin:0 0 .72rem; padding:0 0 .48rem; border-bottom:1px solid #dde5ec; }
-
 .research-section-heading h2 { margin:0 0 .15rem; padding:0; border:0; color:#294a65; font-size:.9rem; line-height:1.3; }
-
 .research-section-heading p { margin:0; color:#687580; font-size:.69rem; line-height:1.45; }
 
 
@@ -40,17 +33,11 @@
    ========================================================= */
 
 .research-area-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.55rem; }
-
 .research-area-card { display:flex; align-items:flex-start; gap:.55rem; min-height:78px; padding:.65rem .72rem; border:1px solid #dce4eb; border-left:4px solid #4e7fa9; border-radius:8px; background:#fbfdff; transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease; }
-
 .research-area-card:hover { transform:translateY(-2px); border-color:#9dbbd3; background:#f4f9fd; box-shadow:0 4px 10px rgba(36,87,167,.07); }
-
 .research-area-icon { flex:0 0 30px; display:flex; align-items:center; justify-content:center; width:30px; height:30px; border-radius:50%; background:#eef4f8; font-size:.85rem; }
-
 .research-area-card div { flex:1; min-width:0; }
-
 .research-area-card strong { display:block; margin:0 0 .12rem; color:#304e67; font-size:.73rem; line-height:1.28; }
-
 .research-area-card small { display:block; color:#707b85; font-size:.62rem; line-height:1.38; }
 
 
@@ -59,17 +46,13 @@
    ========================================================= */
 
 .research-lab-card { display:flex; align-items:center; gap:.85rem; margin:0 0 .65rem; padding:.72rem .78rem; border:1px solid #dce4eb; border-left:4px solid #16848a; border-radius:9px; background:#fafcfd; transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease; }
-
 .research-lab-card:last-child { margin-bottom:0; }
-
 .research-lab-card:hover { transform:translateX(3px); border-color:#91bfc2; background:#f4fbfb; box-shadow:0 4px 10px rgba(22,132,138,.07); }
 
-.research-lab-logo { flex:0 0 76px; width:76px; height:76px; object-fit:cover; border:2px solid #fff; border-radius:50%; box-shadow:0 0 0 1px #b9cbd8,0 3px 8px rgba(0,0,0,.10); }
+.research-lab-logo { flex:0 0 76px; width:76px; height:76px; aspect-ratio:1/1; object-fit:contain; object-position:center; border:2px solid #fff; border-radius:50%; background:#fff; box-shadow:0 0 0 1px #b9cbd8,0 3px 8px rgba(0,0,0,.10); }
 
 .research-lab-content { flex:1; min-width:0; }
-
 .research-lab-content h3 { margin:0 0 .22rem; color:#245b70; font-size:.78rem; line-height:1.38; }
-
 .research-lab-content p { margin:0 0 .42rem; color:#66727d; font-size:.66rem; line-height:1.45; }
 
 
@@ -78,7 +61,6 @@
    ========================================================= */
 
 .research-link-button { display:inline-flex; align-items:center; justify-content:center; padding:.34rem .58rem; border:1px solid #9ebbd2; border-radius:5px; background:#f3f8fc; color:#2457a7 !important; font-size:.63rem; font-weight:700; line-height:1.15; text-decoration:none !important; transition:transform .18s ease,background .18s ease,border-color .18s ease,color .18s ease; }
-
 .research-link-button:hover { transform:translateY(-1px); border-color:#2457a7; background:#2457a7; color:#fff !important; }
 
 
@@ -87,13 +69,9 @@
    ========================================================= */
 
 .research-directions-section { border-left:4px solid #6957a5; }
-
 .research-direction-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.42rem .65rem; }
-
 .research-direction-item { display:flex; align-items:flex-start; gap:.48rem; padding:.42rem .5rem; border-radius:6px; background:#faf9fd; }
-
 .research-direction-item span { flex:0 0 25px; display:flex; align-items:center; justify-content:center; width:25px; height:25px; border-radius:50%; background:#eeeaf7; color:#6957a5; font-size:.57rem; font-weight:700; }
-
 .research-direction-item p { margin:.12rem 0 0; color:#56626d; font-size:.66rem; line-height:1.38; }
 
 
@@ -102,33 +80,19 @@
    ========================================================= */
 
 .research-outreach-section { border-left:4px solid #1a8917; }
-
 .medium-series-heading { display:flex; align-items:center; gap:.55rem; margin:0 0 .62rem; padding:.55rem .62rem; border:1px solid #dce5dc; border-radius:7px; background:#f7fbf7; }
-
 .medium-series-icon { flex:0 0 31px; display:flex; align-items:center; justify-content:center; width:31px; height:31px; border-radius:50%; background:#111; color:#fff; font-family:Georgia,serif; font-size:.86rem; font-weight:700; }
-
 .medium-series-heading div:last-child { display:flex; flex-direction:column; }
-
 .medium-series-heading strong { color:#364d3b; font-size:.72rem; line-height:1.25; }
-
 .medium-series-heading span { margin-top:.05rem; color:#778179; font-size:.61rem; }
-
 .medium-article-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.38rem .5rem; }
-
 .medium-article { display:flex; align-items:center; gap:.45rem; min-height:48px; padding:.42rem .5rem; border:1px solid #dfe5e0; border-radius:7px; background:#fff; color:#46534a !important; text-decoration:none !important; transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease; }
-
 .medium-article:hover { transform:translateY(-1px); border-color:#93b891; background:#f7fbf7; box-shadow:0 3px 8px rgba(40,100,45,.06); text-decoration:none !important; }
-
 .medium-number { flex:0 0 24px; color:#1a8917; font-size:.56rem; font-weight:700; }
-
 .medium-title { flex:1; min-width:0; color:#46534a; font-size:.63rem; line-height:1.35; }
-
 .medium-arrow { flex:0 0 auto; color:#1a8917; font-size:.72rem; }
-
 .medium-profile-row { margin-top:.62rem; }
-
 .medium-profile-button { border-color:#8eb88c; background:#f5fbf5; color:#187615 !important; }
-
 .medium-profile-button:hover { border-color:#187615; background:#187615; color:#fff !important; }
 
 
@@ -137,15 +101,10 @@
    ========================================================= */
 
 .research-development-card { display:flex; align-items:flex-start; gap:.65rem; padding:.75rem .85rem; border:1px solid #d8e2eb; border-left:4px solid #b47b19; border-radius:9px; background:#fffdf8; }
-
 .research-development-icon { flex:0 0 34px; display:flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:8px; background:#fff3da; color:#9a6811; font-size:.78rem; }
-
 .research-development-card div:last-child { flex:1; min-width:0; }
-
 .research-development-card h2 { margin:0 0 .28rem; padding:0; border:0; color:#655126; font-size:.8rem; line-height:1.3; }
-
 .research-development-card p { margin:0 0 .3rem; color:#65635b; font-size:.67rem; line-height:1.45; }
-
 .research-development-card p:last-child { margin-bottom:0; }
 
 
@@ -167,48 +126,31 @@
   .research-lab-logo { flex-basis:62px; width:62px; height:62px; }
   .research-development-card { padding:.7rem; }
 }
+
+
 /* =========================================================
    RESEARCH RECOGNITION & PROJECT EXPERIENCE
    ========================================================= */
 
 .research-recognition-section { border-left:4px solid #b47b19; }
-
 .recognition-card { display:flex; align-items:flex-start; gap:.72rem; margin:0 0 .65rem; padding:.72rem .8rem; border:1px solid #dde3e8; border-radius:9px; background:#fff; transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease; }
-
 .recognition-card:last-child { margin-bottom:0; }
-
 .recognition-card:hover { transform:translateY(-2px); box-shadow:0 5px 12px rgba(35,60,85,.07); }
-
 .recognition-ad { border-left:4px solid #b47b19; background:#fffdf8; }
-
 .recognition-ad:hover { border-color:#d1ae6b; background:#fffcf5; }
-
 .recognition-project { border-left:4px solid #2878b8; background:#f9fcff; }
-
 .recognition-project:hover { border-color:#8fb5d5; background:#f4f9fd; }
-
 .recognition-icon { flex:0 0 38px; display:flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:9px; background:#f3f5f7; font-size:.95rem; }
-
 .recognition-ad .recognition-icon { background:#fff2d8; }
-
 .recognition-project .recognition-icon { background:#eaf4fb; }
-
 .recognition-content { flex:1; min-width:0; }
-
 .recognition-label { display:inline-block; margin:0 0 .15rem; color:#7b8791; font-size:.57rem; font-weight:700; line-height:1.2; text-transform:uppercase; letter-spacing:.045em; }
-
 .recognition-content h3 { margin:0 0 .28rem; color:#314b61; font-size:.78rem; line-height:1.35; }
-
 .recognition-content p { margin:0 0 .48rem; color:#626e78; font-size:.66rem; line-height:1.48; }
-
 .recognition-buttons { display:flex; flex-wrap:wrap; gap:.35rem; }
-
 .recognition-btn { display:inline-flex; align-items:center; justify-content:center; gap:.22rem; padding:.32rem .52rem; border:1px solid #c9ae73; border-radius:5px; background:#fff8e9; color:#795813 !important; font-size:.6rem; font-weight:700; line-height:1.15; text-decoration:none !important; transition:transform .18s ease,background .18s ease,border-color .18s ease,color .18s ease; }
-
 .recognition-btn:hover { transform:translateY(-1px); border-color:#9a711c; background:#9a711c; color:#fff !important; }
-
 .recognition-external-btn { border-color:#9dbbd3; background:#f2f8fc; color:#2457a7 !important; }
-
 .recognition-external-btn:hover { border-color:#2457a7; background:#2457a7; color:#fff !important; }
 
 @media (max-width:768px) {
