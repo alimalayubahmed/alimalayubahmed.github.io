@@ -24,10 +24,10 @@ author_profile: true
       <h2>Peer-Reviewed Journal Articles</h2>
 
       <p>
-        Selected and complete journal publications across accounting, financial
-        reporting, corporate disclosure, artificial intelligence, machine learning,
-        blockchain, business analytics, engineering, education, sustainability,
-        and interdisciplinary research.
+        Journal publications across accounting, financial reporting, corporate
+        disclosure, artificial intelligence, machine learning, blockchain,
+        business analytics, engineering, education, sustainability, and
+        interdisciplinary research.
       </p>
 
       <div class="journal-articles-hero-actions">
@@ -39,7 +39,7 @@ author_profile: true
           rel="noopener noreferrer"
         >
           <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-          Google Scholar ↗
+          Google Scholar Profile ↗
         </a>
 
         <a
@@ -57,7 +57,7 @@ author_profile: true
 
 
   <!-- =====================================================
-       INDEXING LEGEND
+       INDEXING & RANKING INFORMATION
        ===================================================== -->
 
   <section class="journal-indexing-note">
@@ -71,9 +71,16 @@ author_profile: true
       <h2>Indexing &amp; Journal Recognition</h2>
 
       <p>
-        Indexing labels are displayed only where relevant verification has been
-        recorded. The absence of a badge does not necessarily indicate that an
-        article or journal is not indexed.
+        Indexing and ranking labels reflect the strongest verified status available
+        for each journal. Current status is used where it represents an improvement,
+        while publication-period status may be retained where subsequent indexing
+        coverage or ranking has been reduced or discontinued.
+      </p>
+
+      <p class="journal-indexing-subnote">
+        ABDC ratings are shown where an applicable journal quality rating has been
+        identified for the relevant publication period. The absence of an indexing
+        badge does not necessarily indicate that an article or journal is not indexed.
       </p>
 
       <div class="journal-index-legend">
@@ -82,7 +89,10 @@ author_profile: true
         <span class="journal-badge badge-esci">ESCI</span>
         <span class="journal-badge badge-ahci">AHCI</span>
         <span class="journal-badge badge-scopus">Scopus</span>
-        <span class="journal-badge badge-abdc">ABDC</span>
+        <span class="journal-badge badge-abdc-star">ABDC A*</span>
+        <span class="journal-badge badge-abdc-a">ABDC A</span>
+        <span class="journal-badge badge-abdc-b">ABDC B</span>
+        <span class="journal-badge badge-abdc-c">ABDC C</span>
       </div>
 
     </div>
@@ -161,6 +171,8 @@ author_profile: true
 
           {% for article in year_group.items %}
 
+            {% assign scholar_query = article.title | uri_escape %}
+
             <article class="journal-article-card">
 
               <div class="journal-article-number">
@@ -195,6 +207,10 @@ author_profile: true
                 </div>
 
 
+                <!-- =================================================
+                     INDEXING BADGES
+                     ================================================= -->
+
                 {% if article.indexes and article.indexes.size > 0 %}
 
                   <div class="journal-indexes">
@@ -204,25 +220,71 @@ author_profile: true
                       {% assign index_lower = index | downcase %}
 
                       {% if index_lower == "ssci" %}
-                        <span class="journal-badge badge-ssci">SSCI</span>
+
+                        <span class="journal-badge badge-ssci">
+                          SSCI
+                        </span>
 
                       {% elsif index_lower == "scie" %}
-                        <span class="journal-badge badge-scie">SCIE</span>
+
+                        <span class="journal-badge badge-scie">
+                          SCIE
+                        </span>
 
                       {% elsif index_lower == "esci" %}
-                        <span class="journal-badge badge-esci">ESCI</span>
+
+                        <span class="journal-badge badge-esci">
+                          ESCI
+                        </span>
 
                       {% elsif index_lower == "ahci" %}
-                        <span class="journal-badge badge-ahci">AHCI</span>
+
+                        <span class="journal-badge badge-ahci">
+                          AHCI
+                        </span>
 
                       {% elsif index_lower == "scopus" %}
-                        <span class="journal-badge badge-scopus">Scopus</span>
+
+                        <span class="journal-badge badge-scopus">
+                          Scopus
+                        </span>
+
+                      {% elsif index_lower == "abdc a*" %}
+
+                        <span class="journal-badge badge-abdc-star">
+                          ABDC A*
+                        </span>
+
+                      {% elsif index_lower == "abdc a" %}
+
+                        <span class="journal-badge badge-abdc-a">
+                          ABDC A
+                        </span>
+
+                      {% elsif index_lower == "abdc b" %}
+
+                        <span class="journal-badge badge-abdc-b">
+                          ABDC B
+                        </span>
+
+                      {% elsif index_lower == "abdc c" %}
+
+                        <span class="journal-badge badge-abdc-c">
+                          ABDC C
+                        </span>
 
                       {% elsif index_lower == "abdc" %}
-                        <span class="journal-badge badge-abdc">ABDC</span>
+
+                        <span class="journal-badge badge-abdc">
+                          ABDC
+                        </span>
 
                       {% else %}
-                        <span class="journal-badge">{{ index }}</span>
+
+                        <span class="journal-badge">
+                          {{ index }}
+                        </span>
+
                       {% endif %}
 
                     {% endfor %}
@@ -232,12 +294,16 @@ author_profile: true
                 {% endif %}
 
 
+                <!-- =================================================
+                     ARTICLE ACTIONS
+                     ================================================= -->
+
                 <div class="journal-actions">
 
                   {% if article.url and article.url != "" %}
 
                     <a
-                      class="journal-action-button"
+                      class="journal-action-button journal-view-button"
                       href="{{ article.url }}"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -247,6 +313,17 @@ author_profile: true
                     </a>
 
                   {% endif %}
+
+
+                  <a
+                    class="journal-action-button journal-scholar-button"
+                    href="https://scholar.google.com/scholar?q={{ scholar_query }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    Google Scholar ↗
+                  </a>
 
 
                   <button
@@ -284,10 +361,10 @@ author_profile: true
     <i class="fas fa-info-circle" aria-hidden="true"></i>
 
     <p>
-      Publication details are compiled from scholarly records, journal and publisher
-      pages, DOI records, and academic profile sources. Where online-first and final
-      issue years differ, bibliographic information may be standardized to the
-      publication record used for citation.
+      Publication details are compiled from journal and publisher records, DOI
+      information, scholarly databases, academic profiles, and other available
+      publication records. DOI links are preferred for article access where
+      available; otherwise an available publication or repository link is provided.
     </p>
 
   </div>
@@ -314,21 +391,49 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      navigator.clipboard.writeText(citation).then(function () {
+      const originalHTML = button.innerHTML;
 
-        const originalText = button.innerHTML;
-
+      function showCopiedState() {
         button.innerHTML =
           '<i class="fas fa-check" aria-hidden="true"></i> Copied';
 
         button.classList.add("is-copied");
 
         setTimeout(function () {
-          button.innerHTML = originalText;
+          button.innerHTML = originalHTML;
           button.classList.remove("is-copied");
         }, 1500);
+      }
 
-      });
+      if (navigator.clipboard && window.isSecureContext) {
+
+        navigator.clipboard.writeText(citation).then(function () {
+          showCopiedState();
+        });
+
+      } else {
+
+        const textArea = document.createElement("textarea");
+        textArea.value = citation;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-9999px";
+        textArea.style.top = "-9999px";
+
+        document.body.appendChild(textArea);
+
+        textArea.focus();
+        textArea.select();
+
+        try {
+          document.execCommand("copy");
+          showCopiedState();
+        } catch (error) {
+          console.error("Citation copy failed:", error);
+        }
+
+        document.body.removeChild(textArea);
+
+      }
 
     });
 
