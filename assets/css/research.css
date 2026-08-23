@@ -49,7 +49,9 @@
 .research-lab-card:last-child { margin-bottom:0; }
 .research-lab-card:hover { transform:translateX(3px); border-color:#91bfc2; background:#f4fbfb; box-shadow:0 4px 10px rgba(22,132,138,.07); }
 
-.research-lab-logo { flex:0 0 76px; width:76px; height:76px; aspect-ratio:1/1; object-fit:contain; object-position:center; border:2px solid #fff; border-radius:50%; background:#fff; box-shadow:0 0 0 1px #b9cbd8,0 3px 8px rgba(0,0,0,.10); }
+.research-lab-logo-wrap { flex:0 0 76px; width:76px; height:76px; min-width:76px; min-height:76px; max-width:76px; max-height:76px; overflow:hidden; border:2px solid #fff; border-radius:50%; background:#fff; box-shadow:0 0 0 1px #b9cbd8,0 3px 8px rgba(0,0,0,.10); }
+
+.research-lab-logo { display:block; width:100% !important; height:100% !important; max-width:none !important; max-height:none !important; margin:0 !important; padding:0 !important; border:0 !important; border-radius:0 !important; object-fit:cover; object-position:center; }
 
 .research-lab-content { flex:1; min-width:0; }
 .research-lab-content h3 { margin:0 0 .22rem; color:#245b70; font-size:.78rem; line-height:1.38; }
@@ -109,26 +111,6 @@
 
 
 /* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media (max-width:768px) {
-  .research-page { max-width:100%; }
-  .research-area-grid,.research-direction-list,.medium-article-list { grid-template-columns:1fr; }
-  .research-area-card:hover,.research-lab-card:hover,.medium-article:hover { transform:none; }
-}
-
-@media (max-width:520px) {
-  .research-hero { gap:.6rem; padding:.8rem; }
-  .research-hero-icon { flex-basis:36px; width:36px; height:36px; }
-  .research-section { padding:.75rem; }
-  .research-lab-card { align-items:flex-start; }
-  .research-lab-logo { flex-basis:62px; width:62px; height:62px; }
-  .research-development-card { padding:.7rem; }
-}
-
-
-/* =========================================================
    RESEARCH RECOGNITION & PROJECT EXPERIENCE
    ========================================================= */
 
@@ -153,11 +135,26 @@
 .recognition-external-btn { border-color:#9dbbd3; background:#f2f8fc; color:#2457a7 !important; }
 .recognition-external-btn:hover { border-color:#2457a7; background:#2457a7; color:#fff !important; }
 
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
 @media (max-width:768px) {
-  .recognition-card:hover { transform:none; }
+  .research-page { max-width:100%; }
+  .research-area-grid,.research-direction-list,.medium-article-list { grid-template-columns:1fr; }
+  .research-area-card:hover,.research-lab-card:hover,.medium-article:hover,.recognition-card:hover { transform:none; }
 }
 
 @media (max-width:520px) {
+  .research-hero { gap:.6rem; padding:.8rem; }
+  .research-hero-icon { flex-basis:36px; width:36px; height:36px; }
+  .research-section { padding:.75rem; }
+  .research-lab-card { align-items:flex-start; }
+
+  .research-lab-logo-wrap { flex:0 0 62px; width:62px; height:62px; min-width:62px; min-height:62px; max-width:62px; max-height:62px; }
+
+  .research-development-card { padding:.7rem; }
   .recognition-card { gap:.55rem; padding:.65rem; }
   .recognition-icon { flex-basis:34px; width:34px; height:34px; }
   .recognition-buttons { gap:.3rem; }
