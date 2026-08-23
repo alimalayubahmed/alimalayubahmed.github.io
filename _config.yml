@@ -8,12 +8,12 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "default"
 title                    : "Prof. Dr. Alim Al Ayub Ahmed"
 title_separator          : "-"
 name                     : &name "Prof. Dr. Alim Al Ayub Ahmed"
 description              : &description "Academic and Research Profile of Prof. Dr. Alim Al Ayub Ahmed"
-url                      : https://alimalayubahmed.github.io
+url                      : "https://alimalayubahmed.com"
 baseurl                  : ""
 repository               : "alimalayubahmed/alimalayubahmed.github.io"
 
@@ -29,7 +29,7 @@ author:
   name             : "Alim Al Ayub Ahmed"
   pronouns         :
   bio              : "Academic, researcher, editor, and consultant in digital scholarship & research visibility."
-  location         : 
+  location         :
   employer         : "Asian Business Consortium"
 
   # Primary contact
