@@ -1,0 +1,203 @@
+/* =========================================================
+   JOURNAL ARTICLES PAGE
+   Prof. Dr. Alim Al Ayub Ahmed
+   ========================================================= */
+
+.journal-articles-page { width:100%; max-width:855px; margin:0; padding:0 0 1.35rem; color:#34414d; box-sizing:border-box; }
+.journal-articles-page *,.journal-articles-page *::before,.journal-articles-page *::after { box-sizing:border-box; }
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.journal-articles-hero { display:flex; align-items:flex-start; gap:.8rem; margin:0 0 1rem; padding:1rem 1.1rem; border:1px solid #d5e1eb; border-left:5px solid #2457a7; border-radius:10px; background:linear-gradient(135deg,#f5faff 0%,#fff 78%); box-shadow:0 3px 10px rgba(32,65,95,.055); }
+
+.journal-articles-hero-icon { flex:0 0 42px; display:flex; align-items:center; justify-content:center; width:42px; height:42px; border-radius:9px; background:#eaf3fb; color:#2457a7; font-size:.95rem; }
+
+.journal-articles-hero-content { flex:1; min-width:0; }
+
+.journal-articles-hero h2 { margin:0 0 .3rem; padding:0; border:0; color:#214765; font-size:1rem; line-height:1.3; }
+
+.journal-articles-hero p { margin:0; color:#56636f; font-size:.76rem; line-height:1.55; }
+
+.journal-articles-hero-actions { display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.65rem; }
+
+
+/* =========================================================
+   MAIN BUTTONS
+   ========================================================= */
+
+.journal-main-button { display:inline-flex; align-items:center; justify-content:center; gap:.28rem; padding:.4rem .65rem; border:1px solid #9db9cf; border-radius:5px; background:#f3f8fc; color:#2457a7 !important; font-size:.64rem; font-weight:700; line-height:1.15; text-decoration:none !important; transition:transform .18s ease,background .18s ease,border-color .18s ease,color .18s ease; }
+
+.journal-main-button:hover { transform:translateY(-1px); border-color:#2457a7; background:#2457a7; color:#fff !important; }
+
+.journal-google-scholar { border-color:#86a9c8; background:#eef6fc; color:#174f83 !important; }
+
+
+/* =========================================================
+   INDEXING NOTE
+   ========================================================= */
+
+.journal-indexing-note { display:flex; align-items:flex-start; gap:.65rem; margin:0 0 1rem; padding:.78rem .85rem; border:1px solid #dbe3e9; border-left:4px solid #6d7f91; border-radius:9px; background:#fbfcfd; }
+
+.journal-indexing-note-icon { flex:0 0 34px; display:flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:8px; background:#eef2f5; color:#617487; font-size:.78rem; }
+
+.journal-indexing-note > div:last-child { flex:1; min-width:0; }
+
+.journal-indexing-note h2 { margin:0 0 .2rem; padding:0; border:0; color:#3e5365; font-size:.8rem; line-height:1.3; }
+
+.journal-indexing-note p { margin:0 0 .45rem; color:#697580; font-size:.65rem; line-height:1.45; }
+
+.journal-index-legend { display:flex; flex-wrap:wrap; gap:.28rem; }
+
+
+/* =========================================================
+   INDEXING BADGES
+   ========================================================= */
+
+.journal-badge { display:inline-flex; align-items:center; justify-content:center; padding:.17rem .38rem; border:1px solid #cbd5dd; border-radius:999px; background:#f6f8fa; color:#56636f; font-size:.54rem; font-weight:700; line-height:1.15; white-space:nowrap; }
+
+.badge-ssci { border-color:#d1b36d; background:#fff7df; color:#775714; }
+.badge-scie { border-color:#7fb7a6; background:#edf9f5; color:#216756; }
+.badge-esci { border-color:#91acd0; background:#f0f5fc; color:#355e90; }
+.badge-ahci { border-color:#b79bc9; background:#f7f1fa; color:#6d4b80; }
+.badge-scopus { border-color:#d69d77; background:#fff4ed; color:#8b512b; }
+.badge-abdc { border-color:#8ca1b5; background:#f1f5f8; color:#425a6f; }
+
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.journal-summary { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.55rem; margin:0 0 1rem; }
+
+.journal-summary-item { padding:.6rem .7rem; border:1px solid #dde4ea; border-radius:8px; background:#fff; text-align:center; box-shadow:0 2px 6px rgba(25,55,85,.035); }
+
+.journal-summary-item strong { display:block; margin:0 0 .08rem; color:#294f6e; font-size:.9rem; line-height:1.2; }
+
+.journal-summary-item span { display:block; color:#707c86; font-size:.59rem; line-height:1.3; }
+
+
+/* =========================================================
+   MAIN LIST SECTION
+   ========================================================= */
+
+.journal-list-section { margin:0; }
+
+.journal-list-heading { margin:0 0 .8rem; padding:.75rem .85rem; border:1px solid #dbe3e9; border-radius:8px; background:#fff; }
+
+.journal-list-heading h2 { margin:0 0 .12rem; padding:0; border:0; color:#294a65; font-size:.88rem; line-height:1.3; }
+
+.journal-list-heading p { margin:0; color:#6b7782; font-size:.65rem; line-height:1.4; }
+
+
+/* =========================================================
+   YEAR SECTION
+   ========================================================= */
+
+.journal-year-section { margin:0 0 1rem; }
+
+.journal-year-heading { display:flex; align-items:center; justify-content:space-between; gap:.6rem; margin:0 0 .45rem; padding:.42rem .6rem; border-left:4px solid #2457a7; border-radius:5px; background:#eef5fb; }
+
+.journal-year { color:#214f79; font-size:.76rem; font-weight:800; line-height:1.2; }
+
+.journal-year-count { color:#6b7782; font-size:.58rem; font-weight:600; line-height:1.2; }
+
+
+/* =========================================================
+   ARTICLE CARDS
+   ========================================================= */
+
+.journal-article-list { display:flex; flex-direction:column; gap:.45rem; }
+
+.journal-article-card { display:flex; align-items:flex-start; gap:.6rem; padding:.67rem .72rem; border:1px solid #dce4ea; border-left:4px solid #4d7da5; border-radius:8px; background:#fff; transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease; }
+
+.journal-article-card:hover { transform:translateY(-1px); border-color:#9ebbd2; background:#fbfdff; box-shadow:0 4px 10px rgba(36,87,167,.055); }
+
+.journal-article-number { flex:0 0 28px; display:flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#eef4f8; color:#3f6788; font-size:.58rem; font-weight:800; }
+
+.journal-article-content { flex:1; min-width:0; }
+
+.journal-article-content h3 { margin:0 0 .18rem; padding:0; border:0; color:#2f4e67; font-size:.73rem; line-height:1.4; }
+
+.journal-authors { margin:0 0 .22rem; color:#737d86; font-size:.59rem; line-height:1.4; }
+
+.journal-source-row { display:flex; flex-wrap:wrap; align-items:center; gap:.25rem .45rem; margin:0 0 .28rem; }
+
+.journal-name { color:#3d607d; font-size:.62rem; font-style:italic; font-weight:700; line-height:1.3; }
+
+.journal-year-inline { display:inline-flex; align-items:center; padding:.08rem .28rem; border-radius:4px; background:#f0f3f6; color:#697581; font-size:.53rem; font-weight:700; }
+
+.journal-indexes { display:flex; flex-wrap:wrap; gap:.25rem; margin:0 0 .32rem; }
+
+
+/* =========================================================
+   ARTICLE ACTIONS
+   ========================================================= */
+
+.journal-actions { display:flex; flex-wrap:wrap; gap:.32rem; }
+
+.journal-action-button { display:inline-flex; align-items:center; justify-content:center; gap:.22rem; padding:.28rem .48rem; border:1px solid #b3c7d8; border-radius:5px; background:#f6f9fc; color:#315f86 !important; font-family:inherit; font-size:.56rem; font-weight:700; line-height:1.15; text-decoration:none !important; cursor:pointer; transition:transform .18s ease,background .18s ease,border-color .18s ease,color .18s ease; }
+
+.journal-action-button:hover { transform:translateY(-1px); border-color:#356d9d; background:#356d9d; color:#fff !important; }
+
+.journal-copy-button.is-copied { border-color:#57956c; background:#57956c; color:#fff !important; }
+
+
+/* =========================================================
+   FOOTER NOTE
+   ========================================================= */
+
+.journal-footer-note { display:flex; align-items:flex-start; gap:.55rem; margin-top:1rem; padding:.7rem .78rem; border:1px solid #e0e5e9; border-radius:8px; background:#fafbfc; color:#69747d; }
+
+.journal-footer-note i { flex:0 0 auto; margin-top:.08rem; color:#778794; font-size:.7rem; }
+
+.journal-footer-note p { margin:0; font-size:.6rem; line-height:1.45; }
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width:768px) {
+  .journal-articles-page { max-width:100%; }
+  .journal-summary { grid-template-columns:1fr; }
+  .journal-article-card:hover,.journal-main-button:hover,.journal-action-button:hover { transform:none; }
+}
+
+@media (max-width:520px) {
+  .journal-articles-hero { gap:.6rem; padding:.8rem; }
+  .journal-articles-hero-icon { flex:0 0 36px; width:36px; height:36px; }
+
+  .journal-indexing-note { gap:.5rem; padding:.68rem; }
+  .journal-indexing-note-icon { flex:0 0 30px; width:30px; height:30px; }
+
+  .journal-list-heading { padding:.65rem .7rem; }
+
+  .journal-year-heading { padding:.38rem .5rem; }
+
+  .journal-article-card { gap:.48rem; padding:.6rem .62rem; }
+
+  .journal-article-number { flex:0 0 25px; width:25px; height:25px; }
+
+  .journal-article-content h3 { font-size:.69rem; }
+
+  .journal-authors { font-size:.57rem; }
+
+  .journal-actions { gap:.28rem; }
+
+  .journal-action-button { padding:.27rem .42rem; }
+}
+
+@media (max-width:380px) {
+  .journal-articles-hero-actions { flex-direction:column; align-items:flex-start; }
+
+  .journal-main-button { width:100%; }
+
+  .journal-source-row { align-items:flex-start; flex-direction:column; gap:.15rem; }
+
+  .journal-actions { flex-direction:column; align-items:flex-start; }
+
+  .journal-action-button { width:100%; }
+}

@@ -1,0 +1,338 @@
+---
+layout: archive
+title: "Journal Articles"
+permalink: /publications/journal-articles/
+author_profile: true
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/journal-articles.css' | relative_url }}">
+
+<div class="journal-articles-page">
+
+  <!-- =====================================================
+       INTRODUCTION
+       ===================================================== -->
+
+  <section class="journal-articles-hero">
+
+    <div class="journal-articles-hero-icon">
+      <i class="fas fa-file-alt" aria-hidden="true"></i>
+    </div>
+
+    <div class="journal-articles-hero-content">
+
+      <h2>Peer-Reviewed Journal Articles</h2>
+
+      <p>
+        Selected and complete journal publications across accounting, financial
+        reporting, corporate disclosure, artificial intelligence, machine learning,
+        blockchain, business analytics, engineering, education, sustainability,
+        and interdisciplinary research.
+      </p>
+
+      <div class="journal-articles-hero-actions">
+
+        <a
+          class="journal-main-button journal-google-scholar"
+          href="https://scholar.google.com/citations?user=azjOR68AAAAJ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+          Google Scholar ↗
+        </a>
+
+        <a
+          class="journal-main-button"
+          href="{{ '/publications/' | relative_url }}"
+        >
+          ← Publications
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       INDEXING LEGEND
+       ===================================================== -->
+
+  <section class="journal-indexing-note">
+
+    <div class="journal-indexing-note-icon">
+      <i class="fas fa-database" aria-hidden="true"></i>
+    </div>
+
+    <div>
+
+      <h2>Indexing &amp; Journal Recognition</h2>
+
+      <p>
+        Indexing labels are displayed only where relevant verification has been
+        recorded. The absence of a badge does not necessarily indicate that an
+        article or journal is not indexed.
+      </p>
+
+      <div class="journal-index-legend">
+        <span class="journal-badge badge-ssci">SSCI</span>
+        <span class="journal-badge badge-scie">SCIE</span>
+        <span class="journal-badge badge-esci">ESCI</span>
+        <span class="journal-badge badge-ahci">AHCI</span>
+        <span class="journal-badge badge-scopus">Scopus</span>
+        <span class="journal-badge badge-abdc">ABDC</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       PUBLICATION SUMMARY
+       ===================================================== -->
+
+  {% assign article_count = site.data.journal_articles | size %}
+
+  <section class="journal-summary">
+
+    <div class="journal-summary-item">
+      <strong>{{ article_count }}</strong>
+      <span>Journal Articles Listed</span>
+    </div>
+
+    <div class="journal-summary-item">
+      <strong>{{ site.data.journal_articles.first.year }}</strong>
+      <span>Most Recent Year</span>
+    </div>
+
+    <div class="journal-summary-item">
+      <strong>{{ site.data.journal_articles.last.year }}</strong>
+      <span>Earliest Year Listed</span>
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       JOURNAL ARTICLE LIST
+       ===================================================== -->
+
+  <section class="journal-list-section">
+
+    <div class="journal-list-heading">
+
+      <h2>Journal Articles</h2>
+
+      <p>
+        Publications are arranged by year, with the most recent articles shown first.
+      </p>
+
+    </div>
+
+
+    {% assign grouped_articles = site.data.journal_articles | group_by: "year" %}
+
+    {% for year_group in grouped_articles %}
+
+      <section class="journal-year-section">
+
+        <div class="journal-year-heading">
+
+          <span class="journal-year">
+            {{ year_group.name }}
+          </span>
+
+          <span class="journal-year-count">
+            {{ year_group.items | size }}
+            {% if year_group.items.size == 1 %}
+              article
+            {% else %}
+              articles
+            {% endif %}
+          </span>
+
+        </div>
+
+
+        <div class="journal-article-list">
+
+          {% for article in year_group.items %}
+
+            <article class="journal-article-card">
+
+              <div class="journal-article-number">
+                {{ forloop.index }}
+              </div>
+
+
+              <div class="journal-article-content">
+
+                <h3>
+                  {{ article.title }}
+                </h3>
+
+
+                {% if article.authors and article.authors != "" %}
+                  <p class="journal-authors">
+                    {{ article.authors }}
+                  </p>
+                {% endif %}
+
+
+                <div class="journal-source-row">
+
+                  <span class="journal-name">
+                    {{ article.journal }}
+                  </span>
+
+                  <span class="journal-year-inline">
+                    {{ article.year }}
+                  </span>
+
+                </div>
+
+
+                {% if article.indexes and article.indexes.size > 0 %}
+
+                  <div class="journal-indexes">
+
+                    {% for index in article.indexes %}
+
+                      {% assign index_lower = index | downcase %}
+
+                      {% if index_lower == "ssci" %}
+                        <span class="journal-badge badge-ssci">SSCI</span>
+
+                      {% elsif index_lower == "scie" %}
+                        <span class="journal-badge badge-scie">SCIE</span>
+
+                      {% elsif index_lower == "esci" %}
+                        <span class="journal-badge badge-esci">ESCI</span>
+
+                      {% elsif index_lower == "ahci" %}
+                        <span class="journal-badge badge-ahci">AHCI</span>
+
+                      {% elsif index_lower == "scopus" %}
+                        <span class="journal-badge badge-scopus">Scopus</span>
+
+                      {% elsif index_lower == "abdc" %}
+                        <span class="journal-badge badge-abdc">ABDC</span>
+
+                      {% else %}
+                        <span class="journal-badge">{{ index }}</span>
+                      {% endif %}
+
+                    {% endfor %}
+
+                  </div>
+
+                {% endif %}
+
+
+                <div class="journal-actions">
+
+                  {% if article.url and article.url != "" %}
+
+                    <a
+                      class="journal-action-button"
+                      href="{{ article.url }}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                      View Article ↗
+                    </a>
+
+                  {% endif %}
+
+
+                  <button
+                    class="journal-action-button journal-copy-button"
+                    type="button"
+                    data-citation="{{ article.authors | escape }} ({{ article.year }}). {{ article.title | escape }}. {{ article.journal | escape }}."
+                  >
+                    <i class="fas fa-copy" aria-hidden="true"></i>
+                    Copy Citation
+                  </button>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          {% endfor %}
+
+        </div>
+
+      </section>
+
+    {% endfor %}
+
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER NOTE
+       ===================================================== -->
+
+  <div class="journal-footer-note">
+
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+
+    <p>
+      Publication details are compiled from scholarly records, journal and publisher
+      pages, DOI records, and academic profile sources. Where online-first and final
+      issue years differ, bibliographic information may be standardized to the
+      publication record used for citation.
+    </p>
+
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     COPY CITATION SCRIPT
+     ===================================================== -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const copyButtons = document.querySelectorAll(".journal-copy-button");
+
+  copyButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+      const citation = button.getAttribute("data-citation");
+
+      if (!citation) {
+        return;
+      }
+
+      navigator.clipboard.writeText(citation).then(function () {
+
+        const originalText = button.innerHTML;
+
+        button.innerHTML =
+          '<i class="fas fa-check" aria-hidden="true"></i> Copied';
+
+        button.classList.add("is-copied");
+
+        setTimeout(function () {
+          button.innerHTML = originalText;
+          button.classList.remove("is-copied");
+        }, 1500);
+
+      });
+
+    });
+
+  });
+
+});
+</script>
