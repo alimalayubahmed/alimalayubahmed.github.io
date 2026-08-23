@@ -1,13 +1,16 @@
-name: Jekyll build
+name: Jekyll Build Check
 
 on:
-  # Run after bad-pr check
-  workflow_run:
-    workflows: ["Cleanup bad PR"]
-    branches: [main]
-    types:
-      - completed
-      
+  push:
+    branches:
+      - master
+
+  pull_request:
+    branches:
+      - master
+
+  workflow_dispatch:
+
 permissions:
   contents: read
 
@@ -17,7 +20,9 @@ concurrency:
 
 jobs:
   build:
+    name: Build Jekyll Site
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
