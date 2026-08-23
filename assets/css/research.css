@@ -45,13 +45,13 @@
    RESEARCH LABS
    ========================================================= */
 
-.research-lab-card { display:flex; align-items:center; gap:.85rem; margin:0 0 .65rem; padding:.72rem .78rem; border:1px solid #dce4eb; border-left:4px solid #16848a; border-radius:9px; background:#fafcfd; transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease; }
+.research-lab-card { display:flex; align-items:center; gap:1rem; margin:0 0 .65rem; padding:.78rem .85rem; border:1px solid #dce4eb; border-left:4px solid #16848a; border-radius:9px; background:#fafcfd; transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease; }
 .research-lab-card:last-child { margin-bottom:0; }
 .research-lab-card:hover { transform:translateX(3px); border-color:#91bfc2; background:#f4fbfb; box-shadow:0 4px 10px rgba(22,132,138,.07); }
 
-.research-lab-logo-wrap { flex:0 0 76px; width:76px; height:76px; min-width:76px; min-height:76px; max-width:76px; max-height:76px; overflow:hidden; border:2px solid #fff; border-radius:50%; background:#fff; box-shadow:0 0 0 1px #b9cbd8,0 3px 8px rgba(0,0,0,.10); }
+.research-lab-logo-wrap { flex:0 0 94px; display:flex; align-items:center; justify-content:center; width:94px; height:94px; min-width:94px; min-height:94px; max-width:94px; max-height:94px; overflow:hidden; border:2px solid #fff; border-radius:50%; background:#fff; box-shadow:0 0 0 1px #b9cbd8,0 3px 8px rgba(0,0,0,.10); }
 
-.research-lab-logo { display:block; width:100% !important; height:100% !important; max-width:none !important; max-height:none !important; margin:0 !important; padding:0 !important; border:0 !important; border-radius:0 !important; object-fit:cover; object-position:center; }
+.research-lab-logo { display:block; width:100% !important; height:100% !important; max-width:100% !important; max-height:100% !important; margin:0 !important; padding:0 !important; border:0 !important; border-radius:50% !important; object-fit:contain !important; object-position:center center !important; }
 
 .research-lab-content { flex:1; min-width:0; }
 .research-lab-content h3 { margin:0 0 .22rem; color:#245b70; font-size:.78rem; line-height:1.38; }
@@ -150,9 +150,9 @@
   .research-hero { gap:.6rem; padding:.8rem; }
   .research-hero-icon { flex-basis:36px; width:36px; height:36px; }
   .research-section { padding:.75rem; }
-  .research-lab-card { align-items:flex-start; }
+  .research-lab-card { align-items:center; gap:.7rem; padding:.7rem; }
 
-  .research-lab-logo-wrap { flex:0 0 62px; width:62px; height:62px; min-width:62px; min-height:62px; max-width:62px; max-height:62px; }
+  .research-lab-logo-wrap { flex:0 0 76px; width:76px; height:76px; min-width:76px; min-height:76px; max-width:76px; max-height:76px; }
 
   .research-development-card { padding:.7rem; }
   .recognition-card { gap:.55rem; padding:.65rem; }
