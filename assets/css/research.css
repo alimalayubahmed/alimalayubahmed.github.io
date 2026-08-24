@@ -67,13 +67,13 @@
 
 .research-training-badge-wrap { flex:0 0 94px; display:flex; align-items:center; justify-content:center; width:94px; height:94px; min-width:94px; min-height:94px; max-width:94px; max-height:94px; }
 
-.research-training-badge-wrap a { display:block; width:88px; height:88px; overflow:hidden; border-radius:50%; background:transparent; text-decoration:none !important; box-shadow:0 3px 8px rgba(115,82,20,.11); transition:transform .18s ease,box-shadow .18s ease; }
+.research-training-badge-wrap a { display:block; width:94px; height:94px; overflow:hidden; border-radius:50%; background:transparent; text-decoration:none !important; box-shadow:0 3px 8px rgba(115,82,20,.11); transition:transform .18s ease,box-shadow .18s ease; }
 
 .research-training-badge-wrap a:hover { transform:translateY(-2px) scale(1.025); box-shadow:0 5px 12px rgba(115,82,20,.17); }
 
 .research-training-badge-wrap a:focus-visible { outline:2px solid #c58a1a; outline-offset:3px; }
 
-.research-training-badge { display:block; width:88px !important; height:88px !important; max-width:88px !important; max-height:88px !important; margin:0 !important; padding:0 !important; border:0 !important; border-radius:50% !important; object-fit:cover !important; object-position:center center !important; }
+.research-training-badge { display:block; width:104px !important; height:104px !important; max-width:none !important; max-height:none !important; margin:-5px !important; padding:0 !important; border:0 !important; border-radius:50% !important; object-fit:cover !important; object-position:center center !important; }
 
 .research-training-content { flex:1; min-width:0; }
 
@@ -209,12 +209,17 @@
     max-height:76px;
   }
 
-  .research-training-badge-wrap a,
+  .research-training-badge-wrap a {
+    width:76px !important;
+    height:76px !important;
+  }
+
   .research-training-badge {
-    width:72px !important;
-    height:72px !important;
-    max-width:72px !important;
-    max-height:72px !important;
+    width:84px !important;
+    height:84px !important;
+    max-width:none !important;
+    max-height:none !important;
+    margin:-4px !important;
   }
 
   .research-training-label { font-size:.53rem; }
