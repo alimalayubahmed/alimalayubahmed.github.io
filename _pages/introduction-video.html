@@ -1,103 +1,60 @@
 ---
 layout: archive
 title: "Academic Introduction Video"
+description: "Academic and professional introduction to Prof. Dr. Alim Al Ayub Ahmed, highlighting his research interests, scholarly activities, editorial work, and professional engagement."
 permalink: /introduction-video/
 author_profile: true
 ---
 
-<style>
-.intro-video-page{
-  max-width:920px;
-  margin:0 auto;
-}
-
-.intro-video-header{
-  margin-bottom:1rem;
-}
-
-.intro-video-header h1{
-  margin:0 0 .45rem;
-  color:#263f55;
-  font-size:1.55rem;
-  line-height:1.3;
-}
-
-.intro-video-header p{
-  margin:0;
-  color:#5f6c77;
-  font-size:.92rem;
-  line-height:1.6;
-}
-
-.intro-video-wrapper{
-  position:relative;
-  width:100%;
-  margin:1rem 0;
-  overflow:hidden;
-  border:1px solid #d8e1e8;
-  border-radius:10px;
-  background:#000;
-  box-shadow:0 4px 14px rgba(30,55,80,.08);
-}
-
-.intro-video-wrapper video{
-  display:block;
-  width:100%;
-  height:auto;
-  margin:0;
-  background:#000;
-}
-
-.intro-video-note{
-  margin-top:.85rem;
-  padding:.75rem .9rem;
-  border-left:4px solid #2b6da8;
-  border-radius:6px;
-  background:#f5f9fc;
-  color:#596875;
-  font-size:.82rem;
-  line-height:1.55;
-}
-
-@media (max-width:600px){
-  .intro-video-header h1{
-    font-size:1.3rem;
-  }
-
-  .intro-video-header p{
-    font-size:.86rem;
-  }
-}
-</style>
+<link rel="stylesheet" href="{{ '/assets/css/home-about.css' | relative_url }}">
 
 <div class="intro-video-page">
 
-  <div class="intro-video-header">
-    <h1>Academic Introduction Video</h1>
+  <section class="intro-video-card">
 
-    <p>
-      A brief academic and professional introduction to Prof. Dr. Alim Al Ayub Ahmed,
-      highlighting his research interests, academic activities, and professional engagement.
-    </p>
-  </div>
+    <div class="intro-video-heading">
 
-  <div class="intro-video-wrapper">
-    <video
-      controls
-      preload="metadata"
-      poster="{{ '/images/academic-introduction-thumbnail.png' | relative_url }}"
-      playsinline
-      aria-label="Academic introduction video of Prof. Dr. Alim Al Ayub Ahmed">
-      <source src="{{ '/files/academic-introduction.mp4' | relative_url }}" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+      <p>
+        A brief academic and professional introduction highlighting my academic
+        background, research interests, scholarly activities, editorial work,
+        and professional engagement.
+      </p>
 
-  <div class="intro-video-note">
-    This video provides a concise overview of academic, research, and professional activities
-    related to accounting information systems, artificial intelligence, corporate governance,
-    business intelligence, and digital scholarship.
-  </div>
+    </div>
+
+    <div class="intro-video-player-wrap">
+
+      <video
+        class="intro-video-player"
+        controls
+        playsinline
+        preload="metadata"
+        poster="{{ '/images/academic-introduction-thumbnail.png' | relative_url }}"
+        aria-label="Academic introduction video of Prof. Dr. Alim Al Ayub Ahmed">
+
+        <source
+          src="{{ '/assets/videos/academic-introduction.mp4' | relative_url }}"
+          type="video/mp4">
+
+        Your browser does not support the video tag.
+
+      </video>
+
+    </div>
+
+    <div class="intro-video-actions">
+
+      <a class="home-btn home-btn-primary" href="{{ '/' | relative_url }}">
+        Back to Home
+      </a>
+
+      <a class="home-btn home-btn-secondary" href="{{ '/about/' | relative_url }}">
+        About Me
+      </a>
+
+    </div>
+
+  </section>
 
 </div>
 
@@ -106,11 +63,11 @@ author_profile: true
   "@context": "https://schema.org",
   "@type": "VideoObject",
   "name": "Academic Introduction – Prof. Dr. Alim Al Ayub Ahmed",
-  "description": "A brief academic and professional introduction to Prof. Dr. Alim Al Ayub Ahmed, highlighting his research interests, academic activities, and professional engagement in accounting information systems, artificial intelligence, corporate governance, business intelligence, and digital scholarship.",
+  "description": "A brief academic and professional introduction to Prof. Dr. Alim Al Ayub Ahmed, highlighting his academic background, research interests, scholarly activities, editorial work, and professional engagement.",
   "thumbnailUrl": [
     "{{ '/images/academic-introduction-thumbnail.png' | absolute_url }}"
   ],
-  "contentUrl": "{{ '/files/academic-introduction.mp4' | absolute_url }}",
+  "contentUrl": "{{ '/assets/videos/academic-introduction.mp4' | absolute_url }}",
   "embedUrl": "{{ '/introduction-video/' | absolute_url }}"
 }
 </script>
