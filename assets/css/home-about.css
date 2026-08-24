@@ -142,29 +142,130 @@
    PROFESSIONAL TRAINING & CREDENTIALS
    ========================================================= */
 
-.about-credential-details { margin-top:.7rem; padding-top:.62rem; border-top:1px solid rgba(190,145,45,.22); }
+.about-credential-details {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 125px;
+  gap:1rem;
+  align-items:end;
+  margin-top:.7rem;
+  padding-top:.62rem;
+  border-top:1px solid rgba(190,145,45,.22);
+}
 
-.about-credential-details h3 { margin:0 0 .28rem; padding:0; border:0; color:#354352; font-size:.86rem; font-weight:700; line-height:1.3; }
+.credential-info { min-width:0; }
 
-.credential-provider { margin:0 0 .08rem; color:#59636c; font-size:.7rem; line-height:1.4; }
+.about-credential-details h3 {
+  margin:0 0 .28rem;
+  padding:0;
+  border:0;
+  color:#354352;
+  font-size:.86rem;
+  font-weight:700;
+  line-height:1.3;
+}
 
-.credential-meta { margin:0 0 .58rem; color:#68727b; font-size:.69rem; line-height:1.4; }
+.credential-provider {
+  margin:0 0 .08rem;
+  color:#59636c;
+  font-size:.7rem;
+  line-height:1.4;
+}
 
-.credential-course-list { margin:.18rem 0 .66rem; padding-left:1.35rem; color:#4d5862; font-size:.7rem; line-height:1.42; }
+.credential-meta {
+  margin:0 0 .58rem;
+  color:#68727b;
+  font-size:.69rem;
+  line-height:1.4;
+}
 
-.credential-course-list li { margin:0 0 .22rem; padding-left:.08rem; }
+.credential-course-list {
+  margin:.18rem 0 .66rem;
+  padding-left:1.35rem;
+  color:#4d5862;
+  font-size:.7rem;
+  line-height:1.42;
+}
 
-.credential-course-list li:last-child { margin-bottom:0; }
+.credential-course-list li {
+  margin:0 0 .22rem;
+  padding-left:.08rem;
+}
 
-.credential-course-link { color:#3e4852 !important; font-weight:600; text-decoration:none !important; transition:color .16s ease,text-decoration-color .16s ease; }
+.credential-course-list li:last-child {
+  margin-bottom:0;
+}
 
-.credential-course-link:hover { color:#9a6811 !important; text-decoration:underline !important; text-underline-offset:3px; cursor:pointer; }
+.credential-course-link {
+  color:#3e4852 !important;
+  font-weight:600;
+  text-decoration:none !important;
+  transition:color .16s ease,text-decoration-color .16s ease;
+}
 
-.credential-course-link:focus-visible { outline:2px solid #c58a1a; outline-offset:3px; border-radius:2px; }
+.credential-course-link:hover {
+  color:#9a6811 !important;
+  text-decoration:underline !important;
+  text-underline-offset:3px;
+  cursor:pointer;
+}
 
-.credential-main-link { margin-top:.08rem; color:#9a6811 !important; }
+.credential-course-link:focus-visible {
+  outline:2px solid #c58a1a;
+  outline-offset:3px;
+  border-radius:2px;
+}
 
-.credential-main-link:hover { color:#76500d !important; }
+.credential-main-link {
+  margin-top:.08rem;
+  color:#9a6811 !important;
+}
+
+.credential-main-link:hover {
+  color:#76500d !important;
+}
+
+
+/* =========================================================
+   CREDENTIAL BADGE
+   ========================================================= */
+
+.credential-badge-area {
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  width:125px;
+  min-height:125px;
+}
+
+.credential-badge-link {
+  display:block;
+  width:112px;
+  height:112px;
+  overflow:hidden;
+  border-radius:50%;
+  background:transparent;
+  text-decoration:none !important;
+  box-shadow:0 3px 8px rgba(115,82,20,.10);
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+
+.credential-badge-link:hover {
+  transform:translateY(-2px) scale(1.025);
+  box-shadow:0 5px 12px rgba(115,82,20,.16);
+}
+
+.credential-badge-link:focus-visible {
+  outline:2px solid #c58a1a;
+  outline-offset:4px;
+}
+
+.credential-badge {
+  display:block;
+  width:112px;
+  height:112px;
+  object-fit:cover;
+  border-radius:50%;
+}
 
 
 /* =========================================================
@@ -209,20 +310,60 @@
   .home-hero p { font-size:.78rem; }
   .home-hero-actions { gap:.4rem; }
   .home-btn { padding:.42rem .65rem; font-size:.69rem; }
+
   .home-focus-grid { grid-template-columns:1fr; }
   .home-focus-card { min-height:auto; }
+
   .home-explore-card { min-height:64px; }
 
   .about-intro { padding:.7rem .78rem; }
-  .about-card { gap:.55rem; padding:.7rem; }
-  .about-card-icon { flex-basis:32px; width:32px; height:32px; font-size:.78rem; }
-  .about-card-content h2 { font-size:.81rem; }
-  .about-card-content p,.about-profile-card .about-card-content p { font-size:.7rem; }
 
-  .about-credential-details { margin-top:.55rem; padding-top:.5rem; }
+  .about-card { gap:.55rem; padding:.7rem; }
+
+  .about-card-icon {
+    flex-basis:32px;
+    width:32px;
+    height:32px;
+    font-size:.78rem;
+  }
+
+  .about-card-content h2 { font-size:.81rem; }
+
+  .about-card-content p,
+  .about-profile-card .about-card-content p {
+    font-size:.7rem;
+  }
+
+  .about-credential-details {
+    grid-template-columns:1fr;
+    gap:.65rem;
+    margin-top:.55rem;
+    padding-top:.5rem;
+  }
+
   .about-credential-details h3 { font-size:.8rem; }
-  .credential-provider,.credential-meta,.credential-course-list { font-size:.68rem; }
-  .credential-course-list { padding-left:1.15rem; }
+
+  .credential-provider,
+  .credential-meta,
+  .credential-course-list {
+    font-size:.68rem;
+  }
+
+  .credential-course-list {
+    padding-left:1.15rem;
+  }
+
+  .credential-badge-area {
+    width:100%;
+    min-height:auto;
+    justify-content:flex-start;
+  }
+
+  .credential-badge-link,
+  .credential-badge {
+    width:88px;
+    height:88px;
+  }
 }
 
 
