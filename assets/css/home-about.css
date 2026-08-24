@@ -390,7 +390,8 @@
 }
 
 .intro-video-card {
-  max-width:855px;
+  width:75%;
+  max-width:641px;
   margin:0;
   padding:1rem 1.1rem 1.05rem;
   border:1px solid #d6e1ea;
@@ -401,7 +402,7 @@
 }
 
 .intro-video-heading {
-  width:75%;
+  width:100%;
   margin:0 0 .8rem;
 }
 
@@ -422,7 +423,7 @@
 }
 
 .intro-video-player-wrap {
-  width:75%;
+  width:100%;
   overflow:hidden;
   border:1px solid #d5dee7;
   border-radius:9px;
@@ -441,7 +442,7 @@
   display:flex;
   flex-wrap:wrap;
   gap:.5rem;
-  width:75%;
+  width:100%;
   margin-top:.8rem;
 }
 
@@ -451,20 +452,16 @@
    ========================================================= */
 
 @media (max-width:768px) {
-  .intro-video-card { max-width:100%; }
-
-  .intro-video-heading,
-  .intro-video-player-wrap,
-  .intro-video-actions {
-    width:75%;
+  .intro-video-card {
+    width:82%;
+    max-width:none;
   }
 }
 
 @media (max-width:600px) {
-  .intro-video-heading,
-  .intro-video-player-wrap,
-  .intro-video-actions {
+  .intro-video-card {
     width:100%;
+    max-width:100%;
   }
 }
 
