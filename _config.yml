@@ -160,10 +160,22 @@ facebook:
 og_image                 :
 og_description           :
 
+# Structured Academic Identity
 social:
-  type                   :
-  name                   :
+  type                   : "Person"
+  name                   : "Prof. Dr. Alim Al Ayub Ahmed"
   links:
+    - "https://orcid.org/0000-0003-4836-5423"
+    - "https://scholar.google.com/citations?user=azjOR68AAAAJ"
+    - "https://www.scopus.com/authid/detail.uri?authorId=57218631949"
+    - "https://www.webofscience.com/wos/author/rid/B-2259-2015"
+    - "https://ieee-collabratec.ieee.org/app/p/alimahmed"
+    - "https://www.semanticscholar.org/author/Alim-Al-Ayub-Ahmed/30566020"
+    - "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2362304"
+    - "https://www.linkedin.com/in/draaaa76/"
+    - "https://github.com/alimalayubahmed"
+    - "https://www.researchgate.net/profile/Alim_Al_Ayub_Ahmed"
+    - "https://authors.repec.org/pro/pah225/"
 
 
 # Analytics
@@ -352,6 +364,7 @@ whitelist:
 category_archive:
   type: liquid
   path: /categories/
+
 tag_archive:
   type: liquid
   path: /tags/
