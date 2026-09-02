@@ -103,9 +103,10 @@
 
 /* =========================================================
    PROFILE LOGO GRID
+   Desktop layout: 11 + 10
    ========================================================= */
 
-.contact-profile-icons { display:grid; grid-template-columns:repeat(10,44px); justify-content:start; align-items:center; column-gap:.62rem; row-gap:.38rem; }
+.contact-profile-icons { display:grid; grid-template-columns:repeat(11,44px); justify-content:start; align-items:center; column-gap:.62rem; row-gap:.38rem; }
 
 
 /* =========================================================

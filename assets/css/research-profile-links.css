@@ -20,6 +20,7 @@
 /* =========================================================
    PUBLICATIONS PAGE
    Keep profile section inside left grid column
+   Desktop layout: 6 + 6 + 6 + 3
    ========================================================= */
 
 .publication-profile-cell { width:100%; min-width:0; }
@@ -29,9 +30,10 @@
 
 /* =========================================================
    PROFILE LOGO GRID
+   Default / Publications = 6 columns
    ========================================================= */
 
-.scholarly-profile-icons { display:grid; grid-template-columns:repeat(5,44px); justify-content:start; align-items:center; column-gap:.62rem; row-gap:.38rem; }
+.scholarly-profile-icons { display:grid; grid-template-columns:repeat(6,44px); justify-content:start; align-items:center; column-gap:.62rem; row-gap:.38rem; }
 
 
 /* =========================================================
@@ -47,12 +49,12 @@
 
 /* =========================================================
    RESEARCH PAGE
-   Keep full width
+   Desktop layout: 11 + 10
    ========================================================= */
 
 .research-page .scholarly-profiles { width:100%; max-width:100%; margin:1rem 0 0; }
 
-.research-page .scholarly-profile-icons { grid-template-columns:repeat(10,44px); }
+.research-page .scholarly-profile-icons { grid-template-columns:repeat(11,44px); }
 
 
 /* =========================================================
@@ -72,16 +74,22 @@
 }
 
 @media (max-width:650px) {
-  .scholarly-profile-icons,.research-page .scholarly-profile-icons { grid-template-columns:repeat(5,42px); column-gap:.4rem; row-gap:.36rem; }
+  .scholarly-profile-icons,
+  .research-page .scholarly-profile-icons { grid-template-columns:repeat(5,42px); column-gap:.4rem; row-gap:.36rem; }
+
   .scholarly-profile-logo { width:42px; height:42px; }
 }
 
 @media (max-width:520px) {
   .scholarly-profiles { padding:.72rem .75rem; }
-  .scholarly-profile-icons,.research-page .scholarly-profile-icons { grid-template-columns:repeat(4,40px); column-gap:.35rem; row-gap:.34rem; }
+
+  .scholarly-profile-icons,
+  .research-page .scholarly-profile-icons { grid-template-columns:repeat(4,40px); column-gap:.35rem; row-gap:.34rem; }
+
   .scholarly-profile-logo { width:40px; height:40px; }
 }
 
 @media (max-width:380px) {
-  .scholarly-profile-icons,.research-page .scholarly-profile-icons { grid-template-columns:repeat(3,40px); }
+  .scholarly-profile-icons,
+  .research-page .scholarly-profile-icons { grid-template-columns:repeat(3,40px); }
 }
