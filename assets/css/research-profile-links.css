@@ -54,7 +54,7 @@
 
 .research-page .scholarly-profiles { width:100%; max-width:100%; margin:1rem 0 0; }
 
-.research-page .scholarly-profile-icons { grid-template-columns:repeat(11,44px); }
+.research-page .scholarly-profile-icons { grid-template-columns:repeat(12,44px); }
 
 
 /* =========================================================
@@ -93,3 +93,6 @@
   .scholarly-profile-icons,
   .research-page .scholarly-profile-icons { grid-template-columns:repeat(3,40px); }
 }
+.profile-logo-fallback { display:grid; place-items:center; font-size:.65rem; font-weight:700; color:#243d53; }
+.profile-logo-fallback[aria-label='ScholarGPS']::after { content:'SG'; }
+.profile-logo-fallback[aria-label='Bohrium']::after { content:'Bh'; }
