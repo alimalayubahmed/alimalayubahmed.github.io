@@ -106,7 +106,7 @@
    Desktop layout: 11 + 10
    ========================================================= */
 
-.contact-profile-icons { display:grid; grid-template-columns:repeat(11,44px); justify-content:start; align-items:center; column-gap:.62rem; row-gap:.38rem; }
+.contact-profile-icons { display:grid; grid-template-columns:repeat(12,44px); justify-content:start; align-items:center; column-gap:.62rem; row-gap:.38rem; }
 
 
 /* =========================================================
@@ -161,3 +161,6 @@
 @media (max-width:380px) {
   .contact-profile-icons { grid-template-columns:repeat(3,40px); }
 }
+.profile-logo-fallback { display:grid; place-items:center; font-size:.65rem; font-weight:700; color:#243d53; }
+.profile-logo-fallback[aria-label='ScholarGPS']::after { content:'SG'; }
+.profile-logo-fallback[aria-label='Bohrium']::after { content:'Bh'; }
